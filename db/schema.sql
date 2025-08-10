@@ -79,8 +79,7 @@ create table if not exists reviews (
   duration_goal int default 15
 );
 
--- TODO: RLS policies
--- Enable RLS
+-- Enable RLS (idempotent)
 alter table profiles enable row level security;
 alter table progress enable row level security;
 alter table sessions enable row level security;

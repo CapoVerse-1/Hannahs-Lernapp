@@ -45,18 +45,25 @@ export const useAppStore = create<AppState>()(
           // Fire-and-forget persist to Supabase
           try {
             const deviceId = state.deviceId
-            fetch("/api/progress", {
-              method: "POST",
-              headers: { "Content-Type": "application/json", "x-device-id": deviceId },
-              body: JSON.stringify({
-                device_id: deviceId,
-                chapter_id: chapterId,
-                learned_count: next.learned,
-                correct_count: next.correct,
-                wrong_count: next.wrong,
-                mastery_pct: next.mastery
-              })
-            }).catch(() => {})
+            const payload = JSON.stringify({
+              device_id: deviceId,
+              chapter_id: chapterId,
+              learned_count: next.learned,
+              correct_count: next.correct,
+              wrong_count: next.wrong,
+              mastery_pct: next.mastery
+            })
+            if (typeof navigator !== "undefined" && typeof (navigator as any).sendBeacon === "function") {
+              const blob = new Blob([payload], { type: "application/json" })
+              ;(navigator as any).sendBeacon("/api/progress", blob)
+            } else {
+              fetch("/api/progress", {
+                method: "POST",
+                keepalive: true as any,
+                headers: { "Content-Type": "application/json", "x-device-id": deviceId },
+                body: payload
+              }).catch(() => {})
+            }
           } catch {}
           return { progress: { ...state.progress, [chapterId]: next } }
         }),
