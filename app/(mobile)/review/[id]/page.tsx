@@ -18,7 +18,9 @@ export default function ReviewPage() {
   const qs = useMemo(() => questions.filter((q) => q.chapter_id === fromChapter).slice(0, 6), [fromChapter])
   const cs = useMemo(() => cards.filter((c) => c.section_id.startsWith(`${fromChapter}-`)).slice(0, 5), [fromChapter])
   const total = qs.length + cs.length
-  const item = idx < cs.length ? { type: "card" as const, c: cs[idx] } : { type: "q" as const, q: qs[idx - cs.length] }
+  const item = idx < cs.length
+    ? { type: "card" as const, c: cs[idx]! }
+    : { type: "q" as const, q: qs[idx - cs.length]! }
 
   return (
     <main className="p-4 pb-28 space-y-3">
