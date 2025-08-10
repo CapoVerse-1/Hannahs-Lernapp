@@ -1,7 +1,7 @@
 import { create } from "zustand"
 import { persist } from "zustand/middleware"
 import { ModeEnum } from "./schemas"
-import { getSupabaseForDevice } from "./supabase"
+import { getSupabaseForDevice, SHARED_DEVICE_ID } from "./supabase"
 
 type Mode = "full" | "fast"
 
@@ -45,7 +45,7 @@ export const useAppStore = create<AppState>()(
           const next = { ...prev, ...delta }
           // Write directly to Supabase with device header for RLS
           try {
-            const deviceId = state.deviceId
+            const deviceId = SHARED_DEVICE_ID || state.deviceId
             const supa = getSupabaseForDevice(deviceId)
             if (supa) {
               ;(async () => {

@@ -5,7 +5,7 @@ import dynamic from "next/dynamic"
 import { BottomNav } from "@/components/BottomNav"
 import { DashboardHeader } from "@/components/DashboardHeader"
 import { useEffect } from "react"
-import { getSupabaseForDevice } from "@/lib/supabase"
+import { getSupabaseForDevice, SHARED_DEVICE_ID } from "@/lib/supabase"
 
 export default function Page() {
   const state = useAppStore()
@@ -16,7 +16,7 @@ export default function Page() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
   useEffect(() => {
-    const deviceId = state.deviceId
+    const deviceId = SHARED_DEVICE_ID || state.deviceId
     ;(async () => {
       try {
         const supa = getSupabaseForDevice(deviceId)

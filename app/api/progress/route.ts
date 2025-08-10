@@ -2,11 +2,11 @@ import { NextRequest, NextResponse } from "next/server"
 export const runtime = "nodejs"
 export const dynamic = "force-dynamic"
 import { createClient } from "@supabase/supabase-js"
-import { supabaseUrl, supabaseAnon } from "@/lib/supabase"
+import { supabaseUrl, supabaseAnon, SHARED_DEVICE_ID } from "@/lib/supabase"
 
 export async function GET(req: NextRequest) {
   if (!supabaseUrl || !supabaseAnon) return NextResponse.json({ ok: false, error: "Supabase not configured" }, { status: 500 })
-  const headerDeviceId = req.headers.get("x-device-id") || ""
+  const headerDeviceId = req.headers.get("x-device-id") || SHARED_DEVICE_ID || ""
   const profileId = req.headers.get("x-profile-id") || ""
   if (!headerDeviceId && !profileId) return NextResponse.json({ ok: false, error: "Missing device_id or profile_id" }, { status: 400 })
   const supabase = createClient(supabaseUrl, supabaseAnon, {
@@ -38,7 +38,7 @@ export async function POST(req: NextRequest) {
   if (!supabaseUrl || !supabaseAnon) return NextResponse.json({ ok: false, error: "Supabase not configured" }, { status: 500 })
   if (!chapter_id) return NextResponse.json({ ok: false, error: "Missing chapter_id" }, { status: 400 })
 
-  const headerDeviceId = req.headers.get("x-device-id") || providedDeviceId
+  const headerDeviceId = req.headers.get("x-device-id") || providedDeviceId || SHARED_DEVICE_ID
   if (!headerDeviceId && !providedProfileId) return NextResponse.json({ ok: false, error: "Missing device_id or profile_id" }, { status: 400 })
 
   const supabase = createClient(supabaseUrl, supabaseAnon, {
