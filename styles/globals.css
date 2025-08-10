@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0B0F14;
+  --card: #121821;
+  --muted: #1A2230;
+  --mint: #9AE6B4;
+  --periwinkle: #A3BFFA;
+  --apricot: #FBD38D;
+  --rose: #FBB6CE;
+}
+
+html, body {
+  background: var(--bg);
+  color: white;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  outline-offset: 2px;
+}
+
+/* Hide scrollbars on custom containers but keep scroll */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+.focusless *:focus { outline: none !important; box-shadow: none !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
