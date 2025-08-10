@@ -1,6 +1,7 @@
 import { create } from "zustand"
 import { persist } from "zustand/middleware"
 import { ModeEnum } from "./schemas"
+import { getSupabaseForDevice } from "./supabase"
 
 type Mode = "full" | "fast"
 
@@ -42,27 +43,31 @@ export const useAppStore = create<AppState>()(
         set((state) => {
           const prev = state.progress[chapterId] || { learned: 0, correct: 0, wrong: 0, mastery: 0, phase: "review" }
           const next = { ...prev, ...delta }
-          // Fire-and-forget persist to Supabase
+          // Write directly to Supabase with device header for RLS
           try {
             const deviceId = state.deviceId
-            const payload = JSON.stringify({
-              device_id: deviceId,
-              chapter_id: chapterId,
-              learned_count: next.learned,
-              correct_count: next.correct,
-              wrong_count: next.wrong,
-              mastery_pct: next.mastery
-            })
-            if (typeof navigator !== "undefined" && typeof (navigator as any).sendBeacon === "function") {
-              const blob = new Blob([payload], { type: "application/json" })
-              ;(navigator as any).sendBeacon("/api/progress", blob)
-            } else {
-              fetch("/api/progress", {
-                method: "POST",
-                keepalive: true as any,
-                headers: { "Content-Type": "application/json", "x-device-id": deviceId },
-                body: payload
-              }).catch(() => {})
+            const supa = getSupabaseForDevice(deviceId)
+            if (supa) {
+              ;(async () => {
+                // ensure profile exists
+                const { data: prof } = await supa.from("profiles").select("id").eq("device_id", deviceId).maybeSingle()
+                let pid = prof?.id
+                if (!pid) {
+                  const newId = (globalThis as any).crypto?.randomUUID?.() || `${Date.now()}-${Math.random().toString(16).slice(2)}`
+                  await supa.from("profiles").insert({ id: newId, device_id: deviceId }).single()
+                  pid = newId
+                }
+                if (!pid) return
+                await supa.from("progress").upsert({
+                  profile_id: pid,
+                  chapter_id: chapterId,
+                  learned_count: next.learned ?? 0,
+                  correct_count: next.correct ?? 0,
+                  wrong_count: next.wrong ?? 0,
+                  mastery_pct: next.mastery ?? 0,
+                  last_active_at: new Date().toISOString()
+                })
+              })()
             }
           } catch {}
           return { progress: { ...state.progress, [chapterId]: next } }

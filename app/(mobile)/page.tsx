@@ -5,6 +5,7 @@ import dynamic from "next/dynamic"
 import { BottomNav } from "@/components/BottomNav"
 import { DashboardHeader } from "@/components/DashboardHeader"
 import { useEffect } from "react"
+import { getSupabaseForDevice } from "@/lib/supabase"
 
 export default function Page() {
   const state = useAppStore()
@@ -18,19 +19,23 @@ export default function Page() {
     const deviceId = state.deviceId
     ;(async () => {
       try {
-        const res = await fetch("/api/progress", { headers: { "x-device-id": deviceId } })
-        const json = await res.json()
-        if (json?.ok && Array.isArray(json.items)) {
-          const update = useAppStore.getState().updateProgress
-          json.items.forEach((row: any) => {
-            update(Number(row.chapter_id), {
-              learned: row.learned_count ?? 0,
-              correct: row.correct_count ?? 0,
-              wrong: row.wrong_count ?? 0,
-              mastery: Math.round((row.mastery_pct ?? 0) as number),
-            })
+        const supa = getSupabaseForDevice(deviceId)
+        if (!supa) return
+        // ensure profile exists
+        const { data: prof } = await supa.from("profiles").select("id").eq("device_id", deviceId).maybeSingle()
+        const pid = prof?.id
+        if (!pid) return
+        const { data } = await supa.from("progress").select("chapter_id, learned_count, correct_count, wrong_count, mastery_pct").eq("profile_id", pid)
+        if (!data) return
+        const update = useAppStore.getState().updateProgress
+        data.forEach((row: any) => {
+          update(Number(row.chapter_id), {
+            learned: row.learned_count ?? 0,
+            correct: row.correct_count ?? 0,
+            wrong: row.wrong_count ?? 0,
+            mastery: Math.round((row.mastery_pct ?? 0) as number),
           })
-        }
+        })
       } catch {}
     })()
     // eslint-disable-next-line react-hooks/exhaustive-deps
