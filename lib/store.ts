@@ -14,6 +14,7 @@ interface AppState {
   progress: Progress
   setMode: (m: Mode) => void
   setExamDateIso: (iso: string) => void
+  setProgressSnapshot: (snapshot: Progress) => void
   updateProgress: (chapterId: number, delta: Partial<Progress[number]>) => void
   normalizeProgress: () => void
 }
@@ -39,6 +40,7 @@ export const useAppStore = create<AppState>()(
       progress: {},
       setMode: (m) => set({ mode: ModeEnum.parse(m) }),
       setExamDateIso: (iso) => set({ examDateIso: iso }),
+      setProgressSnapshot: (snapshot) => set({ progress: snapshot || {} }),
       updateProgress: (chapterId, delta) =>
         set((state) => {
           const prev = state.progress[chapterId] || { learned: 0, correct: 0, wrong: 0, mastery: 0, phase: "review" }
@@ -82,7 +84,24 @@ export const useAppStore = create<AppState>()(
           return { progress: next }
         })
     }),
-    { name: "hp-state" }
+    {
+      name: "hp-state",
+      version: 2,
+      migrate: (persisted: any, version) => {
+        if (!persisted) return persisted
+        if (version < 2) {
+          // Drop any stale locally persisted progress so server is source of truth
+          delete persisted.progress
+        }
+        return persisted
+      },
+      partialize: (state) => ({
+        deviceId: state.deviceId,
+        mode: state.mode,
+        examDateIso: state.examDateIso
+        // progress intentionally not persisted (server is source of truth)
+      })
+    }
   )
 )
 

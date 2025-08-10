@@ -10,6 +10,7 @@ import { useEffect } from "react"
 export default function Page() {
   const state = useAppStore()
   const normalizeProgress = useAppStore((s) => s.normalizeProgress)
+  const setProgressSnapshot = useAppStore((s) => s.setProgressSnapshot)
   // Normalize once on mount to avoid render loops
   useEffect(() => {
     normalizeProgress()
@@ -21,15 +22,18 @@ export default function Page() {
         const res = await fetch('/api/progress')
         const json = await res.json()
         if (!json?.ok || !Array.isArray(json.items)) return
-        const update = useAppStore.getState().updateProgress
+        const snapshot: Record<number, any> = {}
         json.items.forEach((row: any) => {
-          update(Number(row.chapter_id), {
+          snapshot[Number(row.chapter_id)] = {
             learned: row.learned_count ?? 0,
             correct: row.correct_count ?? 0,
             wrong: row.wrong_count ?? 0,
             mastery: Math.round((row.mastery_pct ?? 0) as number),
-          })
+          }
         })
+        setProgressSnapshot(snapshot)
+        // normalize to align chapter-phase thresholds if needed
+        useAppStore.getState().normalizeProgress()
       } catch {}
     })()
     // eslint-disable-next-line react-hooks/exhaustive-deps
