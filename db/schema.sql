@@ -1,11 +1,4 @@
-create table if not exists profiles (
-  id uuid primary key,
-  created_at timestamptz default now(),
-  display_name text,
-  mode text check (mode in ('full','fast')) default 'full',
-  streak int default 0,
-  device_id text not null unique
-);
+-- Simplified: single-user progress table only
 
 create table if not exists chapters (
   id int primary key,
@@ -60,14 +53,12 @@ create table if not exists attempts (
 );
 
 create table if not exists progress (
-  profile_id uuid references profiles(id),
-  chapter_id int references chapters(id),
+  chapter_id int primary key,
   learned_count int default 0,
   correct_count int default 0,
   wrong_count int default 0,
   mastery_pct float default 0,
-  last_active_at timestamptz default now(),
-  primary key (profile_id, chapter_id)
+  last_active_at timestamptz default now()
 );
 
 create table if not exists reviews (
@@ -80,33 +71,10 @@ create table if not exists reviews (
 );
 
 -- Enable RLS (idempotent)
-alter table profiles enable row level security;
-alter table progress enable row level security;
-alter table sessions enable row level security;
-alter table attempts enable row level security;
-alter table reviews enable row level security;
+-- No RLS needed in single-user mode
 
 -- Profiles policy: owner by id OR matching device_id via anon key
-create policy if not exists profiles_select on profiles
-  for select using (auth.uid() = id or device_id = current_setting('request.headers', true)::json->>'x-device-id');
-create policy if not exists profiles_insert on profiles
-  for insert with check (auth.uid() = id or device_id = current_setting('request.headers', true)::json->>'x-device-id');
-create policy if not exists profiles_update on profiles
-  for update using (auth.uid() = id or device_id = current_setting('request.headers', true)::json->>'x-device-id');
-
--- Progress policies: own rows by profile_id
-create policy if not exists progress_select on progress
-  for select using (auth.uid() = profile_id or exists(
-    select 1 from profiles p where p.id = progress.profile_id and p.device_id = current_setting('request.headers', true)::json->>'x-device-id'
-  ));
-create policy if not exists progress_upsert on progress
-  for insert with check (auth.uid() = profile_id or exists(
-    select 1 from profiles p where p.id = progress.profile_id and p.device_id = current_setting('request.headers', true)::json->>'x-device-id'
-  ));
-create policy if not exists progress_update on progress
-  for update using (auth.uid() = profile_id or exists(
-    select 1 from profiles p where p.id = progress.profile_id and p.device_id = current_setting('request.headers', true)::json->>'x-device-id'
-  ));
+-- (policies removed)
 
 -- Sessions/Attempts/Reviews: restrict to own profile
 create policy if not exists sessions_rw on sessions for all using (

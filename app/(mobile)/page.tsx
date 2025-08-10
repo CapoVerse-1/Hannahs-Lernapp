@@ -16,19 +16,13 @@ export default function Page() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
   useEffect(() => {
-    const deviceId = SHARED_DEVICE_ID || state.deviceId
     ;(async () => {
       try {
-        const supa = getSupabaseForDevice(deviceId)
-        if (!supa) return
-        // ensure profile exists
-        const { data: prof } = await supa.from("profiles").select("id").eq("device_id", deviceId).maybeSingle()
-        const pid = prof?.id
-        if (!pid) return
-        const { data } = await supa.from("progress").select("chapter_id, learned_count, correct_count, wrong_count, mastery_pct").eq("profile_id", pid)
-        if (!data) return
+        const res = await fetch('/api/progress')
+        const json = await res.json()
+        if (!json?.ok || !Array.isArray(json.items)) return
         const update = useAppStore.getState().updateProgress
-        data.forEach((row: any) => {
+        json.items.forEach((row: any) => {
           update(Number(row.chapter_id), {
             learned: row.learned_count ?? 0,
             correct: row.correct_count ?? 0,

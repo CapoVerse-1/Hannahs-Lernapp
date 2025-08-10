@@ -43,32 +43,19 @@ export const useAppStore = create<AppState>()(
         set((state) => {
           const prev = state.progress[chapterId] || { learned: 0, correct: 0, wrong: 0, mastery: 0, phase: "review" }
           const next = { ...prev, ...delta }
-          // Write directly to Supabase with device header for RLS
+          // Write via API (single-user simplified schema)
           try {
-            const deviceId = SHARED_DEVICE_ID || state.deviceId
-            const supa = getSupabaseForDevice(deviceId)
-            if (supa) {
-              ;(async () => {
-                // ensure profile exists
-                const { data: prof } = await supa.from("profiles").select("id").eq("device_id", deviceId).maybeSingle()
-                let pid = prof?.id
-                if (!pid) {
-                  const newId = (globalThis as any).crypto?.randomUUID?.() || `${Date.now()}-${Math.random().toString(16).slice(2)}`
-                  await supa.from("profiles").insert({ id: newId, device_id: deviceId }).single()
-                  pid = newId
-                }
-                if (!pid) return
-                await supa.from("progress").upsert({
-                  profile_id: pid,
-                  chapter_id: chapterId,
-                  learned_count: next.learned ?? 0,
-                  correct_count: next.correct ?? 0,
-                  wrong_count: next.wrong ?? 0,
-                  mastery_pct: next.mastery ?? 0,
-                  last_active_at: new Date().toISOString()
-                })
-              })()
-            }
+            fetch("/api/progress", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                chapter_id: chapterId,
+                learned_count: next.learned ?? 0,
+                correct_count: next.correct ?? 0,
+                wrong_count: next.wrong ?? 0,
+                mastery_pct: next.mastery ?? 0
+              })
+            }).catch(() => {})
           } catch {}
           return { progress: { ...state.progress, [chapterId]: next } }
         }),
