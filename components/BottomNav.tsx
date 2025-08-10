@@ -6,9 +6,9 @@ import { motion } from "framer-motion"
 export function BottomNav() {
   const items = [
     { href: "/", label: "Home", Icon: Home },
-    { href: "/review/2", label: "Review", Icon: RotateCcw },
+    { href: { pathname: "/review/[id]", query: { id: "2" } }, label: "Review", Icon: RotateCcw },
     { href: "/settings", label: "Einstellungen", Icon: Settings }
-  ]
+  ] as const
   return (
     <nav
       className="fixed inset-x-0 bottom-0 z-40 bg-card/90 backdrop-blur border-t border-white/10"
