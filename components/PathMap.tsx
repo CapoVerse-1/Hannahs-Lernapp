@@ -8,7 +8,7 @@ export function PathMap({
   progress
 }: {
   chapters: { id: number; title: string; eta_minutes: number }[]
-  progress: Record<number, { mastery: number }>
+  progress: Record<number, { mastery: number; phase?: "review" | "learn" | "questions" | "done" }>
 }) {
   return (
     <div className="relative mx-auto max-w-sm py-8 pb-24">
