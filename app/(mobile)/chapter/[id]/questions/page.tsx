@@ -1,7 +1,6 @@
 "use client"
 import { useParams, useRouter } from "next/navigation"
 import { useEffect, useMemo, useRef, useState } from "react"
-import { useAppStore } from "@/lib/store"
 import { QuestionCard } from "@/components/QuestionCard"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
