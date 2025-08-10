@@ -17,7 +17,7 @@ export function BottomNav() {
     >
       <div className="mx-auto max-w-sm grid grid-cols-3 gap-1 px-4 py-2 pb-[calc(env(safe-area-inset-bottom)+8px)]">
         {items.map(({ href, label, Icon }) => (
-          <Link key={href} href={href} className="flex items-center justify-center py-2">
+          <Link key={label} href={href} className="flex items-center justify-center py-2">
             <motion.div whileTap={{ scale: 0.95 }} className="flex flex-col items-center text-xs">
               <Icon size={20} className="text-white" aria-hidden="true" />
               <span className="mt-1 opacity-80">{label}</span>
