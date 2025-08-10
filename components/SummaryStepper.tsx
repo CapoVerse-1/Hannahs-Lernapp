@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Card } from "./ui/card"
 import { Button } from "./ui/button"
 
@@ -22,8 +22,8 @@ export function SummaryStepper({ pages, onComplete, onIndexChange }: { pages: { 
           </div>
         ) : (
           <>
-            <div className="text-lg font-semibold">{pages[idx].title}</div>
-            <div className="text-sm opacity-90 mt-2 whitespace-pre-wrap">{pages[idx].body}</div>
+            <div className="text-lg font-semibold">{pages[idx]?.title ?? ""}</div>
+            <div className="text-sm opacity-90 mt-2 whitespace-pre-wrap">{pages[idx]?.body ?? ""}</div>
           </>
         )}
       </Card>
