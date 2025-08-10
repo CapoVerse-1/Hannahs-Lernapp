@@ -57,7 +57,11 @@ export function buildMagicOrder(questions: QuestionT[]): string[] {
     ring += 1
     // Periodic review anchor every 5 items: back-reference an earlier id to repeat soon
     if (order.length % 5 === 0 && order.length > 5) {
-      order.push(order[Math.floor(order.length / 2) - 1])
+      const midIndex = Math.max(0, Math.floor(order.length / 2) - 1)
+      const midId = order[midIndex]
+      if (typeof midId === "string") {
+        order.push(midId)
+      }
     }
   }
   // De-duplicate in case of anchors
