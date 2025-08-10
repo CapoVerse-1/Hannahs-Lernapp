@@ -1,7 +1,7 @@
 import { create } from "zustand"
 import { persist } from "zustand/middleware"
 import { ModeEnum } from "./schemas"
-import { getSupabaseForDevice, SHARED_DEVICE_ID } from "./supabase"
+// single-user: no direct supabase client import
 
 type Mode = "full" | "fast"
 

@@ -5,7 +5,7 @@ import dynamic from "next/dynamic"
 import { BottomNav } from "@/components/BottomNav"
 import { DashboardHeader } from "@/components/DashboardHeader"
 import { useEffect } from "react"
-import { getSupabaseForDevice, SHARED_DEVICE_ID } from "@/lib/supabase"
+// simplified progress: no direct supabase usage here
 
 export default function Page() {
   const state = useAppStore()
