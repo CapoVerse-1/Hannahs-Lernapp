@@ -18,7 +18,7 @@ export const viewport = {
 function ServiceWorkerRegister() {
   return (
     <script dangerouslySetInnerHTML={{
-      __html: `if ('serviceWorker' in navigator) { window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js')); }`
+      __html: `if ('serviceWorker' in navigator) { window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js').then(()=>navigator.serviceWorker.getRegistrations().then(rs=>rs.forEach(r=>r.update())))); }`
     }} />
   )
 }
