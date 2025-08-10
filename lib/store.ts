@@ -42,6 +42,22 @@ export const useAppStore = create<AppState>()(
         set((state) => {
           const prev = state.progress[chapterId] || { learned: 0, correct: 0, wrong: 0, mastery: 0, phase: "review" }
           const next = { ...prev, ...delta }
+          // Fire-and-forget persist to Supabase
+          try {
+            const deviceId = state.deviceId
+            fetch("/api/progress", {
+              method: "POST",
+              headers: { "Content-Type": "application/json", "x-device-id": deviceId },
+              body: JSON.stringify({
+                device_id: deviceId,
+                chapter_id: chapterId,
+                learned_count: next.learned,
+                correct_count: next.correct,
+                wrong_count: next.wrong,
+                mastery_pct: next.mastery
+              })
+            }).catch(() => {})
+          } catch {}
           return { progress: { ...state.progress, [chapterId]: next } }
         }),
       normalizeProgress: () =>
