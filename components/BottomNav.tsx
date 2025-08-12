@@ -6,7 +6,8 @@ import { motion } from "framer-motion"
 export function BottomNav() {
   const items = [
     { href: "/", label: "Home", Icon: Home },
-    { href: { pathname: "/review/[id]", query: { id: "2" } }, label: "Review", Icon: RotateCcw },
+    // Use concrete path instead of dynamic href object to satisfy Next.js app router rules
+    { href: "/review/2", label: "Review", Icon: RotateCcw },
     { href: "/settings", label: "Einstellungen", Icon: Settings }
   ] as const
   return (

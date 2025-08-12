@@ -3,7 +3,7 @@ import { useParams, useRouter } from "next/navigation"
 import { useMemo, useState } from "react"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { questions, cards } from "@/lib/content"
+import { questions, cards, summaryByChapter } from "@/lib/content"
 import { motion } from "framer-motion"
 import { useAppStore } from "@/lib/store"
 
@@ -17,17 +17,31 @@ export default function ReviewPage() {
   const fromChapter = Math.max(1, id - 1)
   const qs = useMemo(() => questions.filter((q) => q.chapter_id === fromChapter).slice(0, 6), [fromChapter])
   const cs = useMemo(() => cards.filter((c) => c.section_id.startsWith(`${fromChapter}-`)).slice(0, 5), [fromChapter])
-  const total = qs.length + cs.length
-  const item = idx < cs.length
-    ? { type: "card" as const, c: cs[idx]! }
-    : { type: "q" as const, q: qs[idx - cs.length]! }
+  const summary = useMemo(() => (summaryByChapter[fromChapter] || []).slice(0, 6), [fromChapter])
+
+  const items = useMemo(() => {
+    // Compose a mixed review: short summary steps first, then flashcards, then MCQs
+    const summaryItems = summary.map((s) => ({ type: "summary" as const, s }))
+    const cardItems = cs.map((c) => ({ type: "card" as const, c }))
+    const qItems = qs.map((q) => ({ type: "q" as const, q }))
+    return [...summaryItems, ...cardItems, ...qItems]
+  }, [summary, cs, qs])
+
+  const total = items.length
+  const item = items[idx]
 
   return (
     <main className="p-4 pb-28 space-y-3">
       <h1 className="text-xl font-bold">15-Minuten Review (Kapitel {fromChapter})</h1>
       <ReviewFlipCard
         front={
-          item.type === "card" ? (
+          item.type === "summary" ? (
+            <div className="space-y-2">
+              <div className="text-sm opacity-80">Zusammenfassung</div>
+              <div className="text-base font-semibold">{item.s.title}</div>
+              <div className="text-xs opacity-60">Tippe zum Umdrehen</div>
+            </div>
+          ) : item.type === "card" ? (
             <div className="space-y-2">
               <div className="text-sm opacity-80">Flashcard</div>
               <div className="text-base font-semibold">{item.c.front_md}</div>
@@ -47,7 +61,12 @@ export default function ReviewPage() {
           )
         }
         back={
-          item.type === "card" ? (
+          item.type === "summary" ? (
+            <div className="space-y-2">
+              <div className="text-sm opacity-80">Kerngedanke</div>
+              <div className="opacity-90 text-sm whitespace-pre-line">{item.s.body}</div>
+            </div>
+          ) : item.type === "card" ? (
             <div className="space-y-2">
               <div className="text-sm opacity-80">Antwort</div>
               <div className="opacity-90">{item.c.back_md}</div>
@@ -68,7 +87,7 @@ export default function ReviewPage() {
           )
         }
       />
-      <div className="flex justify-between">
+      <div className="flex justify-between relative z-10">
         <Button variant="ghost" onClick={() => setIdx((i) => Math.max(0, i - 1))}>Zurück</Button>
         <Button onClick={() => {
           if (idx + 1 >= total) {
@@ -89,7 +108,7 @@ export default function ReviewPage() {
 function ReviewFlipCard({ front, back }: { front: React.ReactNode; back: React.ReactNode }) {
   const [flipped, setFlipped] = useState(false)
   return (
-    <div className="relative h-64" onClick={() => setFlipped((f) => !f)} aria-label="flip">
+    <div className="relative h-[28rem]" onClick={() => setFlipped((f) => !f)} aria-label="flip">
       <motion.div
         className="absolute inset-0"
         initial={false}
@@ -98,10 +117,14 @@ function ReviewFlipCard({ front, back }: { front: React.ReactNode; back: React.R
         style={{ transformStyle: "preserve-3d" }}
       >
         <Card className="absolute inset-0 p-4" style={{ backfaceVisibility: "hidden" }}>
-          {front}
+          <div className="h-full overflow-y-auto pr-1 no-scrollbar break-words text-sm leading-relaxed">
+            {front}
+          </div>
         </Card>
         <Card className="absolute inset-0 p-4" style={{ transform: "rotateY(180deg)", backfaceVisibility: "hidden" }}>
-          {back}
+          <div className="h-full overflow-y-auto pr-1 no-scrollbar break-words text-sm leading-relaxed">
+            {back}
+          </div>
         </Card>
       </motion.div>
     </div>

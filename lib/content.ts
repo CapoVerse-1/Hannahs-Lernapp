@@ -90,14 +90,135 @@ export const cards: CardT[] = [
   { id: "c3-2", section_id: "3-1", front_md: "Reliabilität", back_md: "Zuverlässigkeit.", order_index: 2 },
   { id: "c3-3", section_id: "3-1", front_md: "Validität", back_md: "Misst, was es soll.", order_index: 3 },
   { id: "c3-4", section_id: "3-1", front_md: "Experiment vs. Korrelation", back_md: "Ursache vs. Zusammenhang.", order_index: 4 },
+  { id: "c3-5", section_id: "3-1", front_md: "Alltags- vs. wissenschaftliche Psychologie", back_md: "Alltag: erfahrungsbasiert/heuristisch; Wissenschaft: systematische Prüfung, replizierbare Evidenz.", order_index: 5 },
+  { id: "c3-6", section_id: "3-1", front_md: "Heuristik – Definition", back_md: "Schnelle Faustregel unter Unsicherheit; nützlich, aber fehleranfällig.", order_index: 6 },
+  { id: "c3-7", section_id: "3-1", front_md: "Repräsentativitätsheuristik – Beispiel", back_md: "K–K–K–K–K und K–Z–Z–K–Z sind gleich wahrscheinlich; ‚typisch‘ ist nicht wahrscheinlicher.", order_index: 7 },
+  { id: "c3-8", section_id: "3-1", front_md: "Rückschaufehler (Hindsight Bias)", back_md: "Im Nachhinein erscheint der Ausgang ‚klar‘ → überschätzt Vorhersehbarkeit.", order_index: 8 },
+  { id: "c3-9", section_id: "3-1", front_md: "Bestätigungsfehler (Confirmation Bias)", back_md: "Suche/gewichte bestätigende Infos stärker als widersprechende.", order_index: 9 },
+  { id: "c3-10", section_id: "3-1", front_md: "Kritisches Denken – Kernfragen", back_md: "Quelle? Bedeutung? Evidenz? Alternativerklärungen?", order_index: 10 },
+  { id: "c3-11", section_id: "3-1", front_md: "Wissenschaftliche Methode", back_md: "Verfahren/Techniken für präzise, fehlerarme Aussagen; Methodenlehre zeigt Einsatz.", order_index: 11 },
+  { id: "c3-12", section_id: "3-1", front_md: "Vier Standards der Wissenschaftlichkeit", back_md: "Forschungsproblem; passender Prozess; Ethik; vollständige Dokumentation/Replikation.", order_index: 12 },
+  { id: "c3-13", section_id: "3-1", front_md: "Replikation & Open Science", back_md: "Direkt/konzeptionell; Replikationskrise → Transparenz (Präregistrierung, Daten teilen).", order_index: 13 },
+  { id: "c3-14", section_id: "3-1", front_md: "Qualitätskriterien einer Studie", back_md: "Relevanz, methodische/ethische Strenge, Präsentationsqualität.", order_index: 14 },
+  { id: "c3-15", section_id: "3-1", front_md: "Quantitativ vs. qualitativ", back_md: "Quantitativ: Messen/Statistik; Qualitativ: sinnverstehend; passend zur Frage wählen.", order_index: 15 },
+  { id: "c3-16", section_id: "3-1", front_md: "Hypothesenprozess (Kurz)", back_md: "Frage → Theorie/Hypothesen → Operationalisierung → Erhebung → Analyse → Interpretation → Publikation.", order_index: 16 },
+  { id: "c3-17", section_id: "3-1", front_md: "Theorie vs. Hypothese", back_md: "Theorie: breites Erklärmodell; Hypothese: konkrete, prüfbare Vorhersage.", order_index: 17 },
+  { id: "c3-18", section_id: "3-1", front_md: "Gute Hypothesen – Kriterien", back_md: "Präzise, widerspruchsfrei, falsifizierbar, operationalisierbar, begründet.", order_index: 18 },
+  { id: "c3-19", section_id: "3-1", front_md: "Hypothesentyp: Unterschied", back_md: "Gruppenvergleich; ungerichtet vs. gerichtet (Richtung spezifiziert).", order_index: 19 },
+  { id: "c3-20", section_id: "3-1", front_md: "Hypothesentyp: Zusammenhang", back_md: "Kovariation zweier Variablen; positiv vs. negativ; Korrelation ≠ Kausalität.", order_index: 20 },
+  { id: "c3-21", section_id: "3-1", front_md: "Hypothesentyp: Veränderung", back_md: "Gleiche Personen über Zeit; un-/gerichtet (z. B. Symptomatik sinkt).", order_index: 21 },
+  { id: "c3-22", section_id: "3-1", front_md: "Kausalität – 3 Bedingungen", back_md: "Kovariation; zeitliche Vorordnung; Ausschluss Alternativerklärungen.", order_index: 22 },
+  { id: "c3-23", section_id: "3-1", front_md: "Latent vs. manifest", back_md: "Latent: nicht direkt messbar (z. B. Stress); manifest: beobachtbar (Puls, Skala).", order_index: 23 },
+  { id: "c3-24", section_id: "3-1", front_md: "Variable & Operationalisierung", back_md: "Festlegen, was und wie gemessen wird; Indikatoren + Messinstrumente.", order_index: 24 },
+  { id: "c3-25", section_id: "3-1", front_md: "Gütekriterien: Objektivität", back_md: "Ergebnis unabhängig von Durchführenden/Auswertung/Interpretation.", order_index: 25 },
+  { id: "c3-26", section_id: "3-1", front_md: "Gütekriterien: Reliabilität", back_md: "Zuverlässige Wiederholung bei unverändertem Objekt.", order_index: 26 },
+  { id: "c3-27", section_id: "3-1", front_md: "Gütekriterien: Validität", back_md: "Misst das intendierte Konstrukt (nicht Störfaktoren).", order_index: 27 },
+  { id: "c3-28", section_id: "3-1", front_md: "Skalen: Nominal (dichotom)", back_md: "Kategorien, Gleichheit/Verschiedenheit; z. B. Erkrankung ja/nein, Nationalität.", order_index: 28 },
+  { id: "c3-29", section_id: "3-1", front_md: "Skalen: Ordinal", back_md: "Rangordnung ohne definierte Abstände; z. B. Bildungsabschluss, Schulnoten.", order_index: 29 },
+  { id: "c3-30", section_id: "3-1", front_md: "Skalen: Intervall", back_md: "Rang + Abstände, kein natürlicher Nullpunkt; z. B. °C, psych. Traits.", order_index: 30 },
+  { id: "c3-31", section_id: "3-1", front_md: "Skalen: Verhältnis (Ratio)", back_md: "Rang + Abstände + Nullpunkt; Verhältnisse interpretierbar; z. B. Reaktionszeit, Kelvin.", order_index: 31 },
+  { id: "c3-32", section_id: "3-1", front_md: "Diskret vs. kontinuierlich", back_md: "Diskret: abzählbare Kategorien; kontinuierlich: beliebige Werte; Antwortformat beeinflusst.", order_index: 32 },
+  { id: "c3-33", section_id: "3-1", front_md: "Population, Stichprobe, Repräsentativität", back_md: "Stichprobe als Miniatur der Population; Voraussetzung externer Validität.", order_index: 33 },
+  { id: "c3-34", section_id: "3-1", front_md: "Zufalls- vs. Gelegenheitsstichprobe", back_md: "Zufall ideal; Gelegenheitsstichprobe praktisch, aber Selection Bias möglich.", order_index: 34 },
+  { id: "c3-35", section_id: "3-1", front_md: "Stichprobengröße – Daumenregel", back_md: "Genug für stabile Schätzung, aber ressourcenschonend; Ausreißer weniger wirkmächtig.", order_index: 35 },
+  { id: "c3-36", section_id: "3-1", front_md: "Labor vs. Feld", back_md: "Labor: Kontrolle → interne Validität; Feld: Alltagsnähe → externe Validität.", order_index: 36 },
+  { id: "c3-37", section_id: "3-1", front_md: "Experiment: UV/AV", back_md: "UV manipulieren, AV messen; Störvariablen kontrollieren/balancieren.", order_index: 37 },
+  { id: "c3-38", section_id: "3-1", front_md: "Between vs. Within", back_md: "Between: Gruppenvergleich; Within: gleiche Personen in allen Bedingungen.", order_index: 38 },
+  { id: "c3-39", section_id: "3-1", front_md: "Randomisierung & Parallelisieren", back_md: "Zufallszuteilung kontrolliert viele Störvariablen; Parallelisieren bei kleinem N gezielt.", order_index: 39 },
+  { id: "c3-40", section_id: "3-1", front_md: "Reaktivität (Hawthorne)", back_md: "Beobachtetwerden verändert Verhalten; Gegenmaßnahmen: Coverstory, schwer verfälschbare Maße.", order_index: 40 },
+  { id: "c3-41", section_id: "3-1", front_md: "Placebo/Nocebo", back_md: "Erwartungen bewirken (un-)erwünschte Effekte; Kontrolle via Blindversuch.", order_index: 41 },
+  { id: "c3-42", section_id: "3-1", front_md: "Rosenthal-Effekt", back_md: "Erwartungen der Leitung beeinflussen Ergebnisse; Doppelblind minimiert.", order_index: 42 },
+  { id: "c3-43", section_id: "3-1", front_md: "Deskriptive Statistik: Häufigkeiten", back_md: "Absolut/relativ/prozentual; bei kontinuierlichen Variablen Klassen bilden; Histogramm.", order_index: 43 },
+  { id: "c3-44", section_id: "3-1", front_md: "Zentrale Tendenz", back_md: "Modalwert, Median (ausreißerrobust), arithm. Mittel (ab Intervall).", order_index: 44 },
+  { id: "c3-45", section_id: "3-1", front_md: "Streuung", back_md: "Interquartilsabstand (Q3−Q1), Varianz, Standardabweichung.", order_index: 45 },
+  { id: "c3-46", section_id: "3-1", front_md: "Korrelation r – Deutung", back_md: "r ∈ [−1,1]; Stärke/Richtung linearer Zusammenhang; kein Kausalitätsbeweis.", order_index: 46 },
   { id: "c4-1", section_id: "4-1", front_md: "Aktionspotenzial", back_md: "Depolarisation, Overshoot, Repolarisation.", order_index: 1 },
   { id: "c4-2", section_id: "4-1", front_md: "Synapse", back_md: "Transmitter, exzitatorisch vs. inhibitorisch.", order_index: 2 },
   { id: "c4-3", section_id: "4-1", front_md: "Hirnlappen", back_md: "Frontal, Parietal, Temporal, Okzipital.", order_index: 3 },
   { id: "c4-4", section_id: "4-1", front_md: "Gliazellen", back_md: "Müller-, Amakrin-, Ganglien-, Horizontalzellen.", order_index: 4 },
+  { id: "c4-5", section_id: "4-1", front_md: "Biologische Psychologie – Was untersucht sie?", back_md: "Körperliche/physiologische Grundlagen psychischer Phänomene; Beziehungen zwischen physischen Merkmalen/Prozessen und psychischen Zuständen.", order_index: 5 },
+  { id: "c4-6", section_id: "4-1", front_md: "Warum braucht Psychologie Biologie?", back_md: "Psychische Prozesse beruhen auf neuronalen/hormonellen Mechanismen; Grundlagen für Verstehen von Wahrnehmung, Lernen, Emotion, Störungen, Pharmakawirkung.", order_index: 6 },
+  { id: "c4-7", section_id: "4-1", front_md: "Biopsychologie, Neurowissenschaften, Psychobiologie – Abgrenzung", back_md: "Biopsychologie = synonym Biologische Psychologie. Neurowissenschaften: übergeordnet, interdisziplinär. Psychobiologie: Teilgebiet der Biologie – psychologische Auswirkungen biologischer Prozesse.", order_index: 7 },
+  { id: "c4-8", section_id: "4-1", front_md: "Hauptbereiche – Überblick", back_md: "Physiologische Psychologie; Neuropsychologie; Psychophysiologie; Kognitive Neurowissenschaft; Psychopharmakologie; Vergleichende Psychologie.", order_index: 8 },
+  { id: "c4-9", section_id: "4-1", front_md: "Physiologische Psychologie – Kennzeichen", back_md: "Direkte Manipulation (Stimulation/Chirurgie), oft Tiermodelle; kausale Tests neuronaler Mechanismen des Verhaltens.", order_index: 9 },
+  { id: "c4-10", section_id: "4-1", front_md: "Neuropsychologie – Fokus", back_md: "Auswirkungen umschriebener Hirnschädigungen beim Menschen; Diagnostik, Rehabilitationsmaßnahmen, Inferenz auf Funktionslokalisation.", order_index: 10 },
+  { id: "c4-11", section_id: "4-1", front_md: "Psychophysiologie – typische Maße", back_md: "EEG (Gehirnaktivität), EMG (Muskelspannung), EOG (Augenbewegungen), EKG/Herzrate; Themen: Stress, Emotion, Rhythmen.", order_index: 11 },
+  { id: "c4-12", section_id: "4-1", front_md: "Kognitive Neurowissenschaft – Methoden", back_md: "fMRT/MRT (funktionell/strukturell), MEG/EEG (zeitlich hochauflösend), TMS (kausale Perturbation).", order_index: 12 },
+  { id: "c4-13", section_id: "4-1", front_md: "Psychopharmakologie – Ziel", back_md: "Wirkung von Medikamenten/Drogen auf Nervensystem/Verhalten; Entwicklung neuer Wirkstoffe; interdisziplinär.", order_index: 13 },
+  { id: "c4-14", section_id: "4-1", front_md: "Vergleichende Psychologie – Nutzen", back_md: "Vergleich von Spezies → Evolution, Genetik, adaptive Funktionen von Verhalten; Tiermodelle als Brücke zum Menschen.", order_index: 14 },
+  { id: "c4-15", section_id: "4-1", front_md: "Fall Phineas Gage – Lehre", back_md: "Läsion im linken vorderen Frontallappen → Persönlichkeits-/Impulskontrollveränderungen bei intakter Sprache/Intelligenz → Beitrag zur Rolle des Präfrontalcortex.", order_index: 15 },
+  { id: "c4-16", section_id: "4-1", front_md: "Patient ‚Tan‘ (Broca) – Befund", back_md: "Läsion links frontal (Broca‑Areal) → gestörte Sprachproduktion bei relativ erhaltenem Verständnis (Broca‑Aphasie) → Funktionsspezialisierung.", order_index: 16 },
+  { id: "c4-17", section_id: "4-1", front_md: "Neuron – Hauptteile & Funktion", back_md: "Soma (Zellkern, Organellen), Dendriten (Empfang), Axon (Weiterleitung), Terminals/Synapsen (Übertragung).", order_index: 17 },
+  { id: "c4-18", section_id: "4-1", front_md: "Neurontypen – Beispiele", back_md: "Sensorische Neurone (Input), Interneurone (Verschaltung), Motoneurone (Output an Muskel/Drüse).", order_index: 18 },
+  { id: "c4-19", section_id: "4-1", front_md: "Gliazellen – Typen & Aufgaben", back_md: "Astrozyten (Stoffwechsel, Blut‑Hirn‑Schranke), Oligodendrozyten/Schwann‑Zellen (Myelin), Mikroglia (Immunabwehr), Müller‑Zellen (Retina, Lichtleitung).", order_index: 19 },
+  { id: "c4-20", section_id: "4-1", front_md: "Myelin & Ranvier‑Schnürringe", back_md: "Isolierung ↑ Leitungsgeschwindigkeit; saltatorische Erregungsleitung: AP wird an Schnürringen regeneriert.", order_index: 20 },
+  { id: "c4-21", section_id: "4-1", front_md: "Multiple Sklerose – Kerneffekt", back_md: "Autoimmun‑Demyelinisierung im ZNS → Leitungsstörungen (Sehen, Sensibilität, Motorik), oft schubförmig.", order_index: 21 },
+  { id: "c4-22", section_id: "4-1", front_md: "Ruhepotenzial – Ursachen (≈ −70 mV)", back_md: "Ionengradienten (Na+ außen, K+ innen, Cl− außen), selektive Permeabilität, Na+/K+‑Pumpe (3 Na+ raus/2 K+ rein).", order_index: 22 },
+  { id: "c4-23", section_id: "4-1", front_md: "EPSP vs. IPSP", back_md: "EPSP: Depolarisation, ↑ Feuern; IPSP: Hyperpolarisation, ↓ Feuern. Summation am Axonhügel entscheidet über AP.", order_index: 23 },
+  { id: "c4-24", section_id: "4-1", front_md: "Schwelle & Alles‑oder‑Nichts", back_md: "AP bei ca. −55 mV; unterschritten → kein AP; ausgelöst → immer gleichförmiges AP (Zelltyp‑spezifisch).", order_index: 24 },
+  { id: "c4-25", section_id: "4-1", front_md: "Aktionspotenzial – Phasen", back_md: "Na+‑Aufstrich/Overshoot → Na+‑Inaktivierung → K+‑Ausstrom/Repola → Nachpotenzial (Hyperpolarisation).", order_index: 25 },
+  { id: "c4-26", section_id: "4-1", front_md: "Refraktär – absolut vs. relativ", back_md: "Absolut: kein neues AP (Na+ inaktiviert). Relativ: AP nur bei stärkerem Reiz (bis Ende Nachpotenzial).", order_index: 26 },
+  { id: "c4-27", section_id: "4-1", front_md: "Fortleitung: unmyelinisiert vs. myelinisiert", back_md: "Kontinuierlich vs. saltatorisch; Myelin ermöglicht schnelle, energieeffiziente Weiterleitung.", order_index: 27 },
+  { id: "c4-28", section_id: "4-1", front_md: "Chemische Synapse – Ablauf", back_md: "AP → Ca2+‑Einstrom → Vesikel‑Exozytose → Transmitter bindet Rezeptoren → Ionenkanäle öffnen → EPSP/IPSP → Abbau/Rückaufnahme/Glia.", order_index: 28 },
+  { id: "c4-29", section_id: "4-1", front_md: "Elektrische vs. chemische Synapsen", back_md: "Elektrisch: Gap Junctions, sehr schnell, oft bidirektional. Chemisch: Transmittervermittelt, modulär, im ZNS vorherrschend.", order_index: 29 },
+  { id: "c4-30", section_id: "4-1", front_md: "Neurotransmitter – zentrale Beispiele", back_md: "Glutamat (exzitatorisch, Lernen); GABA (inhibitorisch; Benzodiazepine); Dopamin (Belohnung/Motorik; Parkinson↓); Serotonin (Emotion; SSRI); Acetylcholin (Motorik, Kognition/Schlaf); Noradrenalin (Erregung/Alertness).", order_index: 30 },
+  { id: "c4-31", section_id: "4-1", front_md: "ZNS vs. PNS; somatisch vs. autonom", back_md: "ZNS: Gehirn/Rückenmark. PNS: außerhalb von Schädel/Wirbelsäule. Somatisch: Sinnesinput↔Skelettmuskeln. Autonom: Organe/Drüsen (Sympathikus/Parasympathikus).", order_index: 31 },
+  { id: "c4-32", section_id: "4-1", front_md: "Rückenmark – graue/weiße Substanz & Reflexe", back_md: "Graue Substanz: H‑Form (Hinter-/Vorderhörner). Weiße Substanz: auf-/absteigende Bahnen. Dermatome, Spinalganglion. Reflexe (z. B. Patellarsehne).", order_index: 32 },
+  { id: "c4-33", section_id: "4-1", front_md: "Gehirn – Entwicklungsaufteilung", back_md: "Prosencephalon (→ Tel-/Diencephalon), Mesencephalon, Rhombencephalon (→ Met-/Myelencephalon).", order_index: 33 },
+  { id: "c4-34", section_id: "4-1", front_md: "Vier Lappen – Kernfunktionen", back_md: "Frontal (Planung, Sprache, Impulskontrolle, Motorik), Parietal (Somatosensorik, Raum/Aufmerksamkeit), Temporal (Hören, Gedächtnis, Amygdala/Hippocampus), Okzipital (Sehen).", order_index: 34 },
+  { id: "c4-35", section_id: "4-1", front_md: "Autonomes NS – Sympathikus vs. Parasympathikus", back_md: "Sympathikus: Aktivierung (Puls/Atmung↑, Verdauung↓). Parasympathikus: Erholung/Normalbetrieb (Puls↓, Verdauung↑).", order_index: 35 },
+  { id: "c4-36", section_id: "4-1", front_md: "Auge – Cornea, Iris, Pupille, Linse", back_md: "Cornea lichtdurchlässig; Iris regelt Pupillendurchmesser; Linse akkommodiert (nahe/ferne Objekte). Glaskörper, Sehnerv (blinder Fleck).", order_index: 36 },
+  { id: "c4-37", section_id: "4-1", front_md: "Retina – Photorezeptoren & Fovea", back_md: "Stäbchen/Zapfen in äußerer Schicht; Fovea: maximale Sehschärfe (viele Zapfen). Retina‑Schichten sind lichtdurchlässig; Müller‑Glia leitet Licht.", order_index: 37 },
+  { id: "c4-38", section_id: "4-1", front_md: "Stäbchen vs. Zapfen – Unterschiede", back_md: "Stäbchen: sehr lichtempfindlich, Dämmerungssehen, keine Farbe. Zapfen: Farb‑/Detailsehen bei Helligkeit; drei Typen (blau/grün/rot).", order_index: 38 },
+  { id: "c4-39", section_id: "4-1", front_md: "Farbwahrnehmung & Farbfehlsichtigkeit (kurz)", back_md: "Farbe aus relativer Aktivität dreier Zapfentypen. Rot‑Grün‑Schwäche: Verschiebung/Fehlen von Zapfentypen; X‑chromosomal häufiger bei Männern.", order_index: 39 },
+  { id: "c4-40", section_id: "4-1", front_md: "Retina‑Netzwerk & rezeptive Felder", back_md: "Photorezeptoren → Bipolar → Ganglion (Axone = Sehnerv); Horizontal/Amakrin modulieren. Rezeptives Feld: Retinafläche, die eine Zelle beeinflusst.", order_index: 40 },
+  { id: "c4-41", section_id: "4-1", front_md: "Sehbahn – Chiasma, CGL, V1", back_md: "Nasale Fasern kreuzen im Chiasma (kontralateral). Rechtes CGL: linkes Gesichtsfeld; linkes CGL: rechtes. Retinotope Organisation; V1 im Okzipitallappen.", order_index: 41 },
+  { id: "c4-42", section_id: "4-1", front_md: "V1 – spezialisierte Neurone", back_md: "Orientierungs‑ und richtungssensitive Zellen (Hubel & Wiesel); retinotope Karten; weitere Areale (V2, V3 …) für komplexe Verarbeitung.", order_index: 42 },
+  { id: "c4-43", section_id: "4-1", front_md: "Anatomische Richtungen (Beispiele)", back_md: "Dorsal/Ventral; Anterior/Posterior; Superior/Inferior; Medial/Lateral; Ipsi-/Kontralateral – wichtig für Lagebeschreibung (z. B. Sehbahn).", order_index: 43 },
   { id: "c5-1", section_id: "5-1", front_md: "Wahrnehmung", back_md: "Bottom-up & Top-down.", order_index: 1 },
   { id: "c5-2", section_id: "5-1", front_md: "Gedächtnis", back_md: "Sensorisch, KZG, LZG.", order_index: 2 },
   { id: "c5-3", section_id: "5-1", front_md: "Klassisches Konditionieren", back_md: "Pawlow: CS, US, CR.", order_index: 3 },
   { id: "c5-4", section_id: "5-1", front_md: "Operantes Konditionieren", back_md: "Verstärkung & Bestrafung.", order_index: 4 },
+  { id: "c5-5", section_id: "5-1", front_md: "Allgemeine Psychologie – präzise Definition und Abgrenzung", back_md: "Untersucht grundlegende, universelle psychische Funktionen bei gesunden Erwachsenen. Abgrenzung: nicht Differenzielle (Unterschiede), nicht Entwicklungspsychologie (Veränderungen), nicht Sozialpsychologie (Einfluss anderer).", order_index: 5 },
+  { id: "c5-6", section_id: "5-1", front_md: "Kognitive Psychologie – warum dominierend seit der kognitiven Wende?", back_md: "Erklärt mentale Prozesse (Aufmerksamkeit, Wahrnehmung, Gedächtnis, Denken) mit Theorien/Experimenten als Gegenreaktion zum Behaviorismus, der innere Prozesse ausblendete.", order_index: 6 },
+  { id: "c5-7", section_id: "5-1", front_md: "Input‑Verarbeitung – welche Stationen umfasst sie (Abbildung 5.2)?", back_md: "Sinnesreize → Aufmerksamkeit/Selektion → Einbettung in Vorwissen/Erwartungen (mentale Modelle) → Emotion/Motivation → Klassifikation/Urteilen/Entscheiden → Handlung; Sprache als Ausdruck.", order_index: 7 },
+  { id: "c5-8", section_id: "5-1", front_md: "Wahrnehmung – dreistufiges Modell (Benennen und kurz erläutern)", back_md: "(1) Sensorische Empfindung (Transduktion über Rezeptoren) (2) Wahrnehmung im engeren Sinne (Perzept: mentales Abbild durch Integration) (3) Klassifikation (Zuordnung zu Kategorien).", order_index: 8 },
+  { id: "c5-9", section_id: "5-1", front_md: "Psychophysik – was sind Absolute und Unterschiedsschwelle?", back_md: "Absolutschwelle: kleinste Reizintensität für Entdeckung. Unterschiedsschwelle (ebenmerklicher Unterschied): minimaler Differenzbetrag zur Unterscheidung, abhängig von Ausgangsintensität.", order_index: 9 },
+  { id: "c5-10", section_id: "5-1", front_md: "Grenz‑ vs. Konstanzmethode – wie wird die Schwelle bestimmt?", back_md: "Grenzmethode: Intensität auf/absteigend, Detektion ja/nein. Konstanzmethode: zufällige Intensitäten, psychometrische Funktion; Schwelle ≈ Intensität mit 50% Entdeckungen.", order_index: 10 },
+  { id: "c5-11", section_id: "5-1", front_md: "Signalentdeckungstheorie – zwei Komponenten der Entscheidung", back_md: "(1) Sensitivität (Sensorik, Störreize) (2) Entscheidungskriterium/Antworttendenz (Ja/Nein‑Bias). Vier Ausgänge: Treffer, Verpasser, falscher Alarm, korrekte Zurückweisung.", order_index: 11 },
+  { id: "c5-12", section_id: "5-1", front_md: "Unaufmerksamkeitsblindheit (‚Gorilla‘) – Kernaussage für Aufmerksamkeit", back_md: "Fokus bindet Verarbeitungskapazität: Nichtbeachtete, unerwartete Ereignisse bleiben oft unbemerkt – Aufmerksamkeit bestimmt stark, was bewusst wird.", order_index: 12 },
+  { id: "c5-13", section_id: "5-1", front_md: "Endogene vs. exogene Aufmerksamkeit – definieren und Beispiel nennen", back_md: "Endogen: willentlich, wissens-/erwartungsgetrieben (z. B. Pfeilhinweis). Exogen: reizgetrieben, abrupt (peripheres Aufleuchten).", order_index: 13 },
+  { id: "c5-14", section_id: "5-1", front_md: "Cueing (Posner) – Valid/neutral/invalid und SOA‑Unterschiede", back_md: "Valid < Neutral < Invalid in RT. Endogen wirksam ab ~200 ms (länger anhaltend), exogen schon ~50 ms (kürzer anhaltend).", order_index: 14 },
+  { id: "c5-15", section_id: "5-1", front_md: "Selektive Aufmerksamkeit – Cocktailparty‑Effekt prägnant erklären", back_md: "Selektives Folgen eines Gesprächs trotz Störkulisse; eigenes Name‑Vorkommen zieht Aufmerksamkeit auf anderen Kanal (Salienz).", order_index: 15 },
+  { id: "c5-16", section_id: "5-1", front_md: "Dichotisches Hören & Split‑Span – zentraler Befund", back_md: "Beschattete Seite wird erinnert, unbeschattete Inhalte kaum. Split‑Span: Wiedergabe ohrweise (lokalitätsbasiert) leichter als paarweise.", order_index: 16 },
+  { id: "c5-17", section_id: "5-1", front_md: "Farbwahrnehmung – Dreifarbentheorie (Young–Helmholtz) kurz", back_md: "Drei Zapfentypen mit unterschiedlichen spektralen Empfindlichkeiten; jede Farbe als Mischung dreier Grundaktivitäten; erklärt Farbmischung & Formen von Farbfehlsicht.", order_index: 17 },
+  { id: "c5-18", section_id: "5-1", front_md: "Gegenfarbentheorie (Hering) – welche Paare und welches Phänomen?", back_md: "Rot–Grün, Blau–Gelb, Schwarz–Weiß (Helligkeit). Gegensätzliche Reaktionen erklären u. a. Komplementär‑Nachbilder und Unmöglichkeit ‚grünlichen Rot‘.", order_index: 18 },
+  { id: "c5-19", section_id: "5-1", front_md: "Monokulare Tiefenhinweise – nennen Sie vier typische Cues", back_md: "Linienperspektive, relative Größe, Verdeckung, atmosphärische Perspektive (Sättigung/Bläue).", order_index: 19 },
+  { id: "c5-20", section_id: "5-1", front_md: "Binokulare Hinweise – welche drei und wie entstehen sie?", back_md: "Konvergenz (Augenstellung), Akkommodation (Linsenwölbung, nah), Querdisparation (retinale Bildunterschiede) → Stereotiefe (z. B. Autostereogramme).", order_index: 20 },
+  { id: "c5-21", section_id: "5-1", front_md: "Ames‑Raum – was wird manipuliert und welche Illusion entsteht?", back_md: "Tiefenhinweise (Linienperspektive) so verzerrt, dass gleiche Entfernung vorgetäuscht wird → Personen erscheinen unplausibel groß/klein.", order_index: 21 },
+  { id: "c5-22", section_id: "5-1", front_md: "Zwei visuelle Pfade – ‚Was/Wo‘ vs. ‚Perception/Action‘ erklären", back_md: "Ursprünglich: ventral ‚Was‘ (Objekterkennung), dorsal ‚Wo‘ (Ort/Raum). Goodale & Milner: ventral ‚Vision for Perception‘, dorsal ‚Vision for Action‘ (Greifen).", order_index: 22 },
+  { id: "c5-23", section_id: "5-1", front_md: "Lernen – psychologische Definition (klar abgrenzen)", back_md: "Durch Erfahrung entstandene, relativ überdauernde Verhaltensänderung/‑potenzial (nicht Reifung/Ermüdung/Drogen). Auftreten probabilistisch, Kontextabhängigkeit.", order_index: 23 },
+  { id: "c5-24", section_id: "5-1", front_md: "Nicht‑assoziatives Lernen – Habituation vs. Sensitivierung", back_md: "Habituation: Reaktionsabnahme auf wiederholten, irrelevanten Reiz. Sensitivierung: Reaktionszunahme v. a. bei aversiven/schmerzhaften Reizen.", order_index: 24 },
+  { id: "c5-25", section_id: "5-1", front_md: "Klassische Konditionierung – Begriffe korrekt zuordnen (UCS/CS/UCR/CR)", back_md: "UCS → UCR (vor Kond.). CS+UCS gepaart → CS allein → CR. Beispiel: Glocke (CS) + Futter (UCS) → Speichel (CR).", order_index: 25 },
+  { id: "c5-26", section_id: "5-1", front_md: "Erwerb, Löschung, Spontanremission – was passiert?", back_md: "Erwerb: CS–UCS‑Paarung stärkt CR. Löschung: CS ohne UCS → CR schwächt/verschwindet. Spontanremission: gelöschte CR erholt sich vorübergehend.", order_index: 26 },
+  { id: "c5-27", section_id: "5-1", front_md: "Generalisierung vs. Diskrimination – definieren Sie mit Beispiel", back_md: "Generalisierung: ähnlicher Reiz → CR (Little Albert: Felltiere). Diskrimination: unterscheidungslernend nur spezifischer Reiz → CR (Diskriminationstraining).", order_index: 27 },
+  { id: "c5-28", section_id: "5-1", front_md: "Operante Konditionierung – Gesetz des Effekts (Thorndike)", back_md: "Handlungen mit befriedigenden Konsequenzen treten häufiger auf; S‑R‑Verbindungen werden durch Konsequenzen gestärkt (Problemkäfig).", order_index: 28 },
+  { id: "c5-29", section_id: "5-1", front_md: "Skinner‑Box – wozu dient sie und was ist ein Operandum?", back_md: "Operante Kammer zur systematischen Analyse; Operandum (Hebel/Taste) löst Konsequenz aus. Basisrate → Verstärkungsphase → Verhaltensänderung.", order_index: 29 },
+  { id: "c5-30", section_id: "5-1", front_md: "Verstärkung/Bestrafung – vier Fälle klar unterscheiden (mit Beispiel)", back_md: "Pos. Verst.: Angenehmes hinzu (Lob). Neg. Verst.: Unangenehmes weg (Haushalt entfällt). Pos. Bestraf.: Unangenehmes hinzu (Zusatzdienst). Neg. Bestraf.: Angenehmes weg (Hausarrest).", order_index: 30 },
+  { id: "c5-31", section_id: "5-1", front_md: "Primäre vs. sekundäre Verstärker – Unterschied erläutern", back_md: "Primär: biologisch (Nahrung, Wasser). Sekundär: erlernt/ konditioniert (Geld, Token, soziale Anerkennung).", order_index: 31 },
+  { id: "c5-32", section_id: "5-1", front_md: "Operante Löschung & Spontanerholung – Kerngedanke", back_md: "Ohne Verstärkung fällt Verhalten auf Ausgangsniveau; nach Pause spontane Wiederkehr möglich (kurz), erneute Verstärkung beschleunigt Wiederaufbau.", order_index: 32 },
+  { id: "c5-33", section_id: "5-1", front_md: "Beobachtungslernen (Bandura) – zentrales Ergebnis der Bobo‑Doll‑Studien", back_md: "Kinder ahmen beobachtete (insb. belohnte) Aggression nach; stellvertretende Konsequenzen steuern Imitation (Belohnung > Tadel).", order_index: 33 },
+  { id: "c5-34", section_id: "5-1", front_md: "Gedächtnisprozess – drei Phasen und Störquellen je Phase", back_md: "Enkodierung (Aufmerksamkeit, Tiefe), Speicherung (Dauer, Konsolidierung), Abruf (Hinweise, Zustand). Fehler auf jeder Stufe möglich.", order_index: 34 },
+  { id: "c5-35", section_id: "5-1", front_md: "Drei‑Speicher‑Modell – benennen und Kernannahmen", back_md: "Sensorischer Speicher (ikonisch/echoisch, extrem kurz), Kurzzeit‑/Arbeitsbereich (sekunden), Langzeit (dauerhaft). Kritik: strikte Stufentrennung zu simpel.", order_index: 35 },
+  { id: "c5-36", section_id: "5-1", front_md: "Arbeitsgedächtnis (Baddeley) – vier Komponenten und Funktionen", back_md: "Zentrale Exekutive (Aufmerksamkeitssteuerung), phonologische Schleife (sprachlich), visuo‑räuml. Notizblock (visuell/raum), episodischer Puffer (Bindeglied, Multimodalität).", order_index: 36 },
+  { id: "c5-37", section_id: "5-1", front_md: "Millersche Zahl & Chunking – was folgt daraus fürs Merken?", back_md: "Kapazität ≈ 7±2 Einheiten; durch Chunking (Gruppieren) mehr Information pro Einheit (z. B. 1‑9‑4‑5 → ‚1945‘).", order_index: 37 },
+  { id: "c5-38", section_id: "5-1", front_md: "Langzeitgedächtnis – explizit vs. implizit mit je zwei Beispielen", back_md: "Explizit: semantisch (Fakten), episodisch (Ereignisse). Implizit: prozedural (Fertigkeiten), Konditionierung/Priming/Habituierung.", order_index: 38 },
+  { id: "c5-39", section_id: "5-1", front_md: "Enkodierspezifität – wie verbessert Passung die Erinnerung?", back_md: "Abruf gelingt besser, wenn Abrufkontext (extern/intern) der Enkodiersituation ähnelt (z. B. Taucher unter Wasser vs. an Land; stimmungsabhängig).", order_index: 39 },
+  { id: "c5-40", section_id: "5-1", front_md: "Serieller Positionseffekt – Primacy vs. Recency erklären", back_md: "Anfang (Rehearsal/Einbettung) und Ende (KZG/zeitliche Diskriminierbarkeit) einer Liste werden besser erinnert als Mitte.", order_index: 40 },
+  { id: "c5-41", section_id: "5-1", front_md: "Vergessenskurve (Ebbinghaus) – zentraler Verlauf und Implikation", back_md: "Starker frühzeitiger Abfall, danach langsamer; Ersparnismethode zeigt Restspuren → Wiederauffrischen/Spacing sinnvoll.", order_index: 41 },
+  { id: "c5-42", section_id: "5-1", front_md: "Interferenz – proaktiv vs. retroaktiv mit Alltagsbeispiel", back_md: "Proaktiv: Alt stört Neu (Spanisch → Italienisch). Retroaktiv: Neu stört Alt (Chemie nach Physiklernen erschwert Physikabruf).", order_index: 42 },
+  { id: "c5-43", section_id: "5-1", front_md: "Arbeitsgedächtnis‑Nachweis – was zeigen Dual‑Task‑Befunde?", back_md: "Gleichzeitige Aufgaben stören selektiv passende Subsysteme (z. B. visuo‑räumliche Zusatzaufgabe verschlechtert Schachzüge stärker als artikulatorische Suppression).", order_index: 43 },
+  { id: "c5-44", section_id: "5-1", front_md: "H.M. und Amnesie – was sagt der Fall über Gedächtnissysteme?", back_md: "Schwere anterograde Amnesie (explizit) bei intakten prozeduralen Lernleistungen → Dissoziation explizit/implizit; Hippocampus essenziell für neue explizite Erinnerungen.", order_index: 44 },
   { id: "c6-1", section_id: "6-1", front_md: "Piaget", back_md: "Stadienentwicklung.", order_index: 1 },
   { id: "c6-2", section_id: "6-1", front_md: "Erikson", back_md: "Krisen über Lebensspanne.", order_index: 2 },
   { id: "c6-3", section_id: "6-1", front_md: "Bindung", back_md: "Sicher vs. unsicher.", order_index: 3 },
@@ -1029,6 +1150,1465 @@ export const questions: QuestionT[] = [
     tags: ["sozial"]
   }
   ,
+  // Kapitel 3 – Forschungsmethodik (36 MCQs, multi-correct, keine Teilpunkte)
+  {
+    id: "q3-101",
+    chapter_id: 3,
+    stem_md: "Was unterscheidet Alltagspsychologie von wissenschaftlicher Psychologie?",
+    options: [
+      { id: "a", label: "a", md: "Alltagspsychologie beruht auf individuellen Erfahrungen und Heuristiken.", isCorrect: true },
+      { id: "b", label: "b", md: "Wissenschaftliche Psychologie prüft Aussagen systematisch mit Methoden.", isCorrect: true },
+      { id: "c", label: "c", md: "Alltagspsychologie ist grundsätzlich fehlerfrei.", isCorrect: false },
+      { id: "d", label: "d", md: "Wissenschaftliche Psychologie verzichtet auf Replikation.", isCorrect: false }
+    ],
+    explanation_md: "Alltag nutzt Heuristiken; Wissenschaft nutzt methodische, replizierbare Prüfungen.",
+    tags: ["alltag","wissenschaft"]
+  },
+  {
+    id: "q3-102",
+    chapter_id: 3,
+    stem_md: "Welche Aussagen zu Heuristiken sind korrekt?",
+    options: [
+      { id: "a", label: "a", md: "Heuristiken sind nützliche Faustregeln für schnelle Entscheidungen.", isCorrect: true },
+      { id: "b", label: "b", md: "Heuristiken führen nie zu Fehlern.", isCorrect: false },
+      { id: "c", label: "c", md: "Repräsentativitätsheuristik überschätzt ‚typische‘ Sequenzen.", isCorrect: true },
+      { id: "d", label: "d", md: "Heuristiken sind identisch mit wissenschaftlichen Methoden.", isCorrect: false }
+    ],
+    explanation_md: "Heuristiken sind ökonomisch, aber fehleranfällig; Repräsentativitätstäuschung ist ein Beispiel.",
+    tags: ["heuristik"]
+  },
+  {
+    id: "q3-103",
+    chapter_id: 3,
+    stem_md: "Welche Verzerrungen sind korrekt zugeordnet?",
+    options: [
+      { id: "a", label: "a", md: "Hindsight Bias: Ausgang wirkt im Nachhinein vorhersehbar.", isCorrect: true },
+      { id: "b", label: "b", md: "Confirmation Bias: Widerlegende Informationen werden bevorzugt.", isCorrect: false },
+      { id: "c", label: "c", md: "Confirmation Bias: Bestätigende Informationen werden übergewichtet.", isCorrect: true },
+      { id: "d", label: "d", md: "Hindsight Bias: Zukunftsprognosen werden exakter.", isCorrect: false }
+    ],
+    explanation_md: "Rückschau verzerrt Vorhersage; Bestätigungsfehler bevorzugt kongruente Evidenz.",
+    tags: ["bias"]
+  },
+  {
+    id: "q3-104",
+    chapter_id: 3,
+    stem_md: "Kritisches Denken umfasst typischerweise…",
+    options: [
+      { id: "a", label: "a", md: "Prüfung der Quelle und Aussagepräzision.", isCorrect: true },
+      { id: "b", label: "b", md: "Bewertung der Evidenzstärke.", isCorrect: true },
+      { id: "c", label: "c", md: "Ignorieren alternativer Erklärungen.", isCorrect: false },
+      { id: "d", label: "d", md: "Ausschließliches Vertrauen auf Intuition.", isCorrect: false }
+    ],
+    explanation_md: "Quelle, Präzision, Evidenz und Alternativen sind Kernfragen.",
+    tags: ["kritik"]
+  },
+  {
+    id: "q3-105",
+    chapter_id: 3,
+    stem_md: "Welche Standards der Wissenschaftlichkeit nach Döring (2023) sind korrekt?",
+    options: [
+      { id: "a", label: "a", md: "Tragfähiges Forschungsproblem (empirisch/theoretisch).", isCorrect: true },
+      { id: "b", label: "b", md: "Methodisch passender Forschungsprozess.", isCorrect: true },
+      { id: "c", label: "c", md: "Verzicht auf Ethik zur Wahrung der Objektivität.", isCorrect: false },
+      { id: "d", label: "d", md: "Vollständige Dokumentation zur Nachvollziehbarkeit/Replikation.", isCorrect: true }
+    ],
+    explanation_md: "Ethik ist Voraussetzung, nicht Optional; alle vier Standards gelten.",
+    tags: ["standards"]
+  },
+  {
+    id: "q3-106",
+    chapter_id: 3,
+    stem_md: "Wozu dienen Replikationsstudien?",
+    options: [
+      { id: "a", label: "a", md: "Überprüfung der Robustheit früherer Befunde.", isCorrect: true },
+      { id: "b", label: "b", md: "Bestimmung von Generalisierbarkeit/Spezifität (konzeptionell).", isCorrect: true },
+      { id: "c", label: "c", md: "Ersetzen den Originalbericht und machen Dokumentation überflüssig.", isCorrect: false },
+      { id: "d", label: "d", md: "Sind nur in der Psychologie relevant.", isCorrect: false }
+    ],
+    explanation_md: "Direkte/konzeptionelle Replikation prüfen Robustheit und Gültigkeitsbereich.",
+    tags: ["replikation"]
+  },
+  {
+    id: "q3-107",
+    chapter_id: 3,
+    stem_md: "Welche Qualitätskriterien charakterisieren eine gute Studie?",
+    options: [
+      { id: "a", label: "a", md: "Inhaltliche Relevanz/Beitrag.", isCorrect: true },
+      { id: "b", label: "b", md: "Methodische Strenge und Regelkonformität.", isCorrect: true },
+      { id: "c", label: "c", md: "Ethische Strenge.", isCorrect: true },
+      { id: "d", label: "d", md: "Unstrukturierte, schwer lesbare Berichte.", isCorrect: false }
+    ],
+    explanation_md: "Relevanz, Methode, Ethik und Präsentation tragen gemeinsam zur Qualität bei.",
+    tags: ["qualität"]
+  },
+  {
+    id: "q3-108",
+    chapter_id: 3,
+    stem_md: "Quantitativ vs. qualitativ – was trifft zu?",
+    options: [
+      { id: "a", label: "a", md: "Quantitativ: Messung/Statistik, Hypothesenprüfung.", isCorrect: true },
+      { id: "b", label: "b", md: "Qualitativ: sinnverstehend/interpretativ, offene Antworten.", isCorrect: true },
+      { id: "c", label: "c", md: "Wahl hängt nicht von Fragestellung ab.", isCorrect: false },
+      { id: "d", label: "d", md: "Quantitative Forschung interessiert sich nur für Einzelfälle.", isCorrect: false }
+    ],
+    explanation_md: "Paradigma/Frage bestimmen die Methode; quantitativ zielt auf Gruppen/Schätzung.",
+    tags: ["methoden"]
+  },
+  {
+    id: "q3-109",
+    chapter_id: 3,
+    stem_md: "Ordnen Sie die Schritte des hypothesenprüfenden Prozesses zu.",
+    options: [
+      { id: "a", label: "a", md: "Operationalisierung & Untersuchungsplanung.", isCorrect: true },
+      { id: "b", label: "b", md: "Interpretation/Diskussion nach Analyse.", isCorrect: true },
+      { id: "c", label: "c", md: "Publikation/Präsentation gehört nicht dazu.", isCorrect: false },
+      { id: "d", label: "d", md: "Datenerhebung vor Hypothesenformulierung.", isCorrect: false }
+    ],
+    explanation_md: "Hypothesen werden vor der Erhebung formuliert; Publikation gehört dazu.",
+    tags: ["prozess"]
+  },
+  {
+    id: "q3-110",
+    chapter_id: 3,
+    stem_md: "Theorie vs. Hypothese – was ist richtig?",
+    options: [
+      { id: "a", label: "a", md: "Theorien erklären und prognostizieren Phänomene auf höherer Abstraktion.", isCorrect: true },
+      { id: "b", label: "b", md: "Hypothesen sind konkrete, prüfbare Vorhersagen.", isCorrect: true },
+      { id: "c", label: "c", md: "Hypothesen werden erst nach der Datensammlung formuliert.", isCorrect: false },
+      { id: "d", label: "d", md: "Theorien lassen sich nie weiterentwickeln.", isCorrect: false }
+    ],
+    explanation_md: "Hypothesen werden aus Theorien abgeleitet und vorab formuliert; Theorien werden iterativ verbessert.",
+    tags: ["theorie","hypothese"]
+  },
+  {
+    id: "q3-111",
+    chapter_id: 3,
+    stem_md: "Gute wissenschaftliche Hypothesen …",
+    options: [
+      { id: "a", label: "a", md: "sind präzise und widerspruchsfrei.", isCorrect: true },
+      { id: "b", label: "b", md: "sind prinzipiell widerlegbar (falsifizierbar).", isCorrect: true },
+      { id: "c", label: "c", md: "müssen operationalisierbar sein.", isCorrect: true },
+      { id: "d", label: "d", md: "dürfen ohne Bezug zum Forschungsstand formuliert werden.", isCorrect: false }
+    ],
+    explanation_md: "Präzision, Widerspruchsfreiheit, Falsifizierbarkeit, Operationalisierbarkeit und Begründung sind nötig.",
+    tags: ["hypothese"]
+  },
+  {
+    id: "q3-112",
+    chapter_id: 3,
+    stem_md: "Unterschieds‑, Zusammenhangs‑, Veränderungshypothesen – was passt?",
+    options: [
+      { id: "a", label: "a", md: "Unterschied: Gruppenvergleich eines Merkmals.", isCorrect: true },
+      { id: "b", label: "b", md: "Zusammenhang: Kovariation zweier Variablen (positiv/negativ).", isCorrect: true },
+      { id: "c", label: "c", md: "Veränderung: gleiches Merkmal bei verschiedenen Personen zu einem Zeitpunkt.", isCorrect: false },
+      { id: "d", label: "d", md: "Veränderung: gleiche Personen über Zeit (mehrere Messzeitpunkte).", isCorrect: true }
+    ],
+    explanation_md: "Veränderungen benötigen Längsschnitt in denselben Personen.",
+    tags: ["hypothesentypen"]
+  },
+  {
+    id: "q3-113",
+    chapter_id: 3,
+    stem_md: "Operationalisierung – was ist korrekt?",
+    options: [
+      { id: "a", label: "a", md: "Latente Merkmale benötigen manifeste Indikatoren.", isCorrect: true },
+      { id: "b", label: "b", md: "Die Wahl des Messinstruments gehört zur Operationalisierung.", isCorrect: true },
+      { id: "c", label: "c", md: "Operationalisierung ist für direkte Maße entbehrlich.", isCorrect: false },
+      { id: "d", label: "d", md: "Das operationalisierte Merkmal heißt Variable.", isCorrect: true }
+    ],
+    explanation_md: "Operationalisierung definiert Indikatoren und Messung – auch für manifeste Variablen relevant.",
+    tags: ["operationalisierung"]
+  },
+  {
+    id: "q3-114",
+    chapter_id: 3,
+    stem_md: "Psychometrische Gütekriterien – welche Zuordnung stimmt?",
+    options: [
+      { id: "a", label: "a", md: "Objektivität: Ergebnis unabhängig von Durchführenden/Auswertung.", isCorrect: true },
+      { id: "b", label: "b", md: "Reliabilität: Messgenauigkeit/Zuverlässigkeit.", isCorrect: true },
+      { id: "c", label: "c", md: "Validität: misst, was es messen soll.", isCorrect: true },
+      { id: "d", label: "d", md: "Validität ist ohne Objektivität und Reliabilität immer hoch.", isCorrect: false }
+    ],
+    explanation_md: "Objektivität und Reliabilität sind Voraussetzungen für interpretierbare Validität.",
+    tags: ["gütekriterien"]
+  },
+  {
+    id: "q3-115",
+    chapter_id: 3,
+    stem_md: "Skalenniveaus – welche Beispiele passen?",
+    options: [
+      { id: "a", label: "a", md: "Nominal: Nationalität; dichotom: Erkrankung ja/nein.", isCorrect: true },
+      { id: "b", label: "b", md: "Ordinal: Bildungsabschluss, Schulnoten.", isCorrect: true },
+      { id: "c", label: "c", md: "Intervall: °C, psychologische Traits.", isCorrect: true },
+      { id: "d", label: "d", md: "Verhältnis: Reaktionszeit, Kelvin (natürlicher Nullpunkt).", isCorrect: true }
+    ],
+    explanation_md: "Beispiele ordnen die vier Niveaus korrekt zu.",
+    tags: ["skalen"]
+  },
+  {
+    id: "q3-116",
+    chapter_id: 3,
+    stem_md: "Diskrete vs. kontinuierliche Variablen – richtig ist…",
+    options: [
+      { id: "a", label: "a", md: "Nominal/Ordinal werden typischerweise diskret erhoben.", isCorrect: true },
+      { id: "b", label: "b", md: "Intervall/Ratio sind kontinuierlich – abhängig vom Erhebungsformat.", isCorrect: true },
+      { id: "c", label: "c", md: "Antwortformate können Quantität diskret machen (Kategorien).", isCorrect: true },
+      { id: "d", label: "d", md: "Kontinuierliche Variablen haben immer nur zwei Ausprägungen.", isCorrect: false }
+    ],
+    explanation_md: "Erhebungsformat beeinflusst Diskretheit; kontinuierliche Variablen haben viele Werte.",
+    tags: ["variablen"]
+  },
+  {
+    id: "q3-117",
+    chapter_id: 3,
+    stem_md: "Population/Stichprobe – was ist korrekt?",
+    options: [
+      { id: "a", label: "a", md: "Stichprobe ist eine Teilmenge der Population.", isCorrect: true },
+      { id: "b", label: "b", md: "Repräsentativität erhöht externe Validität.", isCorrect: true },
+      { id: "c", label: "c", md: "Eine nicht-repräsentative Stichprobe verzerrt Generalisierungen.", isCorrect: true },
+      { id: "d", label: "d", md: "Population = nur die tatsächlich Teilnehmenden.", isCorrect: false }
+    ],
+    explanation_md: "Repräsentative Stichproben sichern Übertragbarkeit.",
+    tags: ["stichprobe"]
+  },
+  {
+    id: "q3-118",
+    chapter_id: 3,
+    stem_md: "Sampling – was trifft zu?",
+    options: [
+      { id: "a", label: "a", md: "Zufallsstichprobe: gleiche Chance für alle Populationselemente.", isCorrect: true },
+      { id: "b", label: "b", md: "Gelegenheitsstichprobe: praktisch, aber anfällig für Selection Bias.", isCorrect: true },
+      { id: "c", label: "c", md: "Selection Bias kann Mittelwerte systematisch verzerren.", isCorrect: true },
+      { id: "d", label: "d", md: "Zufallsstichproben sind in Studien unmöglich.", isCorrect: false }
+    ],
+    explanation_md: "Praktikabilität vs. Verzerrung ist abzuwägen; Zufall ist ideal, aber nicht immer machbar.",
+    tags: ["sampling"]
+  },
+  {
+    id: "q3-119",
+    chapter_id: 3,
+    stem_md: "Stichprobengröße – was ist eine sinnvolle Überlegung?",
+    options: [
+      { id: "a", label: "a", md: "Größer → stabilere Schätzungen, weniger Ausreißereffekt.", isCorrect: true },
+      { id: "b", label: "b", md: "Unendlich große Stichproben sind immer realistisch.", isCorrect: false },
+      { id: "c", label: "c", md: "Ressourcen begrenzen die Größe; Powerplanung ist hilfreich.", isCorrect: true },
+      { id: "d", label: "d", md: "Kleine N sind grundsätzlich valider.", isCorrect: false }
+    ],
+    explanation_md: "Trade‑off zwischen Genauigkeit und Ressourcen; Power beachten.",
+    tags: ["stichprobe"]
+  },
+  {
+    id: "q3-120",
+    chapter_id: 3,
+    stem_md: "Labor vs. Feld – welche Zuordnung ist korrekt?",
+    options: [
+      { id: "a", label: "a", md: "Labor: hohe Kontrolle → interne Validität.", isCorrect: true },
+      { id: "b", label: "b", md: "Feld: Alltagsnähe → externe Validität.", isCorrect: true },
+      { id: "c", label: "c", md: "Felduntersuchungen sind grundsätzlich unmöglich.", isCorrect: false },
+      { id: "d", label: "d", md: "Laborstudien sind immer besser generalisierbar.", isCorrect: false }
+    ],
+    explanation_md: "Kontrolle vs. Übertragbarkeit ist ein klassischer Trade‑off.",
+    tags: ["design"]
+  },
+  {
+    id: "q3-121",
+    chapter_id: 3,
+    stem_md: "Experiment – Kernelemente?",
+    options: [
+      { id: "a", label: "a", md: "UV wird manipuliert; AV gemessen.", isCorrect: true },
+      { id: "b", label: "b", md: "Störvariablen werden konstant gehalten oder balanciert.", isCorrect: true },
+      { id: "c", label: "c", md: "Keine Kovariation erforderlich.", isCorrect: false },
+      { id: "d", label: "d", md: "Zeitliche Vorordnung ist für Kausalität irrelevant.", isCorrect: false }
+    ],
+    explanation_md: "Kovariation, Vorordnung und Ausschluss von Alternativen sind nötig.",
+    tags: ["experiment"]
+  },
+  {
+    id: "q3-122",
+    chapter_id: 3,
+    stem_md: "Between‑ vs. Within‑Subjects – was passt?",
+    options: [
+      { id: "a", label: "a", md: "Between: verschiedene Gruppen je Bedingung.", isCorrect: true },
+      { id: "b", label: "b", md: "Within: dieselben Personen in allen Bedingungen.", isCorrect: true },
+      { id: "c", label: "c", md: "Within minimiert personengebundene Störvariablen.", isCorrect: true },
+      { id: "d", label: "d", md: "Between erfordert nie Randomisierung.", isCorrect: false }
+    ],
+    explanation_md: "Within parallelisiert Personen; Between sollte randomisieren.",
+    tags: ["design"]
+  },
+  {
+    id: "q3-123",
+    chapter_id: 3,
+    stem_md: "Randomisierung/Parallelisieren – korrekte Aussagen?",
+    options: [
+      { id: "a", label: "a", md: "Randomisierung balanciert (bei großem N) bekannte und unbekannte Störvariablen.", isCorrect: true },
+      { id: "b", label: "b", md: "Parallelisieren ordnet gezielt nach gemessenen Störvariablen zu.", isCorrect: true },
+      { id: "c", label: "c", md: "Ohne Randomisierung ist es kein Experiment (sondern Quasi‑Experiment).", isCorrect: true },
+      { id: "d", label: "d", md: "Randomisierung ist nur bei Feldstudien erlaubt.", isCorrect: false }
+    ],
+    explanation_md: "Randomisierung ist zentrales Kriterium; Parallelisieren hilft bei kleinem N.",
+    tags: ["kontrolle"]
+  },
+  {
+    id: "q3-124",
+    chapter_id: 3,
+    stem_md: "Erwartungseffekte – Zuordnung richtig?",
+    options: [
+      { id: "a", label: "a", md: "Reaktivität/Hawthorne: Beobachtetwerden verändert Verhalten.", isCorrect: true },
+      { id: "b", label: "b", md: "Placebo: positive Wirkung durch Erwartung/Kontext.", isCorrect: true },
+      { id: "c", label: "c", md: "Rosenthal: Erwartungen der Versuchsleitung beeinflussen Ergebnisse.", isCorrect: true },
+      { id: "d", label: "d", md: "Doppelblind reduziert sowohl Placebo‑ als auch Leitungserwartungen.", isCorrect: true }
+    ],
+    explanation_md: "Alle vier Definitionen sind korrekt zugeordnet.",
+    tags: ["erwartung"]
+  },
+  {
+    id: "q3-125",
+    chapter_id: 3,
+    stem_md: "Deskriptive Statistik – welche Aussagen sind korrekt?",
+    options: [
+      { id: "a", label: "a", md: "Beschreibt Stichprobendaten (Häufigkeiten, Lage, Streuung).", isCorrect: true },
+      { id: "b", label: "b", md: "Histogramme visualisieren Verteilungen (klassiert).", isCorrect: true },
+      { id: "c", label: "c", md: "Sie schließt mittels Wahrscheinlichkeit direkt auf die Population.", isCorrect: false },
+      { id: "d", label: "d", md: "Angabe absoluter vs. relativer Häufigkeit sollte klar sein.", isCorrect: true }
+    ],
+    explanation_md: "Deskriptive Statistik fasst Daten zusammen; Inferenz übernimmt der Schluss auf Population.",
+    tags: ["deskriptiv"]
+  },
+  {
+    id: "q3-126",
+    chapter_id: 3,
+    stem_md: "Zentrale Tendenz – passend ist…",
+    options: [
+      { id: "a", label: "a", md: "Modalwert: häufigster Wert (für nominal sinnvoll).", isCorrect: true },
+      { id: "b", label: "b", md: "Median: robust gegen Ausreißer.", isCorrect: true },
+      { id: "c", label: "c", md: "Arithmetisches Mittel: erst ab Intervallskala sinnvoll.", isCorrect: true },
+      { id: "d", label: "d", md: "Median ist empfindlicher für Ausreißer als das Mittel.", isCorrect: false }
+    ],
+    explanation_md: "Median ist ausreißerrobust; Mittel benötigt mindestens Intervallniveau.",
+    tags: ["lage"]
+  },
+  {
+    id: "q3-127",
+    chapter_id: 3,
+    stem_md: "Streuungsmaße – korrekte Paare?",
+    options: [
+      { id: "a", label: "a", md: "IQA = Q3 − Q1 (mittlere 50%).", isCorrect: true },
+      { id: "b", label: "b", md: "Varianz = mittlere quadrierte Abweichung vom Mittel.", isCorrect: true },
+      { id: "c", label: "c", md: "Standardabweichung = Wurzel der Varianz.", isCorrect: true },
+      { id: "d", label: "d", md: "IQA setzt Nominalskala voraus.", isCorrect: false }
+    ],
+    explanation_md: "IQA ab Ordinal; Varianz/SD ab Intervallniveau.",
+    tags: ["streuung"]
+  },
+  {
+    id: "q3-128",
+    chapter_id: 3,
+    stem_md: "Korrelation r – welche Aussagen sind korrekt?",
+    options: [
+      { id: "a", label: "a", md: "r ist standardisierte Kovarianz, skalenunabhängig.", isCorrect: true },
+      { id: "b", label: "b", md: "r ∈ [−1, 1]; Richtung und Stärke eines linearen Zusammenhangs.", isCorrect: true },
+      { id: "c", label: "c", md: "Hohe Korrelation beweist Kausalität.", isCorrect: false },
+      { id: "d", label: "d", md: "r = 0 schließt jeden (auch nichtlinearen) Zusammenhang aus.", isCorrect: false }
+    ],
+    explanation_md: "r quantifiziert lineare Beziehung; Kausalität erfordert weitere Bedingungen.",
+    tags: ["korrelation"]
+  },
+  {
+    id: "q3-129",
+    chapter_id: 3,
+    stem_md: "Welche Aussagen zur Kausalität sind korrekt?",
+    options: [
+      { id: "a", label: "a", md: "Für Kausalität braucht es Kovariation.", isCorrect: true },
+      { id: "b", label: "b", md: "Zeitliche Vorordnung der Ursache vor der Wirkung ist notwendig.", isCorrect: true },
+      { id: "c", label: "c", md: "Ausschluss plausibler Alternativen gehört dazu.", isCorrect: true },
+      { id: "d", label: "d", md: "Korrelation allein reicht aus.", isCorrect: false }
+    ],
+    explanation_md: "Alle drei Bedingungen sind nötig – Korrelation allein genügt nicht.",
+    tags: ["kausal"]
+  },
+  {
+    id: "q3-130",
+    chapter_id: 3,
+    stem_md: "Welche Maßnahmen kontrollieren Störvariablen?",
+    options: [
+      { id: "a", label: "a", md: "Konstanthalten von Rahmenbedingungen (Raum/Zeit/Instruktion).", isCorrect: true },
+      { id: "b", label: "b", md: "Randomisierte Zuteilung zu Bedingungen.", isCorrect: true },
+      { id: "c", label: "c", md: "Bewusste Ungleichverteilung der Motivation.", isCorrect: false },
+      { id: "d", label: "d", md: "Balancieren (z. B. Alter gleich verteilt).", isCorrect: true }
+    ],
+    explanation_md: "Konstanthalten, Balancieren und Randomisieren sind zentrale Kontrollen.",
+    tags: ["störvariablen"]
+  },
+  {
+    id: "q3-131",
+    chapter_id: 3,
+    stem_md: "Blind‑/Doppelblind – wofür sind sie nützlich?",
+    options: [
+      { id: "a", label: "a", md: "Reduktion von Placebo‑/Nocebo‑Effekten.", isCorrect: true },
+      { id: "b", label: "b", md: "Reduktion von Erwartungseffekten der Versuchsleitung (Rosenthal).", isCorrect: true },
+      { id: "c", label: "c", md: "Ersetzen randomisierte Zuteilung vollständig.", isCorrect: false },
+      { id: "d", label: "d", md: "Sind nur in Tierstudien sinnvoll.", isCorrect: false }
+    ],
+    explanation_md: "Blind reduziert Erwartungen; Randomisierung bleibt dennoch erforderlich.",
+    tags: ["blind"]
+  },
+  {
+    id: "q3-132",
+    chapter_id: 3,
+    stem_md: "Häufigkeiten – richtige Aussagen?",
+    options: [
+      { id: "a", label: "a", md: "Absolute Häufigkeit = Zählwert pro Kategorie.", isCorrect: true },
+      { id: "b", label: "b", md: "Relative Häufigkeit = Anteil an allen Beobachtungen.", isCorrect: true },
+      { id: "c", label: "c", md: "Prozente = relative Häufigkeiten × 100.", isCorrect: true },
+      { id: "d", label: "d", md: "Angaben können ohne Benennung (absolut/relativ) nicht fehlinterpretiert werden.", isCorrect: false }
+    ],
+    explanation_md: "Art der Häufigkeit muss klar benannt werden, um Fehlinterpretation zu vermeiden.",
+    tags: ["häufigkeiten"]
+  },
+  {
+    id: "q3-133",
+    chapter_id: 3,
+    stem_md: "Streudiagramm/Korrelation – was ist korrekt?",
+    options: [
+      { id: "a", label: "a", md: "Streudiagramme visualisieren bivariate Zusammenhänge.", isCorrect: true },
+      { id: "b", label: "b", md: "Ein enger elliptischer Punktwolkenverlauf deutet auf hohe |r| hin.", isCorrect: true },
+      { id: "c", label: "c", md: "Nichtlineare Zusammenhänge werden durch r stets perfekt erfasst.", isCorrect: false },
+      { id: "d", label: "d", md: "r ist ein Maß für den Mittelwert.", isCorrect: false }
+    ],
+    explanation_md: "r misst lineare Stärke; Streudiagramme geben erste Hinweise.",
+    tags: ["korrelation"]
+  },
+  {
+    id: "q3-134",
+    chapter_id: 3,
+    stem_md: "Zuordnung: Merkmal → passendes Messinstrument/Format",
+    options: [
+      { id: "a", label: "a", md: "Körpergröße → Maßband (Ratio).", isCorrect: true },
+      { id: "b", label: "b", md: "Aktuelles Stressempfinden → 0–10‑Skala (manifest).", isCorrect: true },
+      { id: "c", label: "c", md: "Latenter Trait ohne Indikatoren → valide direkte Messung.", isCorrect: false },
+      { id: "d", label: "d", md: "Intelligenz → psychologischer Test (Intervallannahme).", isCorrect: true }
+    ],
+    explanation_md: "Latente Merkmale benötigen Indikatoren; physische Maße sind direkt.",
+    tags: ["messung"]
+  },
+  {
+    id: "q3-135",
+    chapter_id: 3,
+    stem_md: "Externe vs. interne Validität – richtig ist…",
+    options: [
+      { id: "a", label: "a", md: "Externe Validität: Übertragbarkeit auf andere Personen/Situationen.", isCorrect: true },
+      { id: "b", label: "b", md: "Interne Validität: eindeutiger Kausalschluss im Experiment.", isCorrect: true },
+      { id: "c", label: "c", md: "Externe Validität steigt bei streng kontrolliertem Labor immer automatisch.", isCorrect: false },
+      { id: "d", label: "d", md: "Interne Validität erfordert Randomisierung/ Kontrolle.", isCorrect: true }
+    ],
+    explanation_md: "Interne Validität fokussiert Kausalität; externe die Generalisierbarkeit.",
+    tags: ["validität"]
+  },
+  {
+    id: "q3-136",
+    chapter_id: 3,
+    stem_md: "Welche Aussagen zu Konfundierung sind korrekt?",
+    options: [
+      { id: "a", label: "a", md: "Konfundierung liegt vor, wenn eine Störvariable mit UV und AV zusammenhängt.", isCorrect: true },
+      { id: "b", label: "b", md: "Konfundierungen lassen sich durch Balancierung/Randomisierung reduzieren.", isCorrect: true },
+      { id: "c", label: "c", md: "Konfundierungen sind nur in Feldstudien möglich.", isCorrect: false },
+      { id: "d", label: "d", md: "Motivation als Störvariable kann Gruppenunterschiede vortäuschen.", isCorrect: true }
+    ],
+    explanation_md: "Konfundierung bedroht interne Validität und muss kontrolliert werden.",
+    tags: ["konfundierung"]
+  },
+  // Kapitel 4 – Biologische Psychologie (40 MCQs, multi-correct, keine Teilpunkte)
+  {
+    id: "q4-101",
+    chapter_id: 4,
+    stem_md: "Was ist Gegenstand der Biologischen Psychologie?",
+    options: [
+      { id: "a", label: "a", md: "Beziehungen zwischen physischen Merkmalen/Prozessen und psychischen Zuständen.", isCorrect: true },
+      { id: "b", label: "b", md: "Ausschließlich soziale Normen und Kulturkonflikte.", isCorrect: false },
+      { id: "c", label: "c", md: "Neuronale, hormonelle und physiologische Grundlagen psychischer Phänomene.", isCorrect: true },
+      { id: "d", label: "d", md: "Nur subjektive Introspektion ohne Messung.", isCorrect: false }
+    ],
+    explanation_md: "BioPsy untersucht körperliche/neurale Mechanismen psychischer Prozesse und deren Beziehung zu Erleben/Verhalten.",
+    tags: ["definition"]
+  },
+  {
+    id: "q4-102",
+    chapter_id: 4,
+    stem_md: "Begriffsabgrenzung – was passt?",
+    options: [
+      { id: "a", label: "a", md: "Biopsychologie = synonym zu Biologischer Psychologie.", isCorrect: true },
+      { id: "b", label: "b", md: "Neurowissenschaften: übergeordnetes, interdisziplinäres Feld (u. a. Psychologie, Medizin).", isCorrect: true },
+      { id: "c", label: "c", md: "Psychobiologie ist ein Teilgebiet der Biologie mit Fokus auf psychologische Auswirkungen biologischer Prozesse.", isCorrect: true },
+      { id: "d", label: "d", md: "Neurowissenschaften sind ein Teilgebiet der Biologischen Psychologie.", isCorrect: false }
+    ],
+    explanation_md: "Biopsychologie wird synonym verwendet; Neurowissenschaften rahmen disziplinübergreifend; Psychobiologie gehört zur Biologie.",
+    tags: ["begriffe"]
+  },
+  {
+    id: "q4-103",
+    chapter_id: 4,
+    stem_md: "Ordnen Sie Teilgebiete der Biologischen Psychologie den Beschreibungen zu.",
+    options: [
+      { id: "a", label: "a", md: "Physiologische Psychologie: kausale Tests über Stimulation/Chirurgie, oft Tiermodelle.", isCorrect: true },
+      { id: "b", label: "b", md: "Neuropsychologie: Folgen umschriebener Hirnschädigungen beim Menschen.", isCorrect: true },
+      { id: "c", label: "c", md: "Psychophysiologie: nicht‑invasive Messungen (EEG, EMG, EOG, EKG) bei Menschen.", isCorrect: true },
+      { id: "d", label: "d", md: "Kognitive Neurowissenschaft: lehnt Bildgebung ab.", isCorrect: false }
+    ],
+    explanation_md: "Alle außer d sind korrekt. Kognitive Neurowissenschaft nutzt u. a. MRT/fMRT, MEG/EEG, TMS.",
+    tags: ["teilgebiete"]
+  },
+  {
+    id: "q4-104",
+    chapter_id: 4,
+    stem_md: "Welche Aussagen zur Physiologischen Psychologie treffen zu?",
+    options: [
+      { id: "a", label: "a", md: "Direkte Eingriffe erlauben kausale Schlüsse zu neuronalen Mechanismen.", isCorrect: true },
+      { id: "b", label: "b", md: "Tierversuche dienen der Theorieprüfung mit hoher internen Validität.", isCorrect: true },
+      { id: "c", label: "c", md: "Sie untersucht ausschließlich Persönlichkeitstests.", isCorrect: false },
+      { id: "d", label: "d", md: "Sie ist identisch mit Psychophysiologie.", isCorrect: false }
+    ],
+    explanation_md: "Kausalprüfungen über Stimulation/Chirurgie sind typisch; Psychophysiologie misst nicht‑invasiv beim Menschen.",
+    tags: ["physiologisch"]
+  },
+  {
+    id: "q4-105",
+    chapter_id: 4,
+    stem_md: "Neuropsychologie – was ist korrekt?",
+    options: [
+      { id: "a", label: "a", md: "Analysiert kognitive/behaviorale Folgen umschriebener Läsionen.", isCorrect: true },
+      { id: "b", label: "b", md: "Zielt auch auf Diagnostik/Rehabilitation.", isCorrect: true },
+      { id: "c", label: "c", md: "Verzichtet auf Patient:innenuntersuchungen.", isCorrect: false },
+      { id: "d", label: "d", md: "Erlaubt Rückschlüsse auf Funktionslokalisation.", isCorrect: true }
+    ],
+    explanation_md: "Neuropsychologie arbeitet patientennah und leitet Struktur‑Funktion‑Bezüge ab.",
+    tags: ["neuropsychologie"]
+  },
+  {
+    id: "q4-106",
+    chapter_id: 4,
+    stem_md: "Psychophysiologie – welche Maße/Aussagen passen?",
+    options: [
+      { id: "a", label: "a", md: "EEG zur Messung kortikaler Aktivität.", isCorrect: true },
+      { id: "b", label: "b", md: "EMG/EOG/Herzrate als weitere Indikatoren.", isCorrect: true },
+      { id: "c", label: "c", md: "Nur invasive Messungen am Tier.", isCorrect: false },
+      { id: "d", label: "d", md: "Anwendungsfelder: Stress, Emotion, Rhythmen.", isCorrect: true }
+    ],
+    explanation_md: "Psychophysiologie misst nicht‑invasiv am Menschen; typische Domänen sind Stress/Emotion/Rhythmik.",
+    tags: ["psychophysiologie"]
+  },
+  {
+    id: "q4-107",
+    chapter_id: 4,
+    stem_md: "Kognitive Neurowissenschaft – Methoden/Schwerpunkte?",
+    options: [
+      { id: "a", label: "a", md: "fMRT/MRT zur funktionellen/strukturellen Bildgebung.", isCorrect: true },
+      { id: "b", label: "b", md: "MEG/EEG für hohe zeitliche Auflösung.", isCorrect: true },
+      { id: "c", label: "c", md: "TMS zur kausalen Störung/Modulation kortikaler Areale.", isCorrect: true },
+      { id: "d", label: "d", md: "Verzichtet auf die Untersuchung von Kognition (Wahrnehmung/Gedächtnis/Sprache).", isCorrect: false }
+    ],
+    explanation_md: "Methodenvielfalt zur Aufklärung neuronaler Grundlagen kognitiver Prozesse.",
+    tags: ["kogn_neuro"]
+  },
+  {
+    id: "q4-108",
+    chapter_id: 4,
+    stem_md: "Psychopharmakologie – welche Aussagen sind korrekt?",
+    options: [
+      { id: "a", label: "a", md: "Untersucht Wirkungen von Medikamenten/Drogen auf Nervensystem/Verhalten.", isCorrect: true },
+      { id: "b", label: "b", md: "Zielt u. a. auf die Entwicklung neuer Wirkstoffe.", isCorrect: true },
+      { id: "c", label: "c", md: "Ist rein psychologisch, ohne ärztliche/pharmakologische Beteiligung.", isCorrect: false },
+      { id: "d", label: "d", md: "Greift in Neurotransmittersysteme ein (z. B. SSRI, Benzodiazepine).", isCorrect: true }
+    ],
+    explanation_md: "Interdisziplinär; pharmaka greifen gezielt in Transmittersysteme ein.",
+    tags: ["psychopharm"]
+  },
+  {
+    id: "q4-109",
+    chapter_id: 4,
+    stem_md: "Vergleichende Psychologie – wofür ist sie wichtig?",
+    options: [
+      { id: "a", label: "a", md: "Vergleich von Spezies zur Untersuchung von Evolution/Genetik/adaptivem Verhalten.", isCorrect: true },
+      { id: "b", label: "b", md: "Lieferte Impulse für Tiermodelle menschlicher Funktionen.", isCorrect: true },
+      { id: "c", label: "c", md: "Hat keinen Bezug zur Biologischen Psychologie.", isCorrect: false },
+      { id: "d", label: "d", md: "Erlaubt Rückschlüsse auf universelle Mechanismen.", isCorrect: true }
+    ],
+    explanation_md: "Zwischenartliche Vergleiche begründen Modelle und evolutionspsychologische Hypothesen.",
+    tags: ["vergleichend"]
+  },
+  {
+    id: "q4-110",
+    chapter_id: 4,
+    stem_md: "Phineas Gage – was lehrt der Fall?",
+    options: [
+      { id: "a", label: "a", md: "Läsion im linken vorderen Frontallappen → Persönlichkeits-/Impulskontrollveränderungen.", isCorrect: true },
+      { id: "b", label: "b", md: "Sprache/Intelligenz blieben bemerkenswert intakt.", isCorrect: true },
+      { id: "c", label: "c", md: "Zeigt frühe Evidenz für Funktionslokalisation (präfrontal).", isCorrect: true },
+      { id: "d", label: "d", md: "Belegt, dass das Kleinhirn Sitz der Persönlichkeit ist.", isCorrect: false }
+    ],
+    explanation_md: "Der Fall stützt die Rolle des Präfrontalcortex in Planung/Impulskontrolle.",
+    tags: ["fälle"]
+  },
+  {
+    id: "q4-111",
+    chapter_id: 4,
+    stem_md: "Patient ‚Tan‘ (Broca) – korrekte Aussagen?",
+    options: [
+      { id: "a", label: "a", md: "Läsion links frontal (Broca‑Areal) → Aphasiesyndrom mit gestörter Sprachproduktion.", isCorrect: true },
+      { id: "b", label: "b", md: "Sprachverständnis weitgehend erhalten.", isCorrect: true },
+      { id: "c", label: "c", md: "Belegt Spezialisierung sprachlicher Funktionen.", isCorrect: true },
+      { id: "d", label: "d", md: "Lokalisationseffekte gibt es ausschließlich rechts temporal.", isCorrect: false }
+    ],
+    explanation_md: "Broca zeigte frühe Evidenz funktionaler Spezialisierung der linken Hemisphäre.",
+    tags: ["fälle","sprache"]
+  },
+  {
+    id: "q4-112",
+    chapter_id: 4,
+    stem_md: "Neuron – welcher Aufbau/Funktion stimmt?",
+    options: [
+      { id: "a", label: "a", md: "Dendriten: Eingang; Axon: Ausgang/Leitung; Soma: Stoffwechsel/Zellkern.", isCorrect: true },
+      { id: "b", label: "b", md: "Axonterminale: synaptische Übertragung.", isCorrect: true },
+      { id: "c", label: "c", md: "Dendriten leiten ausschließlich weg vom Soma.", isCorrect: false },
+      { id: "d", label: "d", md: "Axon entsteht typischerweise am Axonhügel.", isCorrect: true }
+    ],
+    explanation_md: "Klassischer Aufbau: Soma, Dendriten (Empfang), Axon (Weiterleitung), Terminale (Synapse).",
+    tags: ["neuron"]
+  },
+  {
+    id: "q4-113",
+    chapter_id: 4,
+    stem_md: "Neurontypen – richtige Zuordnung?",
+    options: [
+      { id: "a", label: "a", md: "Sensorische Neurone: wandeln externe Reize in neuronale Signale um.", isCorrect: true },
+      { id: "b", label: "b", md: "Interneurone: Verschaltung/Integration im ZNS.", isCorrect: true },
+      { id: "c", label: "c", md: "Motoneurone: steuern Muskeln/Drüsen.", isCorrect: true },
+      { id: "d", label: "d", md: "Interneurone verlassen das ZNS und innervieren Muskeln.", isCorrect: false }
+    ],
+    explanation_md: "Sensorisch → Input; Interneurone → interne Verschaltung; Motoneurone → Output.",
+    tags: ["neuron"]
+  },
+  {
+    id: "q4-114",
+    chapter_id: 4,
+    stem_md: "Gliazellen – was gehört zu ihren Aufgaben?",
+    options: [
+      { id: "a", label: "a", md: "Stoffwechselunterstützung, Müllentsorgung, Leitung von Transmittern/Ionenregulation.", isCorrect: true },
+      { id: "b", label: "b", md: "Blut‑Hirn‑Schranke (Astrozyten).", isCorrect: true },
+      { id: "c", label: "c", md: "Myelinbildung (Oligodendrozyten/Schwann‑Zellen).", isCorrect: true },
+      { id: "d", label: "d", md: "Alle Glia sind rein passiv und ohne Einfluss auf neuronale Kommunikation.", isCorrect: false }
+    ],
+    explanation_md: "Glia sind aktiv in Stoffwechsel, Schutz, Myelinisierung und Signalumgebung.",
+    tags: ["glia"]
+  },
+  {
+    id: "q4-115",
+    chapter_id: 4,
+    stem_md: "Blut‑Hirn‑Schranke – welche Aussagen sind korrekt?",
+    options: [
+      { id: "a", label: "a", md: "Astrozyten umhüllen Gefäße; Barriere für nicht‑fettlösliche Toxine/Erreger.", isCorrect: true },
+      { id: "b", label: "b", md: "Schützt Neurone vor vielen Substanzen aus dem Blut.", isCorrect: true },
+      { id: "c", label: "c", md: "Ermöglicht ungehinderten Durchtritt aller Moleküle.", isCorrect: false },
+      { id: "d", label: "d", md: "Ist Teil des peripheren Nervensystems.", isCorrect: false }
+    ],
+    explanation_md: "BBB ist zentrale Schutzstruktur des ZNS; selektiv permeabel.",
+    tags: ["bbb","glia"]
+  },
+  {
+    id: "q4-116",
+    chapter_id: 4,
+    stem_md: "Myelin & saltatorische Erregungsleitung – richtig ist…",
+    options: [
+      { id: "a", label: "a", md: "Myelin erhöht Leitungsgeschwindigkeit durch segmentierte Isolation.", isCorrect: true },
+      { id: "b", label: "b", md: "Aktive Regeneration des AP an Ranvier‑Schnürringen.", isCorrect: true },
+      { id: "c", label: "c", md: "Ionenaustausch findet in Myelinsegmenten maximal statt.", isCorrect: false },
+      { id: "d", label: "d", md: "Ohne Ranvier‑Schnürringe gäbe es keine AP‑Weiterleitung in Myelinschnitten.", isCorrect: true }
+    ],
+    explanation_md: "In myelinisierten Abschnitten passiv; an Schnürringen hohe Na+‑Kanaldichte → saltatorisch.",
+    tags: ["myelin"]
+  },
+  {
+    id: "q4-117",
+    chapter_id: 4,
+    stem_md: "Multiple Sklerose (MS) – welche Aussagen treffen zu?",
+    options: [
+      { id: "a", label: "a", md: "Autoimmun bedingte Demyelinisierung im ZNS.", isCorrect: true },
+      { id: "b", label: "b", md: "Folgen: Sehstörungen, Missempfindungen, Muskelschwäche bis Lähmungen.", isCorrect: true },
+      { id: "c", label: "c", md: "Verlauf häufig schubförmig; Remissionen möglich.", isCorrect: true },
+      { id: "d", label: "d", md: "Heilung durch Placebos zuverlässig möglich.", isCorrect: false }
+    ],
+    explanation_md: "MS zerstört Myelin; Symptome variieren; Therapien reduzieren Schubfrequenz/‑schwere, heilen aber nicht.",
+    tags: ["ms"]
+  },
+  {
+    id: "q4-118",
+    chapter_id: 4,
+    stem_md: "Ruhepotenzial – welche Faktoren stabilisieren es?",
+    options: [
+      { id: "a", label: "a", md: "Ionengradienten (Na+ außen, K+ innen, Cl− außen).", isCorrect: true },
+      { id: "b", label: "b", md: "Selektive Permeabilität (v. a. K+; Na+ gering im Ruhe).", isCorrect: true },
+      { id: "c", label: "c", md: "Na+/K+‑Pumpe (3 Na+ raus, 2 K+ rein).", isCorrect: true },
+      { id: "d", label: "d", md: "Gleichmäßige Verteilung aller Ionen innen/außen.", isCorrect: false }
+    ],
+    explanation_md: "Ungleiche Verteilungen + Permeabilitäten + Pumpenaktivität erzeugen/halten ca. −70 mV.",
+    tags: ["ruhepotenzial"]
+  },
+  {
+    id: "q4-119",
+    chapter_id: 4,
+    stem_md: "Welche Aussage zu Na+, K+, Cl− im Ruhe ist korrekt?",
+    options: [
+      { id: "a", label: "a", md: "Na+ hohe Konzentration außen; starker elektrochemischer Drang nach innen.", isCorrect: true },
+      { id: "b", label: "b", md: "K+ hohe Konzentration innen; Nettobewegung wird durch Permeabilität und Gradienten bestimmt.", isCorrect: true },
+      { id: "c", label: "c", md: "Cl− ist innen deutlich höher konzentriert als außen.", isCorrect: false },
+      { id: "d", label: "d", md: "Die Pumpe transportiert Na+ in die Zelle hinein.", isCorrect: false }
+    ],
+    explanation_md: "Na+ außen↑, K+ innen↑, Cl− außen↑; Pumpe hält Gradienten (Na+ raus, K+ rein).",
+    tags: ["ionen"]
+  },
+  {
+    id: "q4-120",
+    chapter_id: 4,
+    stem_md: "EPSP/IPSP – welche Zuordnungen stimmen?",
+    options: [
+      { id: "a", label: "a", md: "EPSP: Depolarisation, erhöht Feuerrate.", isCorrect: true },
+      { id: "b", label: "b", md: "IPSP: Hyperpolarisation, senkt Feuerrate.", isCorrect: true },
+      { id: "c", label: "c", md: "Summation am Axonhügel entscheidet über AP.", isCorrect: true },
+      { id: "d", label: "d", md: "EPSP und IPSP sind identisch.", isCorrect: false }
+    ],
+    explanation_md: "Nettoeffekt am Axonhügel (räumlich/zeitlich) bestimmt, ob die Schwelle überschritten wird.",
+    tags: ["synapse"]
+  },
+  {
+    id: "q4-121",
+    chapter_id: 4,
+    stem_md: "Alles‑oder‑Nichts & Schwelle – was ist korrekt?",
+    options: [
+      { id: "a", label: "a", md: "AP entsteht bei Überschreiten einer Schwelle (≈ −55 mV).", isCorrect: true },
+      { id: "b", label: "b", md: "Subschwellige Depolarisationen lösen kein AP aus.", isCorrect: true },
+      { id: "c", label: "c", md: "AP‑Amplitude variiert kontinuierlich mit Reizstärke.", isCorrect: false },
+      { id: "d", label: "d", md: "APs sind für eine Zelle stereotyp (zelltypspezifisch).", isCorrect: true }
+    ],
+    explanation_md: "Amplituden sind nicht analog zur Reizstärke; Reizintensität kodiert v. a. über Feuerrate.",
+    tags: ["aktionspotenzial"]
+  },
+  {
+    id: "q4-122",
+    chapter_id: 4,
+    stem_md: "AP‑Phasen – Zuordnungen korrekt?",
+    options: [
+      { id: "a", label: "a", md: "Aufstrich/Overshoot: Öffnen spannungsabhängiger Na+‑Kanäle → Na+‑Einstrom.", isCorrect: true },
+      { id: "b", label: "b", md: "Repolarisation: verzögertes Öffnen von K+‑Kanälen → K+‑Ausstrom.", isCorrect: true },
+      { id: "c", label: "c", md: "Na+‑Kanäle inaktivieren kurz nach Öffnung.", isCorrect: true },
+      { id: "d", label: "d", md: "Nachpotenzial = starke Depolarisation über +50 mV.", isCorrect: false }
+    ],
+    explanation_md: "Nachpotenzial ist hyperpolarisiert unter Ruhe; Overshoot ist positive Spitze.",
+    tags: ["aktionspotenzial"]
+  },
+  {
+    id: "q4-123",
+    chapter_id: 4,
+    stem_md: "Refraktärphasen – welche Aussagen stimmen?",
+    options: [
+      { id: "a", label: "a", md: "Absolute Refraktärphase: kein AP möglich (Na+‑Kanäle inaktiviert).", isCorrect: true },
+      { id: "b", label: "b", md: "Relative Refraktärphase: AP nur bei stärkerem Reiz.", isCorrect: true },
+      { id: "c", label: "c", md: "Erklären u. a. die unidirektionale Fortleitung.", isCorrect: true },
+      { id: "d", label: "d", md: "Refraktärphasen treten nur in Dendriten auf.", isCorrect: false }
+    ],
+    explanation_md: "Nach Aktivierung folgt Inaktivierung/Erholung; verhindert Rücklauf des APs.",
+    tags: ["aktionspotenzial"]
+  },
+  {
+    id: "q4-124",
+    chapter_id: 4,
+    stem_md: "Leitung – unmyelinisiert vs. myelinisiert: korrekt ist…",
+    options: [
+      { id: "a", label: "a", md: "Unmyelinisiert: kontinuierliche, langsamere Fortleitung.", isCorrect: true },
+      { id: "b", label: "b", md: "Myelinisiert: saltatorische Leitung mit schnellerer Weitergabe.", isCorrect: true },
+      { id: "c", label: "c", md: "Myelinisierte Axone benötigen keine Na+‑Kanäle.", isCorrect: false },
+      { id: "d", label: "d", md: "In Myelinsegmenten findet keine aktive Regeneration statt.", isCorrect: true }
+    ],
+    explanation_md: "Aktive Regeneration an Schnürringen; Segmente leiten passiv.",
+    tags: ["leitung"]
+  },
+  {
+    id: "q4-125",
+    chapter_id: 4,
+    stem_md: "Chemische Synapse – Ablauf korrekt?",
+    options: [
+      { id: "a", label: "a", md: "AP in Terminale → Öffnen spannungsabhängiger Ca2+‑Kanäle.", isCorrect: true },
+      { id: "b", label: "b", md: "Ca2+‑Einstrom → Vesikel‑Exozytose → Transmitter im Spalt.", isCorrect: true },
+      { id: "c", label: "c", md: "Transmitter binden Rezeptoren → Ionenkanäle öffnen → EPSP/IPSP.", isCorrect: true },
+      { id: "d", label: "d", md: "Transmitter bleiben dauerhaft im Spalt.", isCorrect: false }
+    ],
+    explanation_md: "Nach Rezeptoraktivierung werden Transmitter abgebaut, wiederaufgenommen oder von Glia entfernt.",
+    tags: ["synapse"]
+  },
+  {
+    id: "q4-126",
+    chapter_id: 4,
+    stem_md: "Elektrische Synapse (gap junction) – was trifft zu?",
+    options: [
+      { id: "a", label: "a", md: "Sehr schnelle Übertragung kleiner Moleküle/Ionen.", isCorrect: true },
+      { id: "b", label: "b", md: "Meist bidirektional.", isCorrect: true },
+      { id: "c", label: "c", md: "Im ZNS deutlich häufiger als chemische Synapsen.", isCorrect: false },
+      { id: "d", label: "d", md: "Kommt ganz ohne Zellkontakt aus.", isCorrect: false }
+    ],
+    explanation_md: "Elektrische Synapsen koppeln Zellen direkt; im ZNS dominieren dennoch chemische Synapsen.",
+    tags: ["synapse"]
+  },
+  {
+    id: "q4-127",
+    chapter_id: 4,
+    stem_md: "Neurotransmitter – korrekte Paare?",
+    options: [
+      { id: "a", label: "a", md: "Glutamat: wichtigster exzitatorischer Transmitter; Lernen/Gedächtnis.", isCorrect: true },
+      { id: "b", label: "b", md: "GABA: wichtigster inhibitorischer Transmitter; Benzodiazepine wirken anxiolytisch.", isCorrect: true },
+      { id: "c", label: "c", md: "Dopamin: Motivation/Belohnung, Motorik; M. Parkinson = Dopaminmangel.", isCorrect: true },
+      { id: "d", label: "d", md: "Acetylcholin: ausschließlich peripher, ohne kognitive Funktionen.", isCorrect: false }
+    ],
+    explanation_md: "ACh wirkt an motorischer Endplatte und zentral (Kognition/Schlaf). Serotonin/NA ergänzen das Bild.",
+    tags: ["transmitter"]
+  },
+  {
+    id: "q4-128",
+    chapter_id: 4,
+    stem_md: "ZNS vs. PNS; somatisches vs. autonomes NS – was stimmt?",
+    options: [
+      { id: "a", label: "a", md: "ZNS: Gehirn und Rückenmark; Integration/Koordination.", isCorrect: true },
+      { id: "b", label: "b", md: "PNS: außerhalb von Schädel/Wirbelsäule; somatisch (Sinnesinput↔Skelettmuskeln).", isCorrect: true },
+      { id: "c", label: "c", md: "Autonomes NS: Organe/Drüsen (Sympathikus/Parasympathikus).", isCorrect: true },
+      { id: "d", label: "d", md: "Somatisches NS steuert Drüsenautoregulation.", isCorrect: false }
+    ],
+    explanation_md: "Somatisch = willkürlich/motorisch/sensorisch; autonom = vegetativ (Sympathikus/Parasympathikus).",
+    tags: ["zns","pns"]
+  },
+  {
+    id: "q4-129",
+    chapter_id: 4,
+    stem_md: "Rückenmark – welche Aussagen sind korrekt?",
+    options: [
+      { id: "a", label: "a", md: "Graue Substanz H‑förmig (Hinterhörner sensorisch, Vorderhörner motorisch).", isCorrect: true },
+      { id: "b", label: "b", md: "Weiße Substanz: aufsteigende/absteigende Bahnen.", isCorrect: true },
+      { id: "c", label: "c", md: "Spinalganglion enthält Zellkörper sensorischer Neurone.", isCorrect: true },
+      { id: "d", label: "d", md: "Reflexe benötigen zwingend die Großhirnrinde.", isCorrect: false }
+    ],
+    explanation_md: "Reflexe können auf Rückenmarksebene verschaltet sein (z. B. Patellarsehne).",
+    tags: ["rückenmark"]
+  },
+  {
+    id: "q4-130",
+    chapter_id: 4,
+    stem_md: "Dermatome – richtige Aussagen?",
+    options: [
+      { id: "a", label: "a", md: "Jeder Spinalnerv versorgt ein Hautareal (Dermatom), überlappende Innervation inklusive.", isCorrect: true },
+      { id: "b", label: "b", md: "Schädigung eines Spinalnervs führt nie zu Sensibilitätsveränderungen.", isCorrect: false },
+      { id: "c", label: "c", md: "Dermatome veranschaulichen die somatotopische Organisation peripherer Innervation.", isCorrect: true },
+      { id: "d", label: "d", md: "Dermatome existieren nur an den Beinen.", isCorrect: false }
+    ],
+    explanation_md: "Überlappungen verhindern den totalen Ausfall, doch Sensibilität kann beeinträchtigt sein.",
+    tags: ["dermatom"]
+  },
+  {
+    id: "q4-131",
+    chapter_id: 4,
+    stem_md: "Entwicklungsaufteilung des Gehirns – was passt?",
+    options: [
+      { id: "a", label: "a", md: "Prosencephalon → Telencephalon (Großhirn) und Diencephalon (Zwischenhirn).", isCorrect: true },
+      { id: "b", label: "b", md: "Rhombencephalon → Metencephalon (Hinterhirn) und Myelencephalon (Nachhirn).", isCorrect: true },
+      { id: "c", label: "c", md: "Mesencephalon = Mittelhirn.", isCorrect: true },
+      { id: "d", label: "d", md: "Prosencephalon entwickelt sich zum Rückenmark.", isCorrect: false }
+    ],
+    explanation_md: "Die drei primären Hirnbläschen differenzieren in die genannten Strukturen.",
+    tags: ["entwicklung"]
+  },
+  {
+    id: "q4-132",
+    chapter_id: 4,
+    stem_md: "Lappenfunktionen – welche Zuordnungen stimmen?",
+    options: [
+      { id: "a", label: "a", md: "Frontal: Planung, Sprache, Sozialverhalten, Motorik.", isCorrect: true },
+      { id: "b", label: "b", md: "Parietal: Somatosensorik, räumliche Orientierung/Aufmerksamkeit.", isCorrect: true },
+      { id: "c", label: "c", md: "Temporal: Hören, Gedächtnis (Hippocampus), Emotion (Amygdala), Objekterkennung.", isCorrect: true },
+      { id: "d", label: "d", md: "Okzipital: primär auditorische Verarbeitung.", isCorrect: false }
+    ],
+    explanation_md: "Okzipital ist primär visuell; auditiv liegt v. a. temporal.",
+    tags: ["cortex"]
+  },
+  {
+    id: "q4-133",
+    chapter_id: 4,
+    stem_md: "Lateralisation & Split‑Brain – was trifft zu?",
+    options: [
+      { id: "a", label: "a", md: "Linke Hemisphäre ist typischerweise sprachdominant.", isCorrect: true },
+      { id: "b", label: "b", md: "Split‑Brain zeigt Defizite beim Benennen links dargebotener Reize.", isCorrect: true },
+      { id: "c", label: "c", md: "Rechte Hemisphäre ist oft stärker in räumlicher Verarbeitung.", isCorrect: true },
+      { id: "d", label: "d", md: "Durchtrennung des Balkens führt zu totaler Handlungsunfähigkeit.", isCorrect: false }
+    ],
+    explanation_md: "Split‑Brain‑Patient:innen funktionieren erstaunlich gut, zeigen aber lateralitätsabhängige Defizite.",
+    tags: ["lateralisation"]
+  },
+  {
+    id: "q4-134",
+    chapter_id: 4,
+    stem_md: "Autonomes NS – was ist korrekt?",
+    options: [
+      { id: "a", label: "a", md: "Sympathikus: Aktivierung (Puls/Atmung↑, Verdauung↓).", isCorrect: true },
+      { id: "b", label: "b", md: "Parasympathikus: Erholung/Normalbetrieb (Puls↓, Verdauung↑).", isCorrect: true },
+      { id: "c", label: "c", md: "Sympathikus/Parasympathikus wirken identisch.", isCorrect: false },
+      { id: "d", label: "d", md: "Autonomes NS steuert ausschließlich Skelettmuskeln.", isCorrect: false }
+    ],
+    explanation_md: "Vegetatives System reguliert Organe/Drüsen; Sympathikus/Parasympathikus sind gegenspielerisch.",
+    tags: ["ans"]
+  },
+  {
+    id: "q4-135",
+    chapter_id: 4,
+    stem_md: "Auge – korrekte Aussagen?",
+    options: [
+      { id: "a", label: "a", md: "Cornea ist gefäßfrei und lichtdurchlässig.", isCorrect: true },
+      { id: "b", label: "b", md: "Iris steuert Pupillendurchmesser (Blende).", isCorrect: true },
+      { id: "c", label: "c", md: "Linse akkommodiert für Nah/Fern.", isCorrect: true },
+      { id: "d", label: "d", md: "Blinder Fleck: Dichte an Photorezeptoren besonders hoch.", isCorrect: false }
+    ],
+    explanation_md: "Am blinden Fleck tritt der Sehnerv aus; dort fehlen Photorezeptoren.",
+    tags: ["auge"]
+  },
+  {
+    id: "q4-136",
+    chapter_id: 4,
+    stem_md: "Retina – welche Aussagen sind korrekt?",
+    options: [
+      { id: "a", label: "a", md: "Signalweg: Photorezeptoren → Bipolarzellen → Ganglienzellen (Axone = Sehnerv).", isCorrect: true },
+      { id: "b", label: "b", md: "Horizontal/Amakrinzellen modulieren die Verschaltung.", isCorrect: true },
+      { id: "c", label: "c", md: "Müller‑Glia leitet Licht durch die Retina.", isCorrect: true },
+      { id: "d", label: "d", md: "Photorezeptoren liegen direkt an der Glaskörperseite ohne weitere Schichten.", isCorrect: false }
+    ],
+    explanation_md: "Rezeptoren liegen retinal ‚außen‘; darüber transparente Zellschichten.",
+    tags: ["retina"]
+  },
+  {
+    id: "q4-137",
+    chapter_id: 4,
+    stem_md: "Stäbchen vs. Zapfen – richtige Zuordnung?",
+    options: [
+      { id: "a", label: "a", md: "Stäbchen: sehr lichtempfindlich, Dämmerungssehen, keine Farbe.", isCorrect: true },
+      { id: "b", label: "b", md: "Zapfen: Farb‑/Detailsehen bei Helligkeit; drei Zapfentypen.", isCorrect: true },
+      { id: "c", label: "c", md: "Fovea enthält besonders viele Zapfen.", isCorrect: true },
+      { id: "d", label: "d", md: "Im Auge gibt es mehr Zapfen als Stäbchen.", isCorrect: false }
+    ],
+    explanation_md: "Stäbchen überwiegen zahlenmäßig; Fovea ist zapfenreich für maximale Schärfe.",
+    tags: ["zapfen","stäbchen"]
+  },
+  {
+    id: "q4-138",
+    chapter_id: 4,
+    stem_md: "Farbwahrnehmung & Rot‑Grün‑Schwäche – korrekt ist…",
+    options: [
+      { id: "a", label: "a", md: "Farbe resultiert aus relativer Aktivität von drei Zapfentypen.", isCorrect: true },
+      { id: "b", label: "b", md: "Rot‑Grün‑Schwäche: Verschiebung/Fehlen von Zapfentypen; häufiger bei Männern (X‑chromosomal).", isCorrect: true },
+      { id: "c", label: "c", md: "Betroffene sind vollständig farbenblind (immer).", isCorrect: false },
+      { id: "d", label: "d", md: "Ishihara‑Tafeln geben Hinweise auf Rot‑Grün‑Schwäche.", isCorrect: true }
+    ],
+    explanation_md: "Die häufigste Farbfehlsichtigkeit betrifft Rot/Grün; vollständige Achromatopsie ist selten.",
+    tags: ["farbe"]
+  },
+  {
+    id: "q4-139",
+    chapter_id: 4,
+    stem_md: "Sehbahn – welche Aussagen sind korrekt?",
+    options: [
+      { id: "a", label: "a", md: "Nasale Fasern kreuzen im Chiasma opticum (kontralateral).", isCorrect: true },
+      { id: "b", label: "b", md: "Rechtes CGL erhält Information aus dem linken Gesichtsfeld beider Augen.", isCorrect: true },
+      { id: "c", label: "c", md: "Retinotope Organisation ist im CGL erhalten.", isCorrect: true },
+      { id: "d", label: "d", md: "Foveale Information ist im CGL proportional unterrepräsentiert.", isCorrect: false }
+    ],
+    explanation_md: "Fovea ist überproportional repräsentiert; retinotope Karten bleiben erhalten.",
+    tags: ["sehbahn"]
+  },
+  {
+    id: "q4-140",
+    chapter_id: 4,
+    stem_md: "Primärer visueller Cortex (V1) – was trifft zu?",
+    options: [
+      { id: "a", label: "a", md: "Lokalisation im Okzipitallappen; retinotop organisiert.", isCorrect: true },
+      { id: "b", label: "b", md: "Orientierungs‑ und richtungssensitive Neurone (Hubel & Wiesel).", isCorrect: true },
+      { id: "c", label: "c", md: "V1 verarbeitet nur auditorische Informationen.", isCorrect: false },
+      { id: "d", label: "d", md: "Es existieren weitere visuelle Areale (V2, V3 …) für komplexere Verarbeitung.", isCorrect: true }
+    ],
+    explanation_md: "V1 ist das primäre visuelle Areal; höhere visuelle Areale verarbeiten komplexere Merkmale.",
+    tags: ["v1","visuell"]
+  },
+  // Kapitel 5 – Allgemeine Psychologie (36 MCQs, multi-correct, keine Teilpunkte)
+  {
+    id: "q5-101",
+    chapter_id: 5,
+    stem_md: "Was kennzeichnet die Allgemeine Psychologie (präzise Abgrenzung)?",
+    options: [
+      { id: "a", label: "a", md: "Untersucht grundlegende, universelle Funktionen bei gesunden Erwachsenen.", isCorrect: true },
+      { id: "b", label: "b", md: "Fokussiert individuelle Unterschiede als Hauptziel.", isCorrect: false },
+      { id: "c", label: "c", md: "Betont Gemeinsamkeiten statt Unterschiede.", isCorrect: true },
+      { id: "d", label: "d", md: "Bezieht sich primär auf kindliche Entwicklung über die Lebensspanne.", isCorrect: false }
+    ],
+    explanation_md: "Allgemeine Psychologie sucht allgemeine Gesetzmäßigkeiten (Gemeinsamkeiten) bei gesunden Erwachsenen; Differenzielle/Entwicklungspsychologie fokussieren Unterschiede bzw. Veränderungen.",
+    tags: ["definition","abgrenzung"]
+  },
+  {
+    id: "q5-102",
+    chapter_id: 5,
+    stem_md: "Kognitive Wende – welche Aussagen treffen zu?",
+    options: [
+      { id: "a", label: "a", md: "Stellte mentale Repräsentationen/Informationsverarbeitung ins Zentrum.", isCorrect: true },
+      { id: "b", label: "b", md: "War eine Gegenreaktion auf behavioristische Reduktion auf Beobachtbares.", isCorrect: true },
+      { id: "c", label: "c", md: "Lehnte Experimente als Methode ab.", isCorrect: false },
+      { id: "d", label: "d", md: "Verknüpfte Psychologie stärker mit Neurowissenschaften.", isCorrect: true }
+    ],
+    explanation_md: "Die kognitive Wende etablierte mentale Prozesse als Untersuchungsgegenstand und nutzte experimentelle/neurowissenschaftliche Methoden.",
+    tags: ["kognitiv","wende"]
+  },
+  {
+    id: "q5-103",
+    chapter_id: 5,
+    stem_md: "Prozesskette der Inputverarbeitung (Abb. 5.2) – welche Stationen gehören dazu?",
+    options: [
+      { id: "a", label: "a", md: "Aufnahme sensorischer Reize und Aufmerksamkeitsselektion.", isCorrect: true },
+      { id: "b", label: "b", md: "Einbettung in Vorwissen/Erwartungen, Emotion/Motivation.", isCorrect: true },
+      { id: "c", label: "c", md: "Klassifikation, Urteilen/Entscheiden und Handlung.", isCorrect: true },
+      { id: "d", label: "d", md: "Reine Reflexbögen ohne kognitive Einflüsse.", isCorrect: false }
+    ],
+    explanation_md: "Die Kette umfasst sensorische Aufnahme → Aufmerksamkeit → Top‑down‑Einflüsse → Bewertung/Entscheidung → Handlung; Sprache erlaubt Ausdruck.",
+    tags: ["prozess","aufmerksamkeit"]
+  },
+  {
+    id: "q5-104",
+    chapter_id: 5,
+    stem_md: "Drei Stufen der Wahrnehmung – korrekte Zuordnung?",
+    options: [
+      { id: "a", label: "a", md: "Sensorische Empfindung: Transduktion über Sinnesrezeptoren.", isCorrect: true },
+      { id: "b", label: "b", md: "Wahrnehmung i. e. S.: integriertes Perzept als mentales Abbild.", isCorrect: true },
+      { id: "c", label: "c", md: "Klassifikation: Zuordnung zu bekannten Kategorien.", isCorrect: true },
+      { id: "d", label: "d", md: "Klassifikation ist Teil der Biologischen und nicht der Allgemeinen Psychologie.", isCorrect: false }
+    ],
+    explanation_md: "Stufe 1 (sensorisch) ist eher bio‑psychologisch verankert; Stufe 2/3 sind Kern der Allgemeinen Psychologie.",
+    tags: ["wahrnehmung"]
+  },
+  {
+    id: "q5-105",
+    chapter_id: 5,
+    stem_md: "Top‑down‑Einflüsse auf Wahrnehmung – was trifft zu?",
+    options: [
+      { id: "a", label: "a", md: "Vorwissen, Erwartungen, Bewertungen und Emotionen lenken Aufmerksamkeit.", isCorrect: true },
+      { id: "b", label: "b", md: "Wahrnehmung ist vollständig stimulusgetrieben (Bottom‑up only).", isCorrect: false },
+      { id: "c", label: "c", md: "Angst kann Aufmerksamkeitsfokus auf bedrohliche Reize verengen.", isCorrect: true },
+      { id: "d", label: "d", md: "Vorerfahrungen haben keinen Einfluss auf Klassifikation.", isCorrect: false }
+    ],
+    explanation_md: "Top‑down‑Signale (Vorwissen, Ziele, Emotion) prägen Selektion und Interpretation der Reize.",
+    tags: ["aufmerksamkeit","topdown"]
+  },
+  {
+    id: "q5-106",
+    chapter_id: 5,
+    stem_md: "Psychophysik – Schwellenkonzepte korrekt beschrieben?",
+    options: [
+      { id: "a", label: "a", md: "Absolutschwelle: kleinste Reizintensität, die entdeckt wird.", isCorrect: true },
+      { id: "b", label: "b", md: "Unterschiedsschwelle: minimaler Intensitätsunterschied zur Differenzierung.", isCorrect: true },
+      { id: "c", label: "c", md: "Unterschiedsschwelle ist unabhängig von Ausgangsintensität.", isCorrect: false },
+      { id: "d", label: "d", md: "Schwellen werden oft über die psychometrische Funktion (50%‑Kriterium) bestimmt.", isCorrect: true }
+    ],
+    explanation_md: "Die Unterschiedsschwelle variiert mit der Ausgangsintensität; Schwellen werden probabilistisch (z. B. 50% erkannt) definiert.",
+    tags: ["psychophysik","schwelle"]
+  },
+  {
+    id: "q5-107",
+    chapter_id: 5,
+    stem_md: "Methoden der Schwellenmessung – was passt?",
+    options: [
+      { id: "a", label: "a", md: "Grenzmethode: auf‑/absteigende Reizfolgen, Detektion ja/nein.", isCorrect: true },
+      { id: "b", label: "b", md: "Konstanzmethode: zufällige Reihenfolge vordefinierter Intensitäten.", isCorrect: true },
+      { id: "c", label: "c", md: "Beide Methoden erlauben Schätzung der psychometrischen Funktion.", isCorrect: true },
+      { id: "d", label: "d", md: "Konstanzmethode setzt stets Augenbewegungen als Maß ein.", isCorrect: false }
+    ],
+    explanation_md: "Beide Methoden erfassen Entdeckungswahrscheinlichkeiten; Konstanzmethode präsentiert Intensitäten randomisiert.",
+    tags: ["psychophysik","methoden"]
+  },
+  {
+    id: "q5-108",
+    chapter_id: 5,
+    stem_md: "Signalentdeckungstheorie – korrekte Aussagen?",
+    options: [
+      { id: "a", label: "a", md: "Detektion hängt von Sensitivität und Entscheidungskriterium ab.", isCorrect: true },
+      { id: "b", label: "b", md: "Vier Ausgänge: Treffer, Verpasser, falscher Alarm, korrekte Zurückweisung.", isCorrect: true },
+      { id: "c", label: "c", md: "Antworttendenzen (Ja/Nein‑Bias) beeinflussen Treffer/Falschalarme.", isCorrect: true },
+      { id: "d", label: "d", md: "Die Theorie postuliert eine harte, absolute Schwelle ohne Subjektivität.", isCorrect: false }
+    ],
+    explanation_md: "SDT ersetzt harte Schwellen durch Sensitivität + Kriterium; Bias verschiebt die Entscheidung.",
+    tags: ["sdt","aufmerksamkeit"]
+  },
+  {
+    id: "q5-109",
+    chapter_id: 5,
+    stem_md: "Unaufmerksamkeitsblindheit – was wird damit gezeigt?",
+    options: [
+      { id: "a", label: "a", md: "Unerwartete Reize bleiben bei fokussierter Aufmerksamkeit oft unbemerkt.", isCorrect: true },
+      { id: "b", label: "b", md: "Aufmerksamkeit bestimmt maßgeblich, was bewusst wird.", isCorrect: true },
+      { id: "c", label: "c", md: "Ohne Aufmerksamkeit ist Sehen identisch mit Bewusstsein.", isCorrect: false },
+      { id: "d", label: "d", md: "Das Phänomen lässt sich nicht experimentell demonstrieren.", isCorrect: false }
+    ],
+    explanation_md: "Das Gorilla‑Experiment illustriert, dass Fokus Verarbeitungskapazität bindet und Unerwartetes ausblendet.",
+    tags: ["aufmerksamkeit"]
+  },
+  {
+    id: "q5-110",
+    chapter_id: 5,
+    stem_md: "Endogene vs. exogene Aufmerksamkeit – richtige Zuordnung und Dynamik?",
+    options: [
+      { id: "a", label: "a", md: "Endogen: willentlich, wissens-/erwartungsgetrieben; wirkt ab ~200 ms und länger.", isCorrect: true },
+      { id: "b", label: "b", md: "Exogen: reizgetrieben (peripheres Aufleuchten), wirkt bereits ~50 ms und kürzer.", isCorrect: true },
+      { id: "c", label: "c", md: "Exogene Hinweise halten typischerweise länger an als endogene.", isCorrect: false },
+      { id: "d", label: "d", md: "Endogene Hinweise benötigen Verarbeitung der Bedeutung (z. B. Pfeil).", isCorrect: true }
+    ],
+    explanation_md: "Exogen = früh/kurz; endogen = später/länger. Endogene Cues erfordern semantische Verarbeitung.",
+    tags: ["aufmerksamkeit","cueing"]
+  },
+  {
+    id: "q5-111",
+    chapter_id: 5,
+    stem_md: "Posners Cueing‑Paradigma – typische Befunde?",
+    options: [
+      { id: "a", label: "a", md: "Reaktionszeiten: valide < neutral < invalide.", isCorrect: true },
+      { id: "b", label: "b", md: "Fixation verhindert, dass Augenbewegungen die Effekte erklären.", isCorrect: true },
+      { id: "c", label: "c", md: "Hinweise beeinflussen Wahrnehmung nicht messbar.", isCorrect: false },
+      { id: "d", label: "d", md: "Endogene Cues sind bei sehr kurzen SOAs (< 100 ms) maximal wirksam.", isCorrect: false }
+    ],
+    explanation_md: "Valide Cues beschleunigen, invalide verzögern Reaktionen; endogene Effekte brauchen hinreichende SOA und halten länger an.",
+    tags: ["cueing","aufmerksamkeit"]
+  },
+  {
+    id: "q5-112",
+    chapter_id: 5,
+    stem_md: "Selektive Aufmerksamkeit – was illustrieren Cocktailparty, dichotisches Hören, Split‑Span?",
+    options: [
+      { id: "a", label: "a", md: "Aufmerksamkeitsfokus ermöglicht Verfolgen eines Kanals trotz Störkulisse.", isCorrect: true },
+      { id: "b", label: "b", md: "Nichtbeachtete Inhalte werden identisch gut erinnert wie beachtete.", isCorrect: false },
+      { id: "c", label: "c", md: "Ohrweise Wiedergabe (Split‑Span) ist leichter als paarweise.", isCorrect: true },
+      { id: "d", label: "d", md: "Eigener Name auf dem unbeachteten Kanal kann Aufmerksamkeit umreißen.", isCorrect: true }
+    ],
+    explanation_md: "Frühe Selektion nach physikalischen Merkmalen; Salienz (eigener Name) kann Filter durchbrechen.",
+    tags: ["selektiv","hören"]
+  },
+  {
+    id: "q5-113",
+    chapter_id: 5,
+    stem_md: "Farbtheorien – welche Aussagen sind korrekt?",
+    options: [
+      { id: "a", label: "a", md: "Dreifarbentheorie: drei Zapfentypen mit unterschiedlichen Spektralsensitivitäten.", isCorrect: true },
+      { id: "b", label: "b", md: "Gegenfarbentheorie: gegensätzliche Paare (Rot–Grün, Blau–Gelb, Schwarz–Weiß).", isCorrect: true },
+      { id: "c", label: "c", md: "Gegenfarbentheorie erklärt Komplementär‑Nachbilder.", isCorrect: true },
+      { id: "d", label: "d", md: "Beide Theorien widersprechen sich vollständig und können nicht koexistieren.", isCorrect: false }
+    ],
+    explanation_md: "Theorien ergänzen sich: Zapfenebene (Trichromasie) vs. nachgeschaltete opponentische Kodierung.",
+    tags: ["farbe"]
+  },
+  {
+    id: "q5-114",
+    chapter_id: 5,
+    stem_md: "Tiefenwahrnehmung – welche Hinweise sind korrekt zugeordnet?",
+    options: [
+      { id: "a", label: "a", md: "Monokular: Linienperspektive, relative Größe, Verdeckung, atmosphärische Perspektive.", isCorrect: true },
+      { id: "b", label: "b", md: "Binokular: Querdisparation, Konvergenz; Akkommodation liefert vor allem Nahhinweise.", isCorrect: true },
+      { id: "c", label: "c", md: "Autostereogramme beruhen auf Disparitätsauswertung.", isCorrect: true },
+      { id: "d", label: "d", md: "Ames‑Raum nutzt unveränderte, korrekte Tiefenhinweise.", isCorrect: false }
+    ],
+    explanation_md: "Ames verzerrt Tiefenhinweise und erzeugt dadurch Größentäuschungen.",
+    tags: ["tiefe","hinweise"]
+  },
+  {
+    id: "q5-115",
+    chapter_id: 5,
+    stem_md: "Visuelle Pfade – ursprüngliches vs. Goodale‑&‑Milner‑Modell?",
+    options: [
+      { id: "a", label: "a", md: "Ursprünglich: ventral = Was (Objekterkennung), dorsal = Wo (Ort/Raum).", isCorrect: true },
+      { id: "b", label: "b", md: "Goodale/Milner: ventral = Vision for Perception, dorsal = Vision for Action.", isCorrect: true },
+      { id: "c", label: "c", md: "Empirie: doppelte Dissoziationen stützen die Aufgabentrennung.", isCorrect: true },
+      { id: "d", label: "d", md: "Beide Modelle verneinen funktionale Spezialisierung vollständig.", isCorrect: false }
+    ],
+    explanation_md: "Daten aus Läsionen/Experimenten belegen Pfadunterschiede (Erkennen vs. Handlungssteuerung).",
+    tags: ["visuell","pfade"]
+  },
+  {
+    id: "q5-116",
+    chapter_id: 5,
+    stem_md: "Lernen – psychologische Definition korrekt abgegrenzt?",
+    options: [
+      { id: "a", label: "a", md: "Relativ überdauernde Verhaltensänderung/‑potenzial basierend auf Erfahrung.", isCorrect: true },
+      { id: "b", label: "b", md: "Schließt Reifung/Ermüdung/Drogen als Ursache aus.", isCorrect: true },
+      { id: "c", label: "c", md: "Ist deterministisch und zeigt sich sofort als Leistung.", isCorrect: false },
+      { id: "d", label: "d", md: "Hängt vom Kontext ab und ist probabilistisch.", isCorrect: true }
+    ],
+    explanation_md: "Lernen erzeugt Potenziale; Leistung ist kontext‑ und zeitabhängig.",
+    tags: ["lernen","definition"]
+  },
+  {
+    id: "q5-117",
+    chapter_id: 5,
+    stem_md: "Nicht‑assoziatives Lernen – was trifft zu?",
+    options: [
+      { id: "a", label: "a", md: "Habituation: Reaktionsabnahme auf wiederholte, irrelevante Reize.", isCorrect: true },
+      { id: "b", label: "b", md: "Sensitivierung: gesteigerte Reaktionsbereitschaft v. a. bei aversiven Reizen.", isCorrect: true },
+      { id: "c", label: "c", md: "Beide benötigen die Verknüpfung von CS und UCS.", isCorrect: false },
+      { id: "d", label: "d", md: "Beide gelten als nicht‑assoziativ, da keine Reizkopplung nötig ist.", isCorrect: true }
+    ],
+    explanation_md: "Habituation/Sensitivierung verändern Reaktionsstärke ohne CS–UCS‑Assoziation.",
+    tags: ["lernen","nichtassoziativ"]
+  },
+  {
+    id: "q5-118",
+    chapter_id: 5,
+    stem_md: "Klassische Konditionierung – Begriffe korrekt zuordnen (UCS/CS/UCR/CR)?",
+    options: [
+      { id: "a", label: "a", md: "UCS löst vor Konditionierung UCR aus.", isCorrect: true },
+      { id: "b", label: "b", md: "CS gepaart mit UCS → CS allein löst CR aus.", isCorrect: true },
+      { id: "c", label: "c", md: "CR = identisch mit UCR in jeder Hinsicht.", isCorrect: false },
+      { id: "d", label: "d", md: "Ohne Paarung kann ein neutraler Reiz zum CS werden.", isCorrect: false }
+    ],
+    explanation_md: "Paarung transformiert neutralen Reiz zum CS; CR kann UCR ähneln, ist aber nicht per se identisch.",
+    tags: ["konditionierung"]
+  },
+  {
+    id: "q5-119",
+    chapter_id: 5,
+    stem_md: "Erwerb, Löschung, Spontanremission – richtige Aussagen?",
+    options: [
+      { id: "a", label: "a", md: "Erwerb: wiederholte CS–UCS‑Paarung stärkt CR.", isCorrect: true },
+      { id: "b", label: "b", md: "Löschung: CS ohne UCS → Abschwächung/Verschwinden der CR.", isCorrect: true },
+      { id: "c", label: "c", md: "Spontanremission: gelöschte CR kann nach Pause vorübergehend wieder erscheinen.", isCorrect: true },
+      { id: "d", label: "d", md: "Löschung ist reines Vergessen der vorherigen Assoziation.", isCorrect: false }
+    ],
+    explanation_md: "Löschung gilt als neues Lernen (‚CS kündigt UCS nicht mehr an‘), nicht bloßes Vergessen.",
+    tags: ["konditionierung"]
+  },
+  {
+    id: "q5-120",
+    chapter_id: 5,
+    stem_md: "Generalisierung vs. Diskrimination – korrekt mit Beispiel?",
+    options: [
+      { id: "a", label: "a", md: "Generalisierung: ähnliche Reize lösen CR aus (z. B. Felltiere nach Konditionierung auf Ratte).", isCorrect: true },
+      { id: "b", label: "b", md: "Diskrimination: nur spezieller Reiz löst CR aus (Training notwendig).", isCorrect: true },
+      { id: "c", label: "c", md: "Diskrimination ist ohne Training spontan maximal ausgeprägt.", isCorrect: false },
+      { id: "d", label: "d", md: "Generalisierung dient u. a. Sicherheit, da Reize in Natur variieren.", isCorrect: true }
+    ],
+    explanation_md: "Ähnlichkeit fördert Generalisierung; Diskrimination wird erlernt, wenn nur der spezifische Reiz kündigt.",
+    tags: ["konditionierung"]
+  },
+  {
+    id: "q5-121",
+    chapter_id: 5,
+    stem_md: "Operante Konditionierung – Gesetz des Effekts/Skinners Beiträge?",
+    options: [
+      { id: "a", label: "a", md: "Handlungen mit befriedigenden Konsequenzen treten häufiger auf (Thorndike).", isCorrect: true },
+      { id: "b", label: "b", md: "Skinner analysierte Verhalten systematisch in der operanten Kammer.", isCorrect: true },
+      { id: "c", label: "c", md: "Konsequenzen sind für Wiederauftreten eines Verhaltens irrelevant.", isCorrect: false },
+      { id: "d", label: "d", md: "Basisrate und Verstärkungsphase sind typische Schritte der Prozedur.", isCorrect: true }
+    ],
+    explanation_md: "Operantes Lernen verknüpft Verhalten mit Konsequenzen; systematische Verstärkung formt Verhalten.",
+    tags: ["operant","thorndike","skinner"]
+  },
+  {
+    id: "q5-122",
+    chapter_id: 5,
+    stem_md: "Verstärkung und Bestrafung – welche Kombinationen sind korrekt?",
+    options: [
+      { id: "a", label: "a", md: "Positive Verstärkung: angenehmer Reiz hinzu → Verhalten ↑.", isCorrect: true },
+      { id: "b", label: "b", md: "Negative Verstärkung: aversiver Reiz weg → Verhalten ↑.", isCorrect: true },
+      { id: "c", label: "c", md: "Positive Bestrafung: aversiver Reiz hinzu → Verhalten ↓.", isCorrect: true },
+      { id: "d", label: "d", md: "Negative Bestrafung: angenehmer Reiz weg → Verhalten ↓.", isCorrect: true }
+    ],
+    explanation_md: "Vier‑Felder‑Schema: Verstärkung erhöht, Bestrafung senkt Auftretenswahrscheinlichkeit; ‚positiv/negativ‘ bezieht sich auf Hinzufügen/Entfernen von Reizen.",
+    tags: ["operant","verstärkung"]
+  },
+  {
+    id: "q5-123",
+    chapter_id: 5,
+    stem_md: "Primäre vs. sekundäre Verstärker – was passt?",
+    options: [
+      { id: "a", label: "a", md: "Primär: befriedigen biologische Bedürfnisse (z. B. Nahrung, Wasser).", isCorrect: true },
+      { id: "b", label: "b", md: "Sekundär: erlernte Bedeutung via Konditionierung (z. B. Geld, Token).", isCorrect: true },
+      { id: "c", label: "c", md: "Sekundäre Verstärker sind ohne Lernvorgang wirksam.", isCorrect: false },
+      { id: "d", label: "d", md: "Personen/Anerkennung können als Verstärker fungieren.", isCorrect: true }
+    ],
+    explanation_md: "Sekundäre Verstärker wirken über gelernte Verknüpfungen (z. B. Geld → Zugang zu Primärverstärkern).",
+    tags: ["operant","verstärker"]
+  },
+  {
+    id: "q5-124",
+    chapter_id: 5,
+    stem_md: "Operante Löschung & Spontanerholung – korrekte Aussagen?",
+    options: [
+      { id: "a", label: "a", md: "Ohne Verstärkung fällt Verhalten auf Ausgangsniveau zurück.", isCorrect: true },
+      { id: "b", label: "b", md: "Nach Pause kann Verhalten kurzfristig wieder auftreten (Spontanerholung).", isCorrect: true },
+      { id: "c", label: "c", md: "Spontanerholung ist ein dauerhafter Effekt ohne erneute Verstärkung.", isCorrect: false },
+      { id: "d", label: "d", md: "Erneute Verstärkung beschleunigt Wiederaufbau des Verhaltens.", isCorrect: true }
+    ],
+    explanation_md: "Löschung senkt Auftretenswahrscheinlichkeit; Spontanerholung ist temporär; erneute Verstärkung stabilisiert erneut.",
+    tags: ["operant"]
+  },
+  {
+    id: "q5-125",
+    chapter_id: 5,
+    stem_md: "Beobachtungslernen (Bandura) – was zeigen die Bobo‑Doll‑Studien?",
+    options: [
+      { id: "a", label: "a", md: "Kinder imitieren beobachtetes Verhalten, v. a. wenn es belohnt wird.", isCorrect: true },
+      { id: "b", label: "b", md: "Stellvertretende Konsequenzen (Belohnung/Tadel) steuern Imitation.", isCorrect: true },
+      { id: "c", label: "c", md: "Ohne jeden Anlass zeigen Kinder nie modellähnliches Verhalten.", isCorrect: false },
+      { id: "d", label: "d", md: "Lernen erfolgt auch ohne direkte Verstärkung am eigenen Verhalten.", isCorrect: true }
+    ],
+    explanation_md: "Modelllernen ist kognitiv/sozial eingebettet; Konsequenzen am Modell beeinflussen Ausführung.",
+    tags: ["beobachtungslernen","bandura"]
+  },
+  {
+    id: "q5-126",
+    chapter_id: 5,
+    stem_md: "Gedächtnisprozess – welche Phasen und Störquellen sind korrekt?",
+    options: [
+      { id: "a", label: "a", md: "Enkodierung: Aufnahme/Kodierung; Störung durch geringe Aufmerksamkeit/Tiefe.", isCorrect: true },
+      { id: "b", label: "b", md: "Speicherung: Aufrechterhaltung/Konsolidierung über Zeit.", isCorrect: true },
+      { id: "c", label: "c", md: "Abruf: Wiederauffinden; Kontext/Hinweise/Zustände beeinflussen Erfolg.", isCorrect: true },
+      { id: "d", label: "d", md: "Störungen können nur beim Abruf auftreten.", isCorrect: false }
+    ],
+    explanation_md: "Fehlerquellen existieren auf allen drei Stufen; Müdigkeit/Kontextwechsel schaden dem Abruf.",
+    tags: ["gedächtnis","prozess"]
+  },
+  {
+    id: "q5-127",
+    chapter_id: 5,
+    stem_md: "Drei‑Speicher‑Modell – korrekte Aussagen/Kritik?",
+    options: [
+      { id: "a", label: "a", md: "Sensorischer Speicher (ikonisch/echoisch) ist extrem kurzlebig.", isCorrect: true },
+      { id: "b", label: "b", md: "Kurzzeitbereich lässt sich allein über Wiederholung aufrechterhalten.", isCorrect: true },
+      { id: "c", label: "c", md: "Strikte Trennung KZG/LZG ist unstrittig und empirisch gesichert.", isCorrect: false },
+      { id: "d", label: "d", md: "Faktoren wie Wortfrequenz/Konkretheit sprechen für Wechselwirkung von KZG und LZG.", isCorrect: true }
+    ],
+    explanation_md: "Das Modell ist nützlich, aber zu simpel bzgl. KZG/LZG‑Wechselwirkung; Befunde zeigen direkte LZG‑Einflüsse auf kurzfristige Leistung.",
+    tags: ["gedächtnis","drei-speicher"]
+  },
+  {
+    id: "q5-128",
+    chapter_id: 5,
+    stem_md: "Arbeitsgedächtnis (Baddeley) – Komponenten/Funktionen korrekt?",
+    options: [
+      { id: "a", label: "a", md: "Zentrale Exekutive: Aufmerksamkeitssteuerung/Koordination.", isCorrect: true },
+      { id: "b", label: "b", md: "Phonologische Schleife: sprachbasierte Informationen.", isCorrect: true },
+      { id: "c", label: "c", md: "Visuell‑räumlicher Notizblock: visuelle/räumliche Informationen.", isCorrect: true },
+      { id: "d", label: "d", md: "Episodischer Puffer: Bindeglied/Multimodalität zwischen Systemen.", isCorrect: true }
+    ],
+    explanation_md: "Vier Komponenten tragen unterschiedliche Inhalte; Doppelaufgaben belegen selektive Interferenzmuster.",
+    tags: ["arbeitsgedächtnis"]
+  },
+  {
+    id: "q5-129",
+    chapter_id: 5,
+    stem_md: "Dual‑Task‑Befunde – welche Schlussfolgerung ist korrekt?",
+    options: [
+      { id: "a", label: "a", md: "Gleichzeitige Aufgaben stören selektiv passende Subsysteme.", isCorrect: true },
+      { id: "b", label: "b", md: "Artikulatorische Suppression beeinträchtigt v. a. visuell‑räumliche Aufgaben.", isCorrect: false },
+      { id: "c", label: "c", md: "Visuell‑räumliche Zusatzaufgaben verschlechtern visuell‑räumliches Problemlösen.", isCorrect: true },
+      { id: "d", label: "d", md: "Die zentrale Exekutive wird selten benötigt.", isCorrect: false }
+    ],
+    explanation_md: "Interferenzen sind modalitätsspezifisch; zentrale Exekutive ist bei komplexen Aufgaben/Koordination gefordert.",
+    tags: ["arbeitsgedächtnis","dual-task"]
+  },
+  {
+    id: "q5-130",
+    chapter_id: 5,
+    stem_md: "Millersche Zahl & Chunking – was folgt daraus?",
+    options: [
+      { id: "a", label: "a", md: "Typische Kapazität ≈ 7±2 Einheiten im Kurzzeit-/Arbeitsgedächtnis.", isCorrect: true },
+      { id: "b", label: "b", md: "Chunking erhöht effektive Informationsmenge pro Einheit.", isCorrect: true },
+      { id: "c", label: "c", md: "Chunking ist nur bei Zahlenfolgen möglich.", isCorrect: false },
+      { id: "d", label: "d", md: "Kapazität ist fix und unveränderlich.", isCorrect: false }
+    ],
+    explanation_md: "Gruppierung reduziert Last pro Einheit; Kapazität variiert mit Material/Strategien.",
+    tags: ["arbeitsgedächtnis","chunking"]
+  },
+  {
+    id: "q5-131",
+    chapter_id: 5,
+    stem_md: "Langzeitgedächtnis – Systeme korrekt zugeordnet?",
+    options: [
+      { id: "a", label: "a", md: "Explizit: semantisch (Fakten) und episodisch (Ereignisse).", isCorrect: true },
+      { id: "b", label: "b", md: "Implizit/non‑deklarativ: prozedural, Konditionierung, Priming, Habituation.", isCorrect: true },
+      { id: "c", label: "c", md: "Explizit ist identisch mit prozeduralem Gedächtnis.", isCorrect: false },
+      { id: "d", label: "d", md: "Fall H.M. zeigt Dissoziation: schwer gestörtes explizites Lernen bei intakten prozeduralen Lernleistungen.", isCorrect: true }
+    ],
+    explanation_md: "H.M. stützt Trennung von expliziten und impliziten Systemen (Hippocampus‑Abhängigkeit des Expliziten).",
+    tags: ["lzg","hm"]
+  },
+  {
+    id: "q5-132",
+    chapter_id: 5,
+    stem_md: "Enkodierspezifität – welche Aussagen sind korrekt?",
+    options: [
+      { id: "a", label: "a", md: "Abruf gelingt besser, wenn Abrufkontext dem Enkodierkontext ähnelt.", isCorrect: true },
+      { id: "b", label: "b", md: "Gilt für äußere Kontexte (Ort) und innere Zustände (Stimmung).", isCorrect: true },
+      { id: "c", label: "c", md: "Passung ist irrelevant, wenn die Verarbeitungstiefe hoch war.", isCorrect: false },
+      { id: "d", label: "d", md: "Effekt ist empirisch mit Taucher‑Studien belegt (Baddeley/Godden).", isCorrect: true }
+    ],
+    explanation_md: "Kontext wird mitkodiert und dient als Abrufhinweis; Passung verbessert Leistung.",
+    tags: ["enkodierspezifität"]
+  },
+  {
+    id: "q5-133",
+    chapter_id: 5,
+    stem_md: "Serieller Positionseffekt – Primacy/Recency korrekt erklärt?",
+    options: [
+      { id: "a", label: "a", md: "Wörter am Listenanfang/‑ende werden besser erinnert als in der Mitte.", isCorrect: true },
+      { id: "b", label: "b", md: "Primacy: häufigeres Rehearsal/Einbettung begünstigt frühen Teil.", isCorrect: true },
+      { id: "c", label: "c", md: "Recency: Elemente sind noch im Kurzzeitbereich/zeitlich diskriminierbarer.", isCorrect: true },
+      { id: "d", label: "d", md: "Effekt ist nur bei sehr langen Listen zu beobachten.", isCorrect: false }
+    ],
+    explanation_md: "Beide Ränder profitieren aus unterschiedlichen Gründen; der Effekt ist robust.",
+    tags: ["seriell","effekt"]
+  },
+  {
+    id: "q5-134",
+    chapter_id: 5,
+    stem_md: "Vergessenskurve (Ebbinghaus) – zentrale Aussage/Implikation?",
+    options: [
+      { id: "a", label: "a", md: "Starker Abfall kurz nach dem Lernen, dann flacher Verlauf.", isCorrect: true },
+      { id: "b", label: "b", md: "Ersparnismethode zeigt, dass Restspuren verbleiben.", isCorrect: true },
+      { id: "c", label: "c", md: "Spacing/Wiederauffrischen sind sinnlos gegen Vergessen.", isCorrect: false },
+      { id: "d", label: "d", md: "Kurve legt nahe, früh zu wiederholen und Wiederholungen zu verteilen.", isCorrect: true }
+    ],
+    explanation_md: "Frühe Auffrischung und verteiltes Üben stabilisieren Gedächtnisspuren.",
+    tags: ["vergessen","ebbinghaus"]
+  },
+  {
+    id: "q5-135",
+    chapter_id: 5,
+    stem_md: "Interferenz – proaktiv vs. retroaktiv korrekt unterschieden?",
+    options: [
+      { id: "a", label: "a", md: "Proaktiv: Altes stört Neues (Spanisch → Italienisch).", isCorrect: true },
+      { id: "b", label: "b", md: "Retroaktiv: Neues stört Altes (Chemie nach Physiklernen stört Physikabruf).", isCorrect: true },
+      { id: "c", label: "c", md: "Interferenzen sind keine relevante Ursache für Vergessen.", isCorrect: false },
+      { id: "d", label: "d", md: "Beide Effekte sind in vielen Alltagssituationen beobachtbar.", isCorrect: true }
+    ],
+    explanation_md: "Interferenz ist ein Hauptgrund für Vergessen; Richtungsbezug (alt→neu vs. neu→alt) unterscheidet die Effekte.",
+    tags: ["interferenz"]
+  },
+  {
+    id: "q5-136",
+    chapter_id: 5,
+    stem_md: "Sprache im Prozess der Inputverarbeitung – welche Aussagen sind korrekt?",
+    options: [
+      { id: "a", label: "a", md: "Sprache dient der Versprachlichung/Kommunikation mentaler Prozesse.", isCorrect: true },
+      { id: "b", label: "b", md: "Sie ist vollständig unabhängig von Wahrnehmung/Entscheidung.", isCorrect: false },
+      { id: "c", label: "c", md: "Sie erlaubt es, Bewertungen/Entscheidungen mitzuteilen und zu koordinieren.", isCorrect: true },
+      { id: "d", label: "d", md: "Im Modell (Abb. 5.2) kann Sprache als Output/Meta‑Prozess verortet werden.", isCorrect: true }
+    ],
+    explanation_md: "Sprache ist eng mit kognitiven Prozessen verschränkt und macht interne Verarbeitung sozial teilbar.",
+    tags: ["sprache","prozess"]
+  },
   ...[3,4,5,6,7,8].flatMap((cid) => {
     const base = (i: number) => ({
       id: `q${cid}-${i}`,
@@ -1337,4 +2917,282 @@ export const chapter2SummarySteps: { title: string; body: string }[] = [
 // Map ergänzen
 summaryByChapter[2] = chapter2SummarySteps
 
+// Schrittweise Zusammenfassung – Kapitel 3 (≈ 24–26 Steps ≈ 25 Minuten Lesedauer)
+export const chapter3SummarySteps: { title: string; body: string }[] = [
+  {
+    title: "Kompass & Überblick",
+    body:
+      "Kapitel 3 führt in Forschung und Methodenlehre ein: Unterschied Alltags- vs. Wissenschaftspsychologie, Standards der Wissenschaftlichkeit, Forschungsprozess (Fragen → Planung → Experiment/Erhebung → Statistik), Operationalisierung, Stichproben/Designs sowie Grundzüge des Experiments und der deskriptiven Statistik."
+  },
+  {
+    title: "Alltag vs. Wissenschaft",
+    body:
+      "Alltagspsychologie stützt sich auf individuelle Erfahrungen und ‚Lebensweisheiten‘; die wissenschaftliche Psychologie prüft Aussagen systematisch mit Methoden, zielt auf prüfbare, replizierbare Befunde – häufig entgegen dem Bauchgefühl."
+  },
+  {
+    title: "Heuristiken (Faustregeln)",
+    body:
+      "Heuristiken erlauben schnelle Urteile unter Zeit-/Informationsmangel (z. B. Repräsentativitätsheuristik). Nützlich, aber fehleranfällig: zwei Wurfserien K–K–K–K–K vs. K–Z–Z–K–Z sind gleich wahrscheinlich, obwohl eine ‚typischer‘ wirkt."
+  },
+  {
+    title: "Kognitive Verzerrungen: Rückschaufehler",
+    body:
+      "Hindsight Bias: Im Nachhinein erscheint der Ausgang ‚vorhersehbar‘ (ich wusste es schon immer). Verzerrt Lernen aus Ergebnissen und überschätzt Sicherheit eigener Urteile."
+  },
+  {
+    title: "Kognitive Verzerrungen: Confirmation Bias",
+    body:
+      "Bestätigungsfehler: Bevorzugtes Suchen/Deuten bestätigender Infos; widersprechende Hinweise werden abgewertet (z. B. selektive Lektüre zu Lieblingsfußballteam)."
+  },
+  {
+    title: "Kritisches Denken",
+    body:
+      "Erster Schritt zur Wissenschaftlichkeit: systematisch fragen – Woher stammt die Info? Was ist genau gemeint? Welche Evidenz liegt vor? – statt Heuristiken/Intuition."
+  },
+  {
+    title: "Wissenschaftliche Methode & Methodenlehre",
+    body:
+      "Methodenlehre liefert Regeln/Techniken, um präzise, möglichst fehlerarme Aussagen zu gewinnen und Alltagsfehler zu minimieren: passend wählen, korrekt anwenden, sauber dokumentieren."
+  },
+  {
+    title: "Vier Standards der Wissenschaftlichkeit",
+    body:
+      "(1) Forschungsproblem empirisch/theoretisch tragfähig, (2) passender, methodenstrenger Forschungsprozess, (3) Ethik (keine Täuschung/Schädigung/Datenmanipulation), (4) vollständige, nachvollziehbare Dokumentation (Replizierbarkeit)."
+  },
+  {
+    title: "Replikation & Open Science",
+    body:
+      "Direkte und konzeptionelle Replikationen prüfen Befunde; Replikationskrise → mehr Transparenz (Präregistrierung, Daten/Materialien teilen) zur Stärkung der Vertrauenswürdigkeit."
+  },
+  {
+    title: "Qualitätskriterien einer Studie",
+    body:
+      "Relevanz (Erkenntnisgewinn/Anwendung), methodische Strenge (geeignete, regelkonforme Methoden), ethische Strenge, Präsentationsqualität (klare Berichte). Qualität entsteht im Zusammenspiel."
+  },
+  {
+    title: "Quantitativ vs. qualitativ",
+    body:
+      "Quantitativ: Messung/Vergleich von Gruppen, Hypothesenprüfung, Statistik. Qualitativ: sinnverstehend/interpretativ, offene Antworten. Wahl abhängig von Paradigma und Fragestellung."
+  },
+  {
+    title: "Hypothesenprüfender Prozess (7 Schritte)",
+    body:
+      "(1) Frage, (2) Theorie & Hypothesen, (3) Operationalisierung & Planung, (4) Erhebung, (5) Aufbereitung/Analyse, (6) Interpretation/Diskussion, (7) Publikation/Präsentation."
+  },
+  {
+    title: "Theorien vs. Hypothesen",
+    body:
+      "Theorie: geordnete Begriffe/Aussagen zur Erklärung/Vorhersage. Hypothese: konkrete, prüfbare Vermutung (z. B. aus Piaget abgeleitet: ‚< 2 Jahre → keine Objektpermanenz‘). Zyklus: prüfen → Theorie weiterentwickeln oder anpassen."
+  },
+  {
+    title: "Anforderungen an Hypothesen",
+    body:
+      "Präzise, widerspruchsfrei, prinzipiell widerlegbar (falsifizierbar), operationalisierbar und begründbar (Stand der Forschung). Vor der Datenerhebung formulieren."
+  },
+  {
+    title: "Hypothesentypen: Unterschied",
+    body:
+      "Ungeri chtet: Gruppen unterscheiden sich. Gerichtet: Richtung spezifiziert (z. B. Linkshändigkeit häufiger bei Männern als Frauen)."
+  },
+  {
+    title: "Hypothesentypen: Zusammenhang",
+    body:
+      "Kovariation zweier Variablen (positiv/negativ). Achtung: Korrelation ≠ Kausalität. Für Kausalität zusätzlich nötig: zeitliche Vorordnung und Ausschluss Alternativerklärungen."
+  },
+  {
+    title: "Hypothesentypen: Veränderung",
+    body:
+      "Veränderung über Zeit (gleiche Personen, mehrere Messzeitpunkte), ungerichtet/gerichtet (z. B. Symptomatik sinkt nach Therapie)."
+  },
+  {
+    title: "Operationalisierung: Merkmale → Variablen",
+    body:
+      "Latente Merkmale (nicht direkt messbar) benötigen manifeste Indikatoren und Messinstrumente. Beispiel Stress: subjektive Skala 0–10, Puls, Hormone. Festlegen WAS und WIE gemessen wird."
+  },
+  {
+    title: "Messinstrumente & Gütekriterien",
+    body:
+      "Instrumentwahl (Fragebogen, Test, Apparatur). Güte: Objektivität (durchführungs-/auswertungs-/interpretationsunabhängig), Reliabilität (Zuverlässigkeit), Validität (misst, was es messen soll)."
+  },
+  {
+    title: "Skalenniveaus (Informationsgehalt)",
+    body:
+      "Nominal (Kategorien, z. B. Nationalität), Ordinal (Rangordnung, z. B. Bildungsabschluss), Intervall (Abstände, z. B. °C, psych. Eigenschaften), Verhältnis/Ratio (Abstände + natürlicher Nullpunkt, z. B. Reaktionszeit, Kelvin)."
+  },
+  {
+    title: "Diskret vs. kontinuierlich",
+    body:
+      "Diskret: abzählbare Kategorien (nominal/ordinal). Kontinuierlich: beliebige Werte auf Kontinuum (intervall/ratio). Antwortformat kann latente Quantität diskret machen (vorgegebene Kategorien) oder kontinuierlich (offene Zahl)."
+  },
+  {
+    title: "Population, Stichprobe, Repräsentativität",
+    body:
+      "Population = Zielmenge; Stichprobe = untersuchte Teilmenge. Repräsentativität sichert Übertragbarkeit (externe Validität). Zufallsstichprobe ideal, Praxis oft Gelegenheitsstichprobe → Selection Bias möglich. Stichprobengröße: hinreichend, aber ressourcenschonend."
+  },
+  {
+    title: "Studiendesigns & Settings",
+    body:
+      "Between- vs. Within-Subjects; Labor (Kontrolle) vs. Feld (Alltagsnähe). Interne Validität (kausal eindeutig) vs. externe Validität (Übertragbarkeit) – oft Trade-off."
+  },
+  {
+    title: "Experiment: Kernelemente",
+    body:
+      "UV wird systematisch variiert (manipuliert), AV gemessen; Störvariablen kontrollieren/balancieren. Randomisierung (Zufallszuteilung) zentral; ohne Randomisierung → Quasi-Experiment. Parallelisieren bei kleinen N möglich."
+  },
+  {
+    title: "Erwartungseffekte & Kontrolle",
+    body:
+      "Reaktivität/Hawthorne: Beobachtetwerden verändert Verhalten. Placebo/Nocebo: Erwartungen wirken. Rosenthal-Effekt: Erwartungen der Leitung. Gegenmittel: Coverstory (ethisch prüfen), schwer verfälschbare/implizite Maße, Blind-/Doppelblind-Designs."
+  },
+  {
+    title: "Deskriptive Statistik: Häufigkeiten",
+    body:
+      "Absolute/relative/prozentuale Häufigkeiten (diskrete Variablen), Gruppierung bei kontinuierlichen Variablen, Histogramme. Immer angeben, welche Häufigkeitsart berichtet wird."
+  },
+  {
+    title: "Zentral- & Streuungsmaße",
+    body:
+      "Modalwert, Median, arithm. Mittel (ab Intervall). Streuung: Interquartilsabstand, Varianz, Standardabweichung. Median robust gegen Ausreißer; Mittel nicht."
+  },
+  {
+    title: "Zusammenhang: r richtig lesen",
+    body:
+      "Kovarianz → standardisiert zu r ∈ [−1,1]. r ≈ 0: kein linearer Zusammenhang; |r| hoch: starkerer linearer Trend. r quantifiziert Zusammenhang, belegt aber keine Kausalität."
+  }
+]
+
+// Map ergänzen
+summaryByChapter[3] = chapter3SummarySteps
+
+// Kompakter Review (≈ 15 Minuten) – Kapitel 3
+export const chapter3ReviewSteps: { title: string; body: string }[] = [
+  { title: "Kompass: Warum Methodenlehre?", body: "Sie minimiert Alltagsfehler (Heuristiken/Verzerrungen) und ermöglicht prüfbare, replizierbare Erkenntnisse." },
+  { title: "Alltag vs. Wissenschaft", body: "Alltag: erfahrungsbasiert, heuristisch. Wissenschaft: systematisch, theoriegeleitet, replizierbar." },
+  { title: "Heuristiken & Verzerrungen", body: "Repräsentativitätstäuschung; Hindsight Bias; Confirmation Bias – nützlich, aber fehleranfällig." },
+  { title: "Standards der Wissenschaftlichkeit", body: "(1) Tragfähiges Problem, (2) passender Prozess, (3) Ethik, (4) vollständige Dokumentation/Replikation." },
+  { title: "Replikation & Qualität", body: "Direkt/konzeptionell; Replikationskrise → Transparenz. Qualität = Relevanz + method./eth. Strenge + klare Berichte." },
+  { title: "Forschungsprozess (7 Schritte)", body: "Frage → Theorie/Hypothesen → Operationalisierung/Planung → Erhebung → Aufbereitung/Analyse → Interpretation → Publikation." },
+  { title: "Hypothesen – Anforderungen", body: "Präzise, widerspruchsfrei, falsifizierbar, operationalisierbar, begründet (Stand der Forschung)." },
+  { title: "Hypothesentypen", body: "Unterschied (Gruppen), Zusammenhang (Kovariation), Veränderung (Zeit; gleiche Personen)." },
+  { title: "Kausalität – 3 Bedingungen", body: "Kovariation, Ursache zeitlich vor Wirkung, Ausschluss Alternativerklärungen (Kontrolle)." },
+  { title: "Operationalisierung & Variablen", body: "Latent → manifeste Indikatoren + Messinstrument; Variable = operationalisiertes Merkmal." },
+  { title: "Gütekriterien", body: "Objektivität (Unabhängigkeit), Reliabilität (Zuverlässigkeit), Validität (misst das intendierte Konstrukt)." },
+  { title: "Skalen & Variablen", body: "Nominal/Ordinal/Intervall/Verhältnis; diskret vs. kontinuierlich; Antwortformat beeinflusst Messniveau." },
+  { title: "Stichprobe & Repräsentativität", body: "Population vs. Stichprobe; Zufall ideal, Gelegenheitsstichprobe praktisch → Selection Bias möglich." },
+  { title: "Design/Settings", body: "Between vs. Within; Labor (Kontrolle) vs. Feld (Alltagsnähe); interne vs. externe Validität." },
+  { title: "Experiment & Kontrolle", body: "UV manipulieren, AV messen; Konstanthalten/Balancieren/Randomisieren; Blind/Doppelblind gegen Erwartungen." },
+  { title: "Deskriptive Statistik", body: "Häufigkeiten; Lage (Modalwert, Median, Mittel); Streuung (IQA, Varianz, SD)." },
+  { title: "Korrelation r", body: "r ∈ [−1,1]; Stärke/Richtung linearer Zusammenhang; beweist keine Kausalität." }
+]
+
+// Optional: Registry für kompakte Reviews
+export const reviewSummaryByChapter: Record<number, { title: string; body: string }[]> = {
+  3: chapter3ReviewSteps
+}
+
+
+// Schrittweise Zusammenfassung – Kapitel 4 (≈ 25 Minuten Lesedauer)
+export const chapter4SummarySteps: { title: string; body: string }[] = [
+  { title: "Kompass & Überblick", body: "Biologische Psychologie: erforscht körperliche/neurale Grundlagen psychischer Prozesse. Themen: Neuron/Glia, Ruhe-/Aktionspotenzial, Synapse/Transmitter, Aufbau ZNS/PNS, visuelles System." },
+  { title: "Warum Biologie in Psychologie?", body: "Psychische Phänomene beruhen auf biologischen Prozessen (Gene, Nerven-, Hormon- und Immunsystem). Andere Teilgebiete (z. B. Klinische, Allgemeine) stützen sich darauf." },
+  { title: "Leitfragen des Fachs (Beispiele)", body: "Wie gelangen Sinnesinfos ins Gehirn? Wie wirken Drogen? Was bewirken Hormone/Stress? Welche Prozesse ermöglichen Lernen/Gedächtnis? Wozu dienen Schlaf/Träume?" },
+  { title: "Begriffe abgrenzen", body: "Biologische Psychologie = Biopsychologie (synonym). Teil der Neurowissenschaften (interdisziplinär). Psychobiologie: biologisches Teilgebiet mit Fokus auf psychologische Auswirkungen biologischer Prozesse." },
+  { title: "Hauptbereiche (1): Physiologische Psychologie", body: "Direkte Eingriffe/Stimulationsmethoden (teils Tiermodelle), um neuronale Mechanismen des Verhaltens kausal zu prüfen." },
+  { title: "Hauptbereiche (2): Neuropsychologie", body: "Folgen von Hirnschädigungen beim Menschen; Diagnostik, Reha; Ableitung von Funktions‑Lokalisation und kognitiven Architekturen." },
+  { title: "Hauptbereiche (3): Psychophysiologie", body: "Nicht‑invasive Messung (EEG, EMG, EOG, EKG). Typische Themen: Stress, Emotion, Rhythmen. Körperreaktionen ↔ psychische Prozesse." },
+  { title: "Hauptbereiche (4): Kognitive Neurowissenschaft", body: "Neuronale Grundlagen von Kognition (Wahrnehmung, Gedächtnis, Sprache) – v. a. Bildgebung (fMRT, MRT), auch MEG/EEG, TMS." },
+  { title: "Hauptbereiche (5): Psychopharmakologie", body: "Medikamente/Drogen beeinflussen Aktivität/Verhalten; Entwicklung neuer Wirkstoffe; interdisziplinär (Psychologie, Medizin, Pharmakologie)." },
+  { title: "Hauptbereiche (6): Vergleichende Psychologie", body: "Vergleich von Spezies → Evolution, Genetik, adaptive Verhaltensweisen; Tiermodelle als Brücke zum Menschen." },
+  { title: "Fallstudie: Phineas Gage", body: "Stangenunfall (1848) zerstört linken vorderen Frontallappen → intakte Sprache/Intelligenz, aber massive Persönlichkeits‑/Impulskontrollprobleme → Beitrag zur Funktionsspezialisierung (Präfrontalcortex)." },
+  { title: "Fallstudie: Patient ‚Tan‘ (Broca)", body: "Broca fand Läsion im linken Frontallappen (Broca‑Areal) bei Störung der Sprachproduktion (Broca‑Aphasie), Sprachverständnis weitgehend erhalten → Lokalisation sprachlicher Funktionen." },
+  { title: "Neuron – Grundbaustein", body: "Soma (Zellkern/Organellen), Dendriten (Empfang), Axon (Weiterleitung), Axonterminale (Synapse). Typen: sensorisch, Inter‑, Motorneurone; Vielfalt in Form/Länge/Verzweigung." },
+  { title: "Gliazellen – mehr als Stütze", body: "Astrozyten (Stoffwechsel, Blut‑Hirn‑Schranke), Oligodendrozyten/Schwann‑Zellen (Myelin), Mikroglia (Immunfunktion), Müller‑Zellen (Retina). Beeinflussen Signalumgebung, Transmitter, Ionenhaushalt." },
+  { title: "Myelin & Ranvier‑Schnürringe", body: "Myelin isoliert Axone → schnellere saltatorische Leitung. Ranvier‑Schnürringe als ‚Sprungpunkte‘. MS: Autoimmun → Demyelinisierung, Leitungsstörungen (Sehen, Motorik, Sensibilität)." },
+  { title: "Ruhepotenzial (≈ −70 mV)", body: "Ungleiche Ionenverteilung (Na+ außen, K+ innen, Cl− außen), selektive Permeabilität, Diffusions‑ und Potenzialgradient, Na+/K+‑Pumpe (3 Na+ raus/2 K+ rein) stabilisieren Ruhe." },
+  { title: "Exzitation vs. Inhibition", body: "EPSP (Depolarisation Richtung Schwelle) ↑ Feuerrate; IPSP (Hyperpolarisation) ↓ Feuerrate. Summation am Axonhügel entscheidet über Aktionspotenzial (Alles‑oder‑Nichts, Schwelle ca. −55 mV)." },
+  { title: "Aktionspotenzial – Phasen", body: "Spannungsgesteuerte Na+‑Kanäle öffnen → Aufstrich/Overshoot (~+50 mV); Na+ inaktiviert; verzögert öffnen K+‑Kanäle → Repolarisation; Nachpotenzial/relative Refraktärphase; Refraktär verhindert Rücklauf." },
+  { title: "Fortleitung am Axon", body: "Kontinuierlich (unmyelinisiert) vs. saltatorisch (myelinisiert). In Myelinsegmenten passiv, an Schnürringen aktive Regeneration (viele Na+‑Kanäle). Abstand der Schnürringe begrenzt." },
+  { title: "Synapse – chemische Übertragung", body: "AP in Terminale → spannungsabhängige Ca2+‑Kanäle öffnen → Exozytose aus Vesikeln → Transmitter in Spalt → postsynaptische Rezeptoren öffnen Kanäle → EPSP/IPSP → Abbau/Rückaufnahme/Glia‑Aufnahme." },
+  { title: "Elektrische Synapsen", body: "Gap Junctions (kanalbildende Verbindungen) ermöglichen sehr schnelle, meist bidirektionale Übertragung kleiner Moleküle/Ionen; im ZNS seltener als chemische." },
+  { title: "Neurotransmitter – Überblick", body: "Glutamat (exzitatorisch; Lernen/Gedächtnis), GABA (inhibitorisch; Anxiolyse via Benzodiazepine), Dopamin (Belohnung/Motivation, Motorik; M. Parkinson = Dopaminmangel), Serotonin (Emotion/SSRI), Acetylcholin (motorische Endplatte, Kognition/Schlaf), Noradrenalin (Erregung/Alertness)." },
+  { title: "ZNS vs. PNS", body: "ZNS: Gehirn, Rückenmark (Integration/Koordination). PNS: außerhalb von Schädel/Wirbelsäule; somatisches (Sinnesinput ↔ Skelettmuskeln) und autonomes NS (Organe/Drüsen)." },
+  { title: "Rückenmark – Aufbau & Reflexe", body: "Graue Substanz (H‑förmig: Hinter‑/Vorderhörner), weiße Substanz (auf‑/absteigende Bahnen). Spinalnerven/Dermatome. Reflexe (z. B. Patellarsehne) auch ohne Kortexbeteiligung." },
+  { title: "Gehirn – Entwicklungsgliederung", body: "Aus Neuralrohr: Prosencephalon (→ Telencephalon/Diencephalon), Mesencephalon, Rhombencephalon (→ Metencephalon/Myelencephalon)." },
+  { title: "Nachhirn/Medulla oblongata", body: "Zentrum lebenswichtiger Funktionen (Atmung, Herz, Blutdruck); Kreuzung vieler Bahnen (Kontralateralität). Läsionen oft letal." },
+  { title: "Hinterhirn: Pons & Cerebellum", body: "Pons als Durchgang/Schaltstelle. Cerebellum koordiniert Motorik/Feinabstimmung (Eingänge aus RM, Gleichgewicht, Kortex)." },
+  { title: "Mittelhirn – Tectum/Tegmentum", body: "Tectum: visuo‑/audit. Reflexe; Tegmentum: periaquäduktales Grau (Schmerz), Substantia nigra (Dopamin, Bewegung)." },
+  { title: "Zwischenhirn – Thalamus/Hypothalamus", body: "Thalamus: sensorisches Relais (außer Geruch), CGL für Sehen. Hypothalamus: Homöostase, Hormone (Hypophyse), motivationale Steuerung (Essen, Schlaf, Sexualität)." },
+  { title: "Großhirn – Cortex & Balken", body: "Telencephalon: zwei Hemisphären, verbunden via Corpus callosum; Cortex stark gefaltet (graue Substanz 2–5 mm)." },
+  { title: "Vier Lappen – Kerndefinitionen", body: "Frontal (Planung, Sprache, Sozialverhalten, Motorik), Parietal (Somatosensorik, Raum/Aufmerksamkeit), Temporal (Hören, Objekterkennung; Hippocampus/Amygdala), Okzipital (Sehen)." },
+  { title: "Lateralisation & Split‑Brain", body: "Hemisphären teilen Arbeit (Sprache oft links, Raum eher rechts); Split‑Brain zeigt getrennte Verarbeitung bei durchtrenntem Balken (z. B. Benennprobleme für links dargebotene Reize)." },
+  { title: "Autonomes NS: Sympathikus/Parasympathikus", body: "Sympathikus: Aktivierung (‚fight/flight‘: Puls, Atmung ↑, Verdauung ↓). Parasympathikus: Erholung/Normalbetrieb (Puls ↓, Verdauung ↑)." },
+  { title: "Visuelles System – Auge (Anatomie)", body: "Äußere/innere Häute: Cornea/Hornhaut (lichtdurchlässig), Iris/Pupille (Blende), Linse (Akkommodation), Glaskörper, Retina (Photorezeptoren), Sehnerv (Blinder Fleck)." },
+  { title: "Retina – Zellschichten", body: "Photorezeptoren (Stäbchen/Zapfen) → Bipolarzellen → Ganglienzellen (Axone bilden Sehnerv); Horizontal-/Amakrinzellen modulieren. Müller‑Glia leitet Licht." },
+  { title: "Stäbchen vs. Zapfen", body: "Stäbchen: sehr lichtempfindlich (Dämmerung), keine Farbe. Zapfen: Farb‑/Detailsehen bei Helligkeit; drei Typen (blau/grün/rot). Fovea: höchste Schärfe (viele Zapfen)." },
+  { title: "Transduktion & Farbwahrnehmung", body: "Photopigmente im Außenglied → Licht → elektrische Antwort; Farbe aus relativer Aktivität von drei Zapfentypen. Farbfehlsichtigkeit: v. a. Rot‑Grün‑Schwäche (genetisch, häufiger bei Männern)." },
+  { title: "Sehbahn – Chiasma & CGL", body: "Sehnerven vereinigen sich am Chiasma opticum; nasale Fasern kreuzen (kontralateral). Rechtes CGL: linkes Gesichtsfeld (beider Augen), linkes CGL: rechtes Gesichtsfeld. Retinotope Organisation, stärkere Repräsentation Fovea." },
+  { title: "Primärer visueller Cortex (V1)", body: "Lokalisation im Okzipitallappen; retinotop, Schichten/Spalten; orientierungs‑ und richtungssensitive Neurone (Hubel & Wiesel). Weitere ‚höhere‘ Areale (V2, V3 …) für komplexere Verarbeitung." },
+  { title: "Navigationsbegriffe (kurz)", body: "Anterior/posterior, dorsal/ventral, superior/inferior, medial/lateral, ipsi‑/kontralateral – wichtig für Lagebeschreibung (z. B. Sehbahn kreuzt kontralateral)." },
+  { title: "Kernideen vernetzen", body: "Psychische Funktionen entstehen aus verteilten Netzwerken; Lokalisation ist relativ (Aufgaben nutzen viele Areale). Methodenvielfalt + Fallstudien + Bildgebung erklären Zusammenspiel." }
+]
+
+// Map ergänzen
+summaryByChapter[4] = chapter4SummarySteps
+
+// Schrittweise Zusammenfassung – Kapitel 5 (≈ 24–26 Steps ≈ 25 Minuten Lesedauer)
+export const chapter5SummarySteps: { title: string; body: string }[] = [
+  { title: "Kompass & Abgrenzung", body: "Allgemeine Psychologie: grundlegende, universelle psychische Funktionen bei gesunden Erwachsenen. Nicht Differenzielle (Unterschiede), nicht Entwicklungs‑ (Veränderungen), nicht Sozial‑ (Einfluss anderer)." },
+  { title: "Kognitive Wende → Ansatz", body: "Kognitive Psychologie erklärt mentale Prozesse (Aufmerksamkeit, Wahrnehmung, Gedächtnis, Denken/Entscheiden) mit Theorien/Experimenten als Gegenreaktion zum Behaviorismus." },
+  { title: "Prozesskette (Abbildung 5.2)", body: "Reizaufnahme → Aufmerksamkeit/Selektion → Einbettung in Vorwissen/Erwartungen (mentale Modelle) → Emotion/Motivation → Klassifikation/Urteil/Entscheidung → Handlung; Sprache als Ausdruck/Kommunikation." },
+  { title: "Wahrnehmung – 3 Stufen", body: "(1) Sensorische Empfindung (Transduktion) (2) Wahrnehmung i. e. S. (Perzept als integriertes mentales Abbild) (3) Klassifikation in Kategorien (z. B. ‚Arzt/Ärztin‘)." },
+  { title: "Einflussfaktoren", body: "Vorwissen, Vorerfahrung, Bewertungen, Erwartungen und Emotionen lenken Aufmerksamkeit und prägen Wahrnehmung (z. B. Spinnenangst)." },
+  { title: "Psychophysik – Schwellen", body: "Absolutschwelle = kleinste Intensität für Detektion; Unterschiedsschwelle = minimaler Differenzbetrag; abhängig von Ausgangsintensität." },
+  { title: "Methoden der Schwellenmessung", body: "Grenzmethode (auf/absteigend), Konstanzmethode (zufällige Intensitäten) → psychometrische Funktion; 50%‑Kriterium als Schwelle." },
+  { title: "Signalentdeckungstheorie", body: "Detektion = Sensitivität + Entscheidungskriterium (Antworttendenz). Ausgänge: Treffer, Verpasser, falscher Alarm, korrekte Zurückweisung." },
+  { title: "Unaufmerksamkeitsblindheit", body: "Fokus bindet Verarbeitung: Unerwartete, nicht beachtete Ereignisse (‚Gorilla‘) bleiben oft unbemerkt – selektive Aufmerksamkeit definiert Bewusstes." },
+  { title: "Endogen vs. exogen", body: "Endogen: willentlich, wissens-/erwartungsbasiert. Exogen: reizgetrieben (peripheres Aufleuchten, Name). Beide modulieren Wahrnehmung." },
+  { title: "Cueing – Zeitdynamik", body: "Valid < Neutral < Invalid (RT). Endogen wirksam ab ~200 ms, hält länger; exogen wirksam schon ~50 ms, klingt schneller ab." },
+  { title: "Selektive Aufmerksamkeit – Cocktailparty", body: "Zielgerichtetes Folgen eines Kanals trotz Störkulisse; saliente Reize (eigener Name) reißen Aufmerksamkeit um – Kosten beim Rückwechsel." },
+  { title: "Dichotisches Hören / Split‑Span", body: "Beschatteter Kanal wird erinnert, der andere kaum; ohrweise Reproduktion leichter als paarweise → frühe, physikalische Selektion/Trennung." },
+  { title: "Farbe – Dreifarbentheorie", body: "Drei Zapfentypen (spektral sensitiv); jede Farbe aus Mischung; erklärt Farbmischung und viele Fehlsichtigkeiten." },
+  { title: "Farbe – Gegenfarbentheorie", body: "Gegenpaare Rot–Grün, Blau–Gelb, Schwarz–Weiß; gegensinnige Reaktionen erklären Nachbilder und Unmöglichkeit ‚grünliches Rot‘." },
+  { title: "Tiefenwahrnehmung – monokular", body: "Linienperspektive, relative Größe, Verdeckung, atmosphärische Perspektive – starke Hinweise in 2D‑Bildern." },
+  { title: "Tiefenwahrnehmung – binokular", body: "Konvergenz, Akkommodation (nah), Querdisparation → Stereotiefe (Autostereogramme)." },
+  { title: "Ames‑Raum", body: "Manipulierte Tiefenhinweise → falsche Entfernungsschätzung → Größentäuschung (‚Riese vs. Zwerg‘)." },
+  { title: "Zwei visuelle Pfade", body: "Ventral = ‚Was‘ / Vision for Perception (Objekterkennen). Dorsal = ‚Wie‘ / Vision for Action (Greifen/Steuern). Evidenz: doppelte Dissoziationen." },
+  { title: "Lernen – Definition", body: "Erfahrungsbasierte, relativ überdauernde Verhaltensänderung/‑potenzial (nicht Reifung/Ermüdung/Drogen); Auftreten probabilistisch, kontextabhängig." },
+  { title: "Nicht‑assoziativ: Habituation/Sensitivierung", body: "Habituation: Reaktionsabnahme auf wiederholten irrelevanten Reiz. Sensitivierung: Zunahme v. a. bei aversiven Reizen (Alarmfunktion)." },
+  { title: "Klassische Konditionierung – Ablauf", body: "UCS→UCR; CS+UCS‑Paarung → CS→CR. Erwerb; Löschung (CS ohne UCS); Spontanremission; Generalisierung vs. Diskrimination (Training)." },
+  { title: "Operante Konditionierung – Kerne", body: "Gesetz des Effekts (Thorndike): Konsequenzen steuern Häufigkeit. Skinner‑Box: systematische Verstärkung/Bestrafung; Pläne/Signale möglich." },
+  { title: "Verstärkung/Bestrafung – 4‑Feld", body: "Pos./Neg. Verstärkung erhöhen Verhalten (angenehm hinzu vs. unangenehm weg). Pos./Neg. Bestrafung senken Verhalten (unangenehm hinzu vs. angenehm weg)." },
+  { title: "Beobachtungslernen (Bandura)", body: "Imitationslernen; stellvertretende Konsequenzen steuern Ausführung (Belohnung > Tadel). Aktiver Lerner: kognitiv/sozial eingebettet." },
+  { title: "Gedächtnis – Prozess & Modelle", body: "Enkodierung → Speicherung → Abruf. Drei‑Speicher (sensorisch/KZG/LZG) als Rahmen; Arbeitsgedächtnis (Zentrale Exekutive, phonologische Schleife, visuo‑räuml. Notizblock, episodischer Puffer)." },
+  { title: "LZG – Systeme & Effekte", body: "Explizit (semantisch/episodisch) vs. implizit (prozedural, Konditionierung, Priming). Enkodierspezifität (Kontext/Stimmung), serieller Positionseffekt, Vergessenskurve, Interferenz (pro/retro)." }
+]
+
+// Map ergänzen
+summaryByChapter[5] = chapter5SummarySteps
+
+// Kompakter Review (≈ 15 Minuten) – Kapitel 4
+export const chapter4ReviewSteps: { title: string; body: string }[] = [
+  { title: "Worum geht’s?", body: "Biologische Psychologie erklärt psychische Phänomene über neuronale/physiologische Mechanismen; Basis für viele Teilgebiete." },
+  { title: "Teilgebiete kompakt", body: "Physiologisch (kausal via Eingriffe), Neuropsychologie (Läsionen/Diagnostik), Psychophysiologie (EEG, EMG, EKG), Kognitive Neurowiss. (fMRT/EEG/TMS), Psychopharmakologie (Wirkstoffe/Transmitter), Vergleichend (Evolution/Modelle)." },
+  { title: "Schlüsselbefunde: Gage & Broca", body: "Gage: Präfrontal → Impulskontrolle/Planung. Broca: linkes Frontalareal → Sprachproduktion (Aphasie). Evidenz für Spezialisierung." },
+  { title: "Neuron & Glia – Kernrollen", body: "Neuron: Soma, Dendrit, Axon, Terminale. Glia: Astrozyten (BBB/Metabolismus), Oligodendrozyten/Schwann (Myelin), Mikroglia (Immunschutz), Müller‑Zellen (Retina)." },
+  { title: "Myelin & MS", body: "Myelin → schnelle saltatorische Leitung an Ranvier‑Schnürringen; MS = Demyelinisierung (Sehen/Sensibilität/Motorik), oft schubförmig." },
+  { title: "Ruhepotenzial Essentials", body: "~ −70 mV durch Ionengradienten (Na+ außen, K+ innen, Cl− außen), selektive Permeabilität und Na+/K+‑Pumpe (3 Na+ raus/2 K+ rein)." },
+  { title: "AP – Was passiert?", body: "Schwelle ~ −55 mV; Na+‑Aufstrich/Overshoot → Na+‑Inaktivierung → K+‑Repolarisation → Nachpotenzial; Refraktärphasen sichern Richtung." },
+  { title: "Synapse – Chemisch vs. Elektrisch", body: "Chemisch: Ca2+‑getriggerte Exozytose → Rezeptoren → EPSP/IPSP → Abbau/Rückaufnahme/Glia. Elektrisch: gap junctions, sehr schnell, bidirektional (seltener im ZNS)." },
+  { title: "Transmittersysteme – Überblick", body: "Glutamat (exzitatorisch; Lernen), GABA (inhibitorisch; Benzodiazepine), Dopamin (Belohnung/Motorik; Parkinson↓), Serotonin (Emotion; SSRI), ACh (Motorik/Kognition/Schlaf), NA (Erregung/Alertness)." },
+  { title: "ZNS/PNS & Reflexe", body: "ZNS: Gehirn/Rückenmark. PNS: somatisch (Sinnesinput↔Skelettmuskeln) vs. autonom (Sympathikus/Parasympathikus). Reflexe auch spinale Verschaltung (Patellarsehne)." },
+  { title: "Gehirn – Entwicklungslogik", body: "Prosencephalon → Telencephalon/Diencephalon; Mesencephalon; Rhombencephalon → Metencephalon/Myelencephalon." },
+  { title: "Großhirn & Lappen", body: "Cortex (2–5 mm, gefurcht), Balken verbindet Hemisphären. Lappen: Frontal (Planung/Sprache/Motorik), Parietal (Somatosensorik/Raum), Temporal (Hören/Objekte; Hippocampus/Amygdala), Okzipital (Sehen)." },
+  { title: "Lateralisation & Split‑Brain", body: "Sprache meist links; Raum oft rechts. Getrennter Balken → Benennprobleme links dargebotener Reize (rechte Hemisphäre)." },
+  { title: "ANS – Gegenspieler", body: "Sympathikus: Aktivierung (Puls/Atmung↑, Verdauung↓). Parasympathikus: Erholung/Normalbetrieb (Puls↓, Verdauung↑)." },
+  { title: "Auge – Optik & Retina", body: "Cornea (Licht), Iris/Pupille (Blende), Linse (Akkommodation), Retina (Photorezeptoren), blinder Fleck am Sehnerv." },
+  { title: "Stäbchen/Zapfen & Farbe", body: "Stäbchen: Dämmerung, keine Farbe. Zapfen: Farb‑/Detailsehen (3 Typen); Fovea = Schärfe. Rot‑Grün‑Schwäche X‑chromosomal häufiger bei Männern." },
+  { title: "Sehbahn & V1", body: "Nasale Fasern kreuzen (Chiasma); CGL retinotop, Fovea überrepräsentiert; V1 (Okzipital) mit orientierungs-/richtungssensitiven Neuronen; höhere Areale (V2+)." }
+]
+
+// (Registry bereits oben exportiert)
 
