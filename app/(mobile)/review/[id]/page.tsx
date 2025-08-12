@@ -30,6 +30,21 @@ export default function ReviewPage() {
   const total = items.length
   const item = items[idx]
 
+  // Guard against empty review sets to satisfy strict type checking and avoid runtime errors
+  if (!item) {
+    return (
+      <main className="p-4 pb-28 space-y-3">
+        <h1 className="text-xl font-bold">15-Minuten Review (Kapitel {fromChapter})</h1>
+        <Card className="p-4">
+          <div className="text-sm opacity-80">Für dieses Review wurden keine Inhalte gefunden.</div>
+        </Card>
+        <div className="flex justify-between">
+          <Button variant="ghost" onClick={() => router.push("/")}>Zur Übersicht</Button>
+        </div>
+      </main>
+    )
+  }
+
   return (
     <main className="p-4 pb-28 space-y-3">
       <h1 className="text-xl font-bold">15-Minuten Review (Kapitel {fromChapter})</h1>
