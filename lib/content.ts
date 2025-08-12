@@ -223,6 +223,38 @@ export const cards: CardT[] = [
   { id: "c6-2", section_id: "6-1", front_md: "Erikson", back_md: "Krisen über Lebensspanne.", order_index: 2 },
   { id: "c6-3", section_id: "6-1", front_md: "Bindung", back_md: "Sicher vs. unsicher.", order_index: 3 },
   { id: "c6-4", section_id: "6-1", front_md: "Spracherwerb", back_md: "Meilensteine.", order_index: 4 },
+  { id: "c6-5", section_id: "6-1", front_md: "Entwicklungspsychologie – präzise Definition & Spannweite", back_md: "Untersucht Veränderungen über die gesamte Lebensspanne (biologisch, kognitiv, sprachlich, sozial). Nicht nur Kindheit/Jugend, sondern auch Erwachsenen‑ und hohes Alter.", order_index: 5 },
+  { id: "c6-6", section_id: "6-1", front_md: "Lebensspannen‑Phasen (nach Tabelle 6.1) – aufzählen", back_md: "Pränatal; Säuglingsalter (0–1); frühe Kindheit/Kleinkind (1–3); mittlere/späte Kindheit (3–11); Pubertät/Adoleszenz (11–20); frühes EA (20–40); mittleres EA (40–65); hohes EA (65+).", order_index: 6 },
+  { id: "c6-7", section_id: "6-1", front_md: "Anlage vs. Umwelt; Stufen vs. Kontinuität – Kerndebatten", back_md: "Entwicklung durch Gene, Umwelt oder Interaktion? Verläuft sie diskontinuierlich in Stufen (z. B. Piaget) oder kontinuierlich/gradient? Moderne Sicht: Interaktion; Mischformen.", order_index: 7 },
+  { id: "c6-8", section_id: "6-1", front_md: "Pränatale Entwicklung – drei Phasen (benennen + Kern)", back_md: "Germinal (Befruchtung–2. Woche): Zygote, Zellteilung, Einnistung. Embryonal (3.–8. Woche): Spezialisierung, Organanlagen, erster Herzschlag. Fötal (ab 9. Woche bis Geburt): Wachstum/Ausreifung, Schlaf‑Wach, Bewegungen.", order_index: 8 },
+  { id: "c6-9", section_id: "6-1", front_md: "Neuroentwicklung pränatal/früh – zentrale Prozesse", back_md: "Massive Neurogenese (bis ca. 250k Neurone/Minute), Axon-/Dendritenwachstum; in den ersten 2 Jahren: Überproduktion + synaptic pruning (Skulptur‑Prinzip: Rohmasse → Feinform durch Beschneidung).", order_index: 9 },
+  { id: "c6-10", section_id: "6-1", front_md: "Teratogene – Definition & Beispiele", back_md: "Externe Schädiger in der Schwangerschaft (biologisch, physikalisch, chemisch). Beispiele: Infektionen, Luftverschmutzung, ionisierende Strahlung, Alkohol/Drogen, bestimmte Medikamente (z. B. Thalidomid).", order_index: 10 },
+  { id: "c6-11", section_id: "6-1", front_md: "Fetales Alkoholsyndrom (FAS/FASD) – Folgen", back_md: "Spektrum pränataler Alkoholeffekte: Wachstumsstörungen, Gesichtsfehlbildungen, Herzfehler, Bewegungs‑/kognitive Störungen (Konzentration, Lernen). Risiko steigt mit Dosis/Dauer; sensible Phasen besonders gefährdet.", order_index: 11 },
+  { id: "c6-12", section_id: "6-1", front_md: "Sozioökonomie/Stress pränatal – Auswirkungen", back_md: "Niedriger SES, Mangelernährung, Obdachlosigkeit, chronischer Stress/Trauma → ungünstige fetale Umgebung, Risiko für Angst/Depression/AD‑Symptome beim Kind erhöht; Bedeutung pränataler Diagnostik/Interventionen.", order_index: 12 },
+  { id: "c6-13", section_id: "6-1", front_md: "Frühkindliche Reflexe – Such‑ & Saugreflex (Funktion)", back_md: "Automatische, unwillkürliche Reaktionen zur Nahrungsaufnahme: Suchreflex (Berührung Wange → Orientierung zur Quelle), Saugreflex (Aufnahme). Frühkindlich transiente Reflexe (vs. lebenslange z. B. Patellarsehne).", order_index: 13 },
+  { id: "c6-14", section_id: "6-1", front_md: "Frühe Sinnesleistungen & Präferenzen (Mutter)", back_md: "Präferenz für Mutterstimme (Herzrate steigt), Muttergesicht, Muttergeruch; Muttermilchgeruch beruhigt stärker. Visuell: Präferenz für Muster, Bewegung, 3D, Neues, Gesichter (ggü. gesichtsunähnlich).", order_index: 14 },
+  { id: "c6-15", section_id: "6-1", front_md: "Tiefenwahrnehmung – Visuelle Klippe (Befund)", back_md: "Kinder (6–14 Monate) meiden den scheinbaren Abgrund trotz Glasbrücke → frühes Tiefenverständnis. Krabbel‑Erfahrung moduliert Verhalten.", order_index: 15 },
+  { id: "c6-16", section_id: "6-1", front_md: "Deprivation & Gehirn – Entwicklungsfolgen", back_md: "Langandauernde Vernachlässigung/Mangel an Stimulation → verändertes Hirnwachstum, reduzierte kognitive Werte (z. B. IQ). Aktive Interaktion/Anregung fördert Entwicklung.", order_index: 16 },
+  { id: "c6-17", section_id: "6-1", front_md: "Adoleszenz – Hormone & Reifung (Kernpunkte)", back_md: "Mädchen: Östrogen/Progesteron, Menarche (~12 J.). Jungen: Testosteron, Spermache; sekundäre Geschlechtsmerkmale; Wachstumsschübe; psychische Belastbarkeit/Selbstwert teils herausgefordert.", order_index: 17 },
+  { id: "c6-18", section_id: "6-1", front_md: "Erwachsenenalter – körperliche/kognitive Veränderungen", back_md: "Allgemein langsamer Abbau (Reaktionszeit/Muskelkraft); Inflammaging (niedriggradige Entzündung). Frauen: Menopause (~50 J.). Männer: Testosteronabnahme; Libido/Erektion ↓. Fitness/Ernährung/Training puffern vieles ab.", order_index: 18 },
+  { id: "c6-19", section_id: "6-1", front_md: "Postformales Denken – was ist gemeint?", back_md: "Reflektiertes Abwägen, Antizipation von Konsequenzen, Umgang mit Ambiguität/Widersprüchen; assoziiert mit Kreativität und Verständnis von Metaphern/Ironie.", order_index: 19 },
+  { id: "c6-20", section_id: "6-1", front_md: "Piaget – Grundideen (Schemata, Assimilation, Akkommodation)", back_md: "Kinder als kleine Wissenschaftler: konstruieren Wissen; Assimilation = neue Info in bestehende Schemata einordnen; Akkommodation = Schemata anpassen; Entwicklung teils in qualitativ unterschiedlichen Stadien.", order_index: 20 },
+  { id: "c6-21", section_id: "6-1", front_md: "Piaget – vier Stadien (mit Kernerrungenschaften)", back_md: "Sensumotorisch (0–2): Objektpermanenz. Präoperational (2–7): Sprache, Repräsentationen (Animismus/Realismus möglich). Konkret‑operational (7–11): Logik über Konkretes, Reversibilität, Erhaltung. Formal‑operational (11+): abstraktes/hypothetisches Denken.", order_index: 21 },
+  { id: "c6-22", section_id: "6-1", front_md: "Objektpermanenz – klassische & moderne Befunde", back_md: "Klassisch: Erwerb ~8 Monate; neuere Paradigmen (Blickdauer) zeigen Anzeichen ab ~3,5 Monaten → frühere Kompetenzen, aber motorische Limitierungen erklären Verhaltensdefizite.", order_index: 22 },
+  { id: "c6-23", section_id: "6-1", front_md: "Erhaltung (Invarianz) – Flüssigkeitsaufgabe (Erklärung)", back_md: "Vor konkret‑operationalem Stadium wird Höhe überbewertet → ‚mehr Wasser‘ im schmal‑hohen Glas; im konkret‑operationalen Stadium Verständnis: Menge bleibt trotz Formwechsel gleich.", order_index: 23 },
+  { id: "c6-24", section_id: "6-1", front_md: "Theory of Mind – False‑Belief‑Aufgabe (Maxi)", back_md: "Ab ~4–6 Jahren gelingen explizite False‑Belief‑Tests (Maxi sucht dort, wo er es glaubt – grüner Schrank); jüngere orientieren sich am Eigenwissen (blauer Schrank).", order_index: 24 },
+  { id: "c6-25", section_id: "6-1", front_md: "Kohlberg – Moralentwicklung (3 Niveaus/6 Stufen)", back_md: "Präkonventionell (Strafe/Belohnung, instrumentell); konventionell (Beziehungen/soziales System); postkonventionell (Kontrakt/Rechte, universelle Prinzipien). Fokus auf Begründungen (Heinz‑Dilemma).", order_index: 25 },
+  { id: "c6-26", section_id: "6-1", front_md: "Kohlberg – zentrale Kritikpunkte", back_md: "Geschlechterperspektive (Gilligan: Fürsorge vs. Gerechtigkeit – Unterschiede klein); Kulturübertragbarkeit begrenzt (westlich geprägte Instrumente); nicht jede Person erreicht hohe Stufe.", order_index: 26 },
+  { id: "c6-27", section_id: "6-1", front_md: "Bindung – Strange Situation (Ainsworth) & Typen", back_md: "A: unsicher‑vermeidend (äußerlich ruhig, aber hohes Cortisol); B: sicher (weinen bei Trennung, gut tröstbar); C: unsicher‑ambivalent (sucht Trost, nimmt ihn nicht an); D: unsicher‑desorganisiert (konfuse Reaktionen, oft Trauma).", order_index: 27 },
+  { id: "c6-28", section_id: "6-1", front_md: "Bindung – Kerneinflüsse & Generalisierbarkeit", back_md: "Elterliche Sensitivität zentral; Bindung generationenübergreifend; kulturübergreifend beobachtet; Bindungsperson ≠ zwingend Mutter (auch Vater/Großeltern/Betreuer).", order_index: 28 },
+  { id: "c6-29", section_id: "6-1", front_md: "Erikson – psychosoziale Krisen (Überblick)", back_md: "0–1: Urvertrauen vs. Misstrauen; 1–3: Autonomie vs. Zweifel; 3–6: Initiative vs. Schuld; 6–Pub.: Kompetenz vs. Minderwertigkeit; Adol.: Identität vs. Rollenkonfusion; frühes EA: Intimität vs. Isolation; mittleres EA: Generativität vs. Stagnation; hohes EA: Ich‑Integrität vs. Verzweiflung.", order_index: 29 },
+  { id: "c6-30", section_id: "6-1", front_md: "Identitätsstatus (Marcia) – vier Kategorien", back_md: "Diffus (keine Exploration/Commitment), Foreclosure/übernommen (Commitment ohne Exploration), Moratorium/kritisch (Exploration ohne Commitment), Achievement/erarbeitet (Exploration → Commitment).", order_index: 30 },
+  { id: "c6-31", section_id: "6-1", front_md: "Pränatale Diagnostik – Ziel & Beispiele", back_md: "Früherkennung von Risiken/Fehlbildungen: Nackenfaltenmessung, Organscreening, Fruchtwasserbiopsie; ergänzt Standard‑Untersuchungen (Blut, Ultraschall).", order_index: 31 },
+  { id: "c6-32", section_id: "6-1", front_md: "Konzept sensible Phasen – was bedeutet es?", back_md: "Zeitfenster erhöhter Verletzbarkeit oder Plastizität (z. B. rasches Wachstum). Teratogene wirken besonders stark; auch Lernen hat sensible Perioden.", order_index: 32 },
+  { id: "c6-33", section_id: "6-1", front_md: "Kinder als aktive Mitgestalter – Entwicklungsumwelt", back_md: "Kinder gestalten Lernumwelten aktiv (Exploration, Spiel, soziale Interaktion). Eltern fördern Entwicklung durch anregende, sichere Kontexte.", order_index: 33 },
+  { id: "c6-34", section_id: "6-1", front_md: "Erhaltung weiterer Größen (über Flüssigkeit hinaus)", back_md: "Im konkret‑operationalen Stadium: Erhaltung von Zahl, Länge, Masse, Gewicht; verstehen Reversibilität (X+X=Y → Y−X=X).", order_index: 34 },
+  { id: "c6-35", section_id: "6-1", front_md: "Kognitive Alterung – Muster & Prävention", back_md: "65+: stärkere Korrelationen zwischen Fähigkeiten; genereller Abfall, aber variabel. Gesundheit, Bewegung, kognitives Training und soziale Einbindung puffern; Erkrankungen (Alzheimer/Parkinson) nehmen zu.", order_index: 35 },
+  { id: "c6-36", section_id: "6-1", front_md: "Kontrollfragen – Anlage/Umwelt & Stufen/Gradient", back_md: "Kann ich Beispiele nennen, wo Gene/Umwelt erkennbar sind (FASD, Deprivation)? Welche Befunde stützen Stufen vs. Kontinuität (Piaget‑Revisionen)?", order_index: 36 },
   { id: "c7-1", section_id: "7-1", front_md: "Konformität", back_md: "Asch-Paradigma.", order_index: 1 },
   { id: "c7-2", section_id: "7-1", front_md: "Gehorsam", back_md: "Milgram.", order_index: 2 },
   { id: "c7-3", section_id: "7-1", front_md: "Minimalgruppen", back_md: "Tajfel.", order_index: 3 },
@@ -2140,6 +2172,475 @@ export const questions: QuestionT[] = [
     explanation_md: "V1 ist das primäre visuelle Areal; höhere visuelle Areale verarbeiten komplexere Merkmale.",
     tags: ["v1","visuell"]
   },
+  // Kapitel 6 – Entwicklungspsychologie (36 MCQs, multi-correct, keine Teilpunkte)
+  {
+    id: "q6-101",
+    chapter_id: 6,
+    stem_md: "Was umfasst die Entwicklungspsychologie in Abgrenzung zu anderen Fächern?",
+    options: [
+      { id: "a", label: "a", md: "Veränderungsprozesse über die gesamte Lebensspanne (pränatal → hohes Alter).", isCorrect: true },
+      { id: "b", label: "b", md: "Nur biologische Reifung in der Kindheit.", isCorrect: false },
+      { id: "c", label: "c", md: "Veränderungen auf biologischer, kognitiver, sprachlicher und sozialer Ebene.", isCorrect: true },
+      { id: "d", label: "d", md: "Ausschließlich Unterschiede zwischen Personen (Differenzielle Psychologie).", isCorrect: false }
+    ],
+    explanation_md: "Entwicklungspsychologie betrachtet lebenslange Veränderungsprozesse in mehreren Domänen; sie ist nicht auf Kindheit beschränkt.",
+    tags: ["definition","abgrenzung"]
+  },
+  {
+    id: "q6-102",
+    chapter_id: 6,
+    stem_md: "Ordnen Sie die Lebensphasen korrekt zu (nach Tabelle 6.1).",
+    options: [
+      { id: "a", label: "a", md: "Pränatal → Empfängnis bis Geburt.", isCorrect: true },
+      { id: "b", label: "b", md: "Säuglingsalter → Geburt bis Ende des 1. Jahres.", isCorrect: true },
+      { id: "c", label: "c", md: "Adoleszenz → ca. 11–20 Jahre.", isCorrect: true },
+      { id: "d", label: "d", md: "Mittleres Erwachsenenalter → ca. 20–40 Jahre.", isCorrect: false }
+    ],
+    explanation_md: "Mittleres Erwachsenenalter ≈ 40–65 Jahre; frühes Erwachsenenalter ≈ 20–40 Jahre.",
+    tags: ["phasen"]
+  },
+  {
+    id: "q6-103",
+    chapter_id: 6,
+    stem_md: "Anlage vs. Umwelt und Stufen vs. Kontinuität – was trifft die heutige Sicht?",
+    options: [
+      { id: "a", label: "a", md: "Entwicklung entsteht durch Interaktion von genetischen Anlagen und Umwelt.", isCorrect: true },
+      { id: "b", label: "b", md: "Es gibt ausschließlich stufenartige Sprünge ohne graduelle Trends.", isCorrect: false },
+      { id: "c", label: "c", md: "Je nach Bereich mischen sich stufige und kontinuierliche Veränderungen.", isCorrect: true },
+      { id: "d", label: "d", md: "Umwelt trägt keinen eigenständigen Beitrag zur Entwicklung.", isCorrect: false }
+    ],
+    explanation_md: "Interaktionismus ist Konsens; einige Domänen zeigen Stufen (z. B. Piaget‑ähnliche Meilensteine), andere eher kontinuierliche Kurven.",
+    tags: ["anlage","umwelt","stufen"]
+  },
+  {
+    id: "q6-104",
+    chapter_id: 6,
+    stem_md: "Pränatale Entwicklung – ordnen Sie Phasen korrekt zu.",
+    options: [
+      { id: "a", label: "a", md: "Germinal (Befruchtung–2. Woche): Zygote, Zellteilung, Einnistung.", isCorrect: true },
+      { id: "b", label: "b", md: "Embryonal (3.–8. Woche): Spezialisierung, Organanlagen, erster Herzschlag.", isCorrect: true },
+      { id: "c", label: "c", md: "Fötal (ab 9. Woche): Wachstum/Ausreifung, Schlaf‑Wach, Bewegungen.", isCorrect: true },
+      { id: "d", label: "d", md: "Embryonalphase endet mit Geburt.", isCorrect: false }
+    ],
+    explanation_md: "Die Fötalphase reicht bis zur Geburt; Embryonalphase endet um die 8. Woche.",
+    tags: ["pränatal"]
+  },
+  {
+    id: "q6-105",
+    chapter_id: 6,
+    stem_md: "Neuroentwicklung vor/nach Geburt – was ist korrekt?",
+    options: [
+      { id: "a", label: "a", md: "Pränatal: enorme Neurogenese (bis ~250k Neurone/Minute).", isCorrect: true },
+      { id: "b", label: "b", md: "Postnatal (0–2 Jahre): Überproduktion + synaptic pruning formen Netzwerke.", isCorrect: true },
+      { id: "c", label: "c", md: "Nach der Geburt entstehen keine neuen Synapsen mehr.", isCorrect: false },
+      { id: "d", label: "d", md: "Axon‑/Dendritenwachstum beginnt erst im Jugendalter.", isCorrect: false }
+    ],
+    explanation_md: "Synaptogenese und Pruning prägen frühe Entwicklung; Axon/Dendriten wachsen bereits pränatal weiter.",
+    tags: ["neuro"]
+  },
+  {
+    id: "q6-106",
+    chapter_id: 6,
+    stem_md: "Teratogene – Definition und Beispiele.",
+    options: [
+      { id: "a", label: "a", md: "Externe Schädiger in der Schwangerschaft (biologisch/physikalisch/chemisch).", isCorrect: true },
+      { id: "b", label: "b", md: "Beispiele: Infektionen, Luftverschmutzung, ionisierende Strahlung, Alkohol/Drogen, Medikamente (z. B. Thalidomid).", isCorrect: true },
+      { id: "c", label: "c", md: "Wirkung ist unabhängig von Dosis und Zeitpunkt.", isCorrect: false },
+      { id: "d", label: "d", md: "Sensible Phasen erhöhen Verletzbarkeit stark.", isCorrect: true }
+    ],
+    explanation_md: "Einfluss hängt von Dosis, Dauer und Entwicklungsfenster ab; sensible Phasen sind besonders riskant.",
+    tags: ["teratogene"]
+  },
+  {
+    id: "q6-107",
+    chapter_id: 6,
+    stem_md: "Fetale Alkoholspektrumsstörungen (FASD) – was gehört dazu?",
+    options: [
+      { id: "a", label: "a", md: "Wachstumsstörungen, Gesichtsfehlbildungen, Herzfehler.", isCorrect: true },
+      { id: "b", label: "b", md: "Motorisch‑kognitive Defizite (Aufmerksamkeit, Lernen).", isCorrect: true },
+      { id: "c", label: "c", md: "Geringeres Risiko bei höherer Dosis und längerer Exposition.", isCorrect: false },
+      { id: "d", label: "d", md: "FAS ist die ausgeprägte Form innerhalb des Spektrums.", isCorrect: true }
+    ],
+    explanation_md: "FASD umfasst eine Bandbreite von Beeinträchtigungen; Risiko steigt mit Dosis/Dauer.",
+    tags: ["fasd"]
+  },
+  {
+    id: "q6-108",
+    chapter_id: 6,
+    stem_md: "Pränatale Diagnostik – Ziele und Beispiele.",
+    options: [
+      { id: "a", label: "a", md: "Früherkennung genetischer/umweltbedingter Risiken oder Fehlbildungen.", isCorrect: true },
+      { id: "b", label: "b", md: "Beispiele: Nackenfaltenmessung, Organscreening, Fruchtwasserbiopsie.", isCorrect: true },
+      { id: "c", label: "c", md: "Dient dem Erkennen und der Einleitung unterstützender Maßnahmen.", isCorrect: true },
+      { id: "d", label: "d", md: "Ersetzt alle Routineuntersuchungen der Mutter.", isCorrect: false }
+    ],
+    explanation_md: "Diagnostik ergänzt Standarduntersuchungen; Ziel sind Früherkennung und Unterstützung.",
+    tags: ["diagnostik"]
+  },
+  {
+    id: "q6-109",
+    chapter_id: 6,
+    stem_md: "Frühkindliche Reflexe und Sinnespräferenzen – welche Aussagen stimmen?",
+    options: [
+      { id: "a", label: "a", md: "Such‑ und Saugreflex unterstützen Nahrungsaufnahme direkt nach Geburt.", isCorrect: true },
+      { id: "b", label: "b", md: "Frühkindliche Reflexe bleiben lebenslang erhalten.", isCorrect: false },
+      { id: "c", label: "c", md: "Neugeborene zeigen Präferenzen für Mutterstimme/‑gesicht/‑geruch.", isCorrect: true },
+      { id: "d", label: "d", md: "Visuell werden Muster, Bewegung und Gesichter bevorzugt.", isCorrect: true }
+    ],
+    explanation_md: "Viele frühe Reflexe sind transient; Präferenzen für Bezugsperson und strukturierte visuelle Reize sind gut belegt.",
+    tags: ["reflexe","sinne"]
+  },
+  {
+    id: "q6-110",
+    chapter_id: 6,
+    stem_md: "Visuelle Klippe (Gibson & Walk) – was folgt daraus?",
+    options: [
+      { id: "a", label: "a", md: "Krabbelnde Kinder meiden den scheinbaren Abgrund trotz Glasabsicherung.", isCorrect: true },
+      { id: "b", label: "b", md: "Befund stützt ein frühes Tiefenverständnis.", isCorrect: true },
+      { id: "c", label: "c", md: "Kinder werden vom Abgrund angezogen und krabbeln bevorzugt darüber.", isCorrect: false },
+      { id: "d", label: "d", md: "Erfahrung (Krabbeln) moduliert Verhalten.", isCorrect: true }
+    ],
+    explanation_md: "Die Studie illustriert frühe Tiefenwahrnehmung; motorische Erfahrung beeinflusst das Verhalten.",
+    tags: ["tiefe"]
+  },
+  {
+    id: "q6-111",
+    chapter_id: 6,
+    stem_md: "Deprivation in der frühen Kindheit – typische Folgen?",
+    options: [
+      { id: "a", label: "a", md: "Verändertes Gehirnwachstum bei langandauernder Vernachlässigung.", isCorrect: true },
+      { id: "b", label: "b", md: "Reduzierte kognitive Leistungen (z. B. IQ).", isCorrect: true },
+      { id: "c", label: "c", md: "Deprivation wirkt sich ausschließlich positiv auf Lernchancen aus.", isCorrect: false },
+      { id: "d", label: "d", md: "Anregung/Interaktion sind entwicklungsförderlich.", isCorrect: true }
+    ],
+    explanation_md: "Mangel an Stimulation schädigt Entwicklung; anregende Umgebungen fördern sie.",
+    tags: ["deprivation"]
+  },
+  {
+    id: "q6-112",
+    chapter_id: 6,
+    stem_md: "Adoleszenz – welche Zuordnungen sind korrekt?",
+    options: [
+      { id: "a", label: "a", md: "Mädchen: Östrogen/Progesteron; Jungen: Testosteron.", isCorrect: true },
+      { id: "b", label: "b", md: "Menarche ≈ erste Menstruation; Spermache ≈ Beginn der Spermienproduktion.", isCorrect: true },
+      { id: "c", label: "c", md: "Sekundäre Geschlechtsmerkmale: z. B. Brustentwicklung, Stimmbruch, Behaarung.", isCorrect: true },
+      { id: "d", label: "d", md: "Psychische Belastungen sind in der Adoleszenz unmöglich.", isCorrect: false }
+    ],
+    explanation_md: "Pubertät geht mit hormonellen/körperlichen Veränderungen und psychischer Belastung einher; Ausprägung variiert.",
+    tags: ["adoleszenz"]
+  },
+  {
+    id: "q6-113",
+    chapter_id: 6,
+    stem_md: "Veränderungen im Erwachsenenalter – was trifft zu?",
+    options: [
+      { id: "a", label: "a", md: "Langsamer Abbau von Reaktionszeit/Muskelkraft bei vielen Personen.", isCorrect: true },
+      { id: "b", label: "b", md: "Inflammaging: niedriggradige chronische Entzündung im Alter.", isCorrect: true },
+      { id: "c", label: "c", md: "Menopause: Ende der Fruchtbarkeit, typische Symptome (z. B. Hitzewallungen).", isCorrect: true },
+      { id: "d", label: "d", md: "Testosteron steigt beim Mann kontinuierlich im Alter.", isCorrect: false }
+    ],
+    explanation_md: "Testosteron sinkt; gesunde Lebensführung puffert körperlich/kognitiv.",
+    tags: ["erwachsenenalter"]
+  },
+  {
+    id: "q6-114",
+    chapter_id: 6,
+    stem_md: "Postformales Denken – Kennzeichen?",
+    options: [
+      { id: "a", label: "a", md: "Reflektiertes Abwägen, Antizipation von Konsequenzen.", isCorrect: true },
+      { id: "b", label: "b", md: "Toleranz von Ambiguität/Widerspruch.", isCorrect: true },
+      { id: "c", label: "c", md: "Verknüpfung mit Kreativität/Metaphern‑/Ironieverständnis (Befunde).", isCorrect: true },
+      { id: "d", label: "d", md: "Reines Auswendiglernen ohne Kontext.", isCorrect: false }
+    ],
+    explanation_md: "Postformal betont flexible, kontextualisierte Urteile und den Umgang mit Mehrdeutigkeit.",
+    tags: ["postformal"]
+  },
+  {
+    id: "q6-115",
+    chapter_id: 6,
+    stem_md: "Piaget – Kernmechanismen des Lernens.",
+    options: [
+      { id: "a", label: "a", md: "Schemata als mentale Strukturen organisieren Erfahrung.", isCorrect: true },
+      { id: "b", label: "b", md: "Assimilation: neue Information in bestehende Schemata einpassen.", isCorrect: true },
+      { id: "c", label: "c", md: "Akkommodation: Schemata an neue Information anpassen.", isCorrect: true },
+      { id: "d", label: "d", md: "Kinder sind passive Empfänger von Wissen.", isCorrect: false }
+    ],
+    explanation_md: "Piaget sieht Kinder als aktive Wissenskonstrukteure; Lernen = Wechselspiel von Assimilation/Akkommodation.",
+    tags: ["piaget"]
+  },
+  {
+    id: "q6-116",
+    chapter_id: 6,
+    stem_md: "Piaget – Stadien und typische Errungenschaften.",
+    options: [
+      { id: "a", label: "a", md: "Sensumotorisch: Objektpermanenz.", isCorrect: true },
+      { id: "b", label: "b", md: "Präoperational: Sprache/mentale Repräsentationen, Animismus/Realismus möglich.", isCorrect: true },
+      { id: "c", label: "c", md: "Konkret‑operational: Logik über Konkretes, Reversibilität, Erhaltung.", isCorrect: true },
+      { id: "d", label: "d", md: "Formal‑operational: ausschließlich sensorische Erkundung.", isCorrect: false }
+    ],
+    explanation_md: "Formal‑operational = Abstraktion/Hypothesen; nicht sensorische Erkundung.",
+    tags: ["piaget","stadien"]
+  },
+  {
+    id: "q6-117",
+    chapter_id: 6,
+    stem_md: "Objektpermanenz – klassische vs. neue Befunde.",
+    options: [
+      { id: "a", label: "a", md: "Klassisch: sichtbares Suchverhalten zeigt Erwerb ~8 Monate.", isCorrect: true },
+      { id: "b", label: "b", md: "Neue Paradigmen (Blickdauer) zeigen Anzeichen schon ~3,5 Monate.", isCorrect: true },
+      { id: "c", label: "c", md: "Motorische Limitierungen können Verhaltensdefizite erklären.", isCorrect: true },
+      { id: "d", label: "d", md: "Kinder erwerben Objektpermanenz erst im Jugendalter.", isCorrect: false }
+    ],
+    explanation_md: "Frühe Kompetenz kann durch Aufgabenanforderungen maskiert sein.",
+    tags: ["objektpermanenz"]
+  },
+  {
+    id: "q6-118",
+    chapter_id: 6,
+    stem_md: "Konkret‑operationales Denken – welches Beispiel passt?",
+    options: [
+      { id: "a", label: "a", md: "Erhaltung von Flüssigkeit trotz anderer Gefäßform.", isCorrect: true },
+      { id: "b", label: "b", md: "Reversibilität (X+X=Y ⇒ Y−X=X).", isCorrect: true },
+      { id: "c", label: "c", md: "Abstrakte Logik ohne Bezug zu konkreten Gegebenheiten.", isCorrect: false },
+      { id: "d", label: "d", md: "Schlussfolgern über konkrete Situationen/Ereignisse.", isCorrect: true }
+    ],
+    explanation_md: "Abstraktion kennzeichnet eher formal‑operationales Denken.",
+    tags: ["konkret"]
+  },
+  {
+    id: "q6-119",
+    chapter_id: 6,
+    stem_md: "Theory of Mind – False‑Belief‑Aufgabe (Maxi). Was ist korrekt?",
+    options: [
+      { id: "a", label: "a", md: "Ab ~4–6 Jahren nennen Kinder typischerweise den grünen Schrank (Maxis Glaube).", isCorrect: true },
+      { id: "b", label: "b", md: "Jüngere Kinder antworten oft aus eigenem Wissen (blauer Schrank).", isCorrect: true },
+      { id: "c", label: "c", md: "Aufgabe misst Zuschreibung mentaler Zustände an andere.", isCorrect: true },
+      { id: "d", label: "d", md: "ToM ist mit 2 Jahren vollständig wie bei Erwachsenen.", isCorrect: false }
+    ],
+    explanation_md: "Die False‑Belief‑Aufgabe prüft, ob Kinder Überzeugungen verstehen, die von der Realität abweichen.",
+    tags: ["tom"]
+  },
+  {
+    id: "q6-120",
+    chapter_id: 6,
+    stem_md: "Kohlberg – ordnen Sie die Niveaus/Stufen korrekt zu.",
+    options: [
+      { id: "a", label: "a", md: "Präkonventionell: Strafe/Belohnung; instrumentell (Eigennutz/Reziprozität).", isCorrect: true },
+      { id: "b", label: "b", md: "Konventionell: Beziehungen/Erwartungen; soziales System/Ordnung.", isCorrect: true },
+      { id: "c", label: "c", md: "Postkonventionell: sozialer Kontrakt/Rechte; universelle Prinzipien.", isCorrect: true },
+      { id: "d", label: "d", md: "Präkonventionell: Orientierung an universellen ethischen Prinzipien.", isCorrect: false }
+    ],
+    explanation_md: "Die Niveaus beschreiben zunehmende Abstraktion in moralischer Begründung.",
+    tags: ["kohlberg"]
+  },
+  {
+    id: "q6-121",
+    chapter_id: 6,
+    stem_md: "Kohlberg – Fokus der Theorie ist…",
+    options: [
+      { id: "a", label: "a", md: "…nicht die Entscheidung (stehlen/nicht stehlen), sondern die Begründung.", isCorrect: true },
+      { id: "b", label: "b", md: "…ausschließlich die Gesetzestreue unabhängig vom Kontext.", isCorrect: false },
+      { id: "c", label: "c", md: "…kumulatives Durchlaufen von Stufen in gleicher Reihenfolge.", isCorrect: true },
+      { id: "d", label: "d", md: "…dass jede Person sicher Stufe 6 erreicht.", isCorrect: false }
+    ],
+    explanation_md: "Reihenfolge der Stufen ist invariant; wenige erreichen dauerhaft postkonventionelle Stufen.",
+    tags: ["kohlberg"]
+  },
+  {
+    id: "q6-122",
+    chapter_id: 6,
+    stem_md: "Kohlberg – zentrale Kritikpunkte?",
+    options: [
+      { id: "a", label: "a", md: "Gender‑Perspektive (Gilligan): Fürsorge vs. Gerechtigkeit – Unterschiede eher klein.", isCorrect: true },
+      { id: "b", label: "b", md: "Kulturelle Übertragbarkeit eingeschränkt (westliche Instrumente).", isCorrect: true },
+      { id: "c", label: "c", md: "Empirie zeigt keinerlei Einschränkungen in jeder Kultur.", isCorrect: false },
+      { id: "d", label: "d", md: "Theorie ist rein biologisch und ignoriert Kognition.", isCorrect: false }
+    ],
+    explanation_md: "Kritik betrifft v. a. kulturelle Prägung der Messinstrumente und die Betonung der Gerechtigkeitslogik.",
+    tags: ["kohlberg","kritik"]
+  },
+  {
+    id: "q6-123",
+    chapter_id: 6,
+    stem_md: "Bindung – Strange Situation: ordnen Sie Typen korrekt zu.",
+    options: [
+      { id: "a", label: "a", md: "A: unsicher‑vermeidend – äußerlich ruhig, sucht wenig Trost; Cortisol erhöht.", isCorrect: true },
+      { id: "b", label: "b", md: "B: sicher – weint bei Trennung, lässt sich gut trösten/beruhigen.", isCorrect: true },
+      { id: "c", label: "c", md: "C: unsicher‑ambivalent – sucht Trost, kann ihn aber nicht annehmen.", isCorrect: true },
+      { id: "d", label: "d", md: "D: unsicher‑desorganisiert – konfus, ‚einfrieren‘, teils Aggression, oft Trauma.", isCorrect: true }
+    ],
+    explanation_md: "Bindungstyp B gilt als sicher; A/C/D als unsichere Muster.",
+    tags: ["bindung"]
+  },
+  {
+    id: "q6-124",
+    chapter_id: 6,
+    stem_md: "Bindung – was begünstigt sichere Bindung und Generalisierbarkeit?",
+    options: [
+      { id: "a", label: "a", md: "Elterliche Sensitivität (verlässliche, feinfühlige Reaktion).", isCorrect: true },
+      { id: "b", label: "b", md: "Bindungsperson muss zwingend die Mutter sein.", isCorrect: false },
+      { id: "c", label: "c", md: "Bindungsphänomene zeigen sich kulturübergreifend.", isCorrect: true },
+      { id: "d", label: "d", md: "Bindungsmuster sind zufällig und generationell unabhängig.", isCorrect: false }
+    ],
+    explanation_md: "Bindung kann zu Vater/Großeltern/Betreuern aufgebaut werden; Muster zeigen generationelle Kontinuität und Kulturrobustheit.",
+    tags: ["bindung"]
+  },
+  {
+    id: "q6-125",
+    chapter_id: 6,
+    stem_md: "Erikson – ordnen Sie Phase/Krise korrekt zu.",
+    options: [
+      { id: "a", label: "a", md: "0–1: Urvertrauen vs. Misstrauen.", isCorrect: true },
+      { id: "b", label: "b", md: "1–3: Autonomie vs. Selbstzweifel.", isCorrect: true },
+      { id: "c", label: "c", md: "Adoleszenz: Identität vs. Rollenkonfusion.", isCorrect: true },
+      { id: "d", label: "d", md: "Hohes Erwachsenenalter: Intimität vs. Isolation.", isCorrect: false }
+    ],
+    explanation_md: "Im hohen Erwachsenenalter: Ich‑Integrität vs. Verzweiflung; Intimität vs. Isolation gehört ins frühe Erwachsenenalter.",
+    tags: ["erikson"]
+  },
+  {
+    id: "q6-126",
+    chapter_id: 6,
+    stem_md: "Marcia – Identitätsstatus: Zuordnung und Kennzeichen.",
+    options: [
+      { id: "a", label: "a", md: "Diffus: keine Exploration, kein Commitment.", isCorrect: true },
+      { id: "b", label: "b", md: "Foreclosure/übernommen: Commitment ohne Exploration (Übernahme elterlicher Werte).", isCorrect: true },
+      { id: "c", label: "c", md: "Moratorium/kritisch: hohe Exploration, wenig Commitment.", isCorrect: true },
+      { id: "d", label: "d", md: "Achievement/erarbeitet: nach Exploration Commitment zu Selbstbild/Werten.", isCorrect: true }
+    ],
+    explanation_md: "Marcia kreuzt Exploration × Commitment → vier Identitätsstatus.",
+    tags: ["marcia","identität"]
+  },
+  {
+    id: "q6-127",
+    chapter_id: 6,
+    stem_md: "Sensible Phasen – was ist gemeint?",
+    options: [
+      { id: "a", label: "a", md: "Zeitfenster erhöhter Plastizität oder Verletzbarkeit (z. B. rasches Wachstum).", isCorrect: true },
+      { id: "b", label: "b", md: "Teratogeneffekte unabhängig vom Zeitpunkt.", isCorrect: false },
+      { id: "c", label: "c", md: "Gilt auch im Lernen über sensible Perioden.", isCorrect: true },
+      { id: "d", label: "d", md: "Sensible Phasen existieren nicht pränatal.", isCorrect: false }
+    ],
+    explanation_md: "Sensible Phasen erhöhen Wirkung von Störfaktoren, aber auch Lernchancen.",
+    tags: ["sensibel"]
+  },
+  {
+    id: "q6-128",
+    chapter_id: 6,
+    stem_md: "Kognitive Alterung – typische Muster/Prävention?",
+    options: [
+      { id: "a", label: "a", md: "65+: stärkere Korrelation zwischen kognitiven Domänen; generelle Abnahme im Mittel.", isCorrect: true },
+      { id: "b", label: "b", md: "Gesundheit, Bewegung, kognitives Training und soziale Einbindung puffern Abbau.", isCorrect: true },
+      { id: "c", label: "c", md: "Erkrankungen (z. B. Alzheimer) treten seltener auf als in der Jugend.", isCorrect: false },
+      { id: "d", label: "d", md: "Variabilität zwischen Personen bleibt bestehen.", isCorrect: true }
+    ],
+    explanation_md: "Alter ist heterogen; Lebensstilfaktoren wirken protektiv; Erkrankungsrisiken steigen insgesamt.",
+    tags: ["alterung"]
+  },
+  {
+    id: "q6-129",
+    chapter_id: 6,
+    stem_md: "Welche Aussagen zur Rolle von Eltern/Umwelt in der frühen Entwicklung sind korrekt?",
+    options: [
+      { id: "a", label: "a", md: "Aktivierender, feinfühliger Umgang und neue Erlebnisse fördern Entwicklung.", isCorrect: true },
+      { id: "b", label: "b", md: "Kinder gestalten ihre Lernumwelt aktiv (Exploration, Spiel).", isCorrect: true },
+      { id: "c", label: "c", md: "Elterliche Sensitivität trägt nichts zur Bindung bei.", isCorrect: false },
+      { id: "d", label: "d", md: "Reizarme, deprivierende Umgebungen sind unproblematisch.", isCorrect: false }
+    ],
+    explanation_md: "Entwicklung ist ein Co‑Produkt aktiver Kinder und sinnvoller Umwelten; Sensitivität fördert Bindung.",
+    tags: ["umwelt","eltern"]
+  },
+  {
+    id: "q6-130",
+    chapter_id: 6,
+    stem_md: "Erhaltung (Invarianz) – welche Zuordnungen sind korrekt?",
+    options: [
+      { id: "a", label: "a", md: "Klein‑Kind vor konkret‑operationaler Phase: Fokus auf Höhe → ‚mehr Wasser‘.", isCorrect: true },
+      { id: "b", label: "b", md: "Konkret‑operational: versteht, dass Menge trotz Formwechsel gleich bleibt.", isCorrect: true },
+      { id: "c", label: "c", md: "Invarianzprinzip gilt nur für Flüssigkeit, nicht Zahl/Länge/Masse/Gewicht.", isCorrect: false },
+      { id: "d", label: "d", md: "Reversibilität unterstützt das Verständnis von Erhaltung.", isCorrect: true }
+    ],
+    explanation_md: "Erhaltung erstreckt sich auf mehrere Größen; Reversibilität ist zentral.",
+    tags: ["erhaltung"]
+  },
+  {
+    id: "q6-131",
+    chapter_id: 6,
+    stem_md: "Animismus/Realismus in der Präoperationsphase – Beispiele?",
+    options: [
+      { id: "a", label: "a", md: "Animismus: Teddybär ist ‚traurig‘ – Zuschreibung lebendiger Eigenschaften an Objekte.", isCorrect: true },
+      { id: "b", label: "b", md: "Realismus: Nicht‑Existentes (Träume) als extern real aufgefasst.", isCorrect: true },
+      { id: "c", label: "c", md: "Beide Phänomene treten niemals bei Kindern auf.", isCorrect: false },
+      { id: "d", label: "d", md: "Piagets Häufigkeitseinschätzungen wurden teils revidiert (Kinder können Realität/Vorstellung früher unterscheiden).", isCorrect: true }
+    ],
+    explanation_md: "Neuere Studien zeigen frühere Unterscheidungsfähigkeiten als von Piaget angenommen.",
+    tags: ["animismus","realismus"]
+  },
+  {
+    id: "q6-132",
+    chapter_id: 6,
+    stem_md: "Adoleszenz – welches Zeitfenster ist plausibel?",
+    options: [
+      { id: "a", label: "a", md: "Buben: Beginn ca. 10–17 Jahre.", isCorrect: true },
+      { id: "b", label: "b", md: "Mädchen: Beginn ca. 9–14 Jahre.", isCorrect: true },
+      { id: "c", label: "c", md: "Menarche durchschnittlich etwa mit 12 Jahren.", isCorrect: true },
+      { id: "d", label: "d", md: "Spermache = Ende der Spermienproduktion.", isCorrect: false }
+    ],
+    explanation_md: "Spermache bezeichnet den Beginn der Produktion; Zeiträume variieren interindividuell.",
+    tags: ["adoleszenz","zeitfenster"]
+  },
+  {
+    id: "q6-133",
+    chapter_id: 6,
+    stem_md: "Menopause/Testosteronabfall – was ist korrekt?",
+    options: [
+      { id: "a", label: "a", md: "Menopause: Zeitpunkt der letzten Blutung + ≥12 Monate keine Blutung.", isCorrect: true },
+      { id: "b", label: "b", md: "Testosteron sinkt beim Mann ab ca. 40 Jahren langsam.", isCorrect: true },
+      { id: "c", label: "c", md: "Männer bleiben häufig bis ins hohe Alter fruchtbar.", isCorrect: true },
+      { id: "d", label: "d", md: "Menopause = plötzlicher Start der Fruchtbarkeit.", isCorrect: false }
+    ],
+    explanation_md: "Menopause beendet Fruchtbarkeit; beim Mann sinkt Testosteron, Fruchtbarkeit kann aber erhalten bleiben.",
+    tags: ["menopause","testosteron"]
+  },
+  {
+    id: "q6-134",
+    chapter_id: 6,
+    stem_md: "Piaget‑Revisionen – warum wurden Erwerbsalter teils nach unten korrigiert?",
+    options: [
+      { id: "a", label: "a", md: "Komplexe Aufgabenanforderungen maskierten vorhandene Kompetenzen.", isCorrect: true },
+      { id: "b", label: "b", md: "Neue Methoden (z. B. Blickdauer) erfassen frühere Wissensaspekte.", isCorrect: true },
+      { id: "c", label: "c", md: "Weil Kinder später anfangen zu denken.", isCorrect: false },
+      { id: "d", label: "d", md: "Motorische Limitierungen erschweren manifeste Leistung bei klassischen Aufgaben.", isCorrect: true }
+    ],
+    explanation_md: "Methodische Anpassungen zeigen frühere kognitive Anzeichen als sichtbar im Verhalten.",
+    tags: ["piaget","methoden"]
+  },
+  {
+    id: "q6-135",
+    chapter_id: 6,
+    stem_md: "Eriksons Modell – was kennzeichnet die Logik der Stufen?",
+    options: [
+      { id: "a", label: "a", md: "Jede Stufe hat einen psychosozialen Konflikt (Krise).", isCorrect: true },
+      { id: "b", label: "b", md: "Erfolgreiche Bewältigung erleichtert die nächste Stufe.", isCorrect: true },
+      { id: "c", label: "c", md: "Konflikte verschwinden vollständig und sind später irrelevant.", isCorrect: false },
+      { id: "d", label: "d", md: "Das Modell inspirierte viele Untersuchungen v. a. zur Adoleszenz/Identität.", isCorrect: true }
+    ],
+    explanation_md: "Konflikte bleiben als Themen präsent; Identität (Adoleszenz) wurde intensiv erforscht.",
+    tags: ["erikson"]
+  },
+  {
+    id: "q6-136",
+    chapter_id: 6,
+    stem_md: "Identitätsentwicklung – welche Paare sind korrekt?",
+    options: [
+      { id: "a", label: "a", md: "Foreclosure: Commitment ohne Exploration (Übernahme elterlicher Werte).", isCorrect: true },
+      { id: "b", label: "b", md: "Moratorium: hohe Exploration, wenig Commitment.", isCorrect: true },
+      { id: "c", label: "c", md: "Achievement: Exploration abgeschlossen, stabiles Commitment.", isCorrect: true },
+      { id: "d", label: "d", md: "Diffus: stabiles Commitment nach intensiver Exploration.", isCorrect: false }
+    ],
+    explanation_md: "Diffus = weder Exploration noch Commitment; Achievement = erarbeitetes Commitment.",
+    tags: ["identität","marcia"]
+  },
   // Kapitel 5 – Allgemeine Psychologie (36 MCQs, multi-correct, keine Teilpunkte)
   {
     id: "q5-101",
@@ -3172,6 +3673,67 @@ export const chapter5SummarySteps: { title: string; body: string }[] = [
 
 // Map ergänzen
 summaryByChapter[5] = chapter5SummarySteps
+ 
+// Schrittweise Zusammenfassung – Kapitel 6 (≈ 24–26 Steps ≈ 25 Minuten Lesedauer)
+export const chapter6SummarySteps: { title: string; body: string }[] = [
+  { title: "Kompass & Abgrenzung", body: "Entwicklungspsychologie untersucht Veränderungsprozesse über die gesamte Lebensspanne (pränatal → hohes Alter) auf biologischer, kognitiver, sprachlicher und sozialer Ebene. Fokus nicht nur Kindheit/Jugend; auch Erwachsenenalter relevant." },
+  { title: "Lebensspannen‑Phasen (Tabelle 6.1)", body: "Pränatal; Säuglingsalter (0–1); frühe Kindheit (1–3); mittlere/späte Kindheit (3–11); Pubertät/Adoleszenz (11–20); frühes EA (20–40); mittleres EA (40–65); hohes EA (65+)." },
+  { title: "Grunddebatten", body: "Anlage vs. Umwelt (Gene ↔ Erfahrungen) und Stufen vs. Kontinuität (diskontinuierliche Sprünge vs. graduelle Veränderungen). Moderne Sicht: wechselseitige Einflüsse; Mischung aus Stufen und kontinuierlichen Trends." },
+  { title: "Pränatal I – germinal & embryonal", body: "Germinal (Befruchtung–2. Woche): Zygote, Zellteilung, Einnistung. Embryonal (3.–8. Woche): Zell‑Spezialisierung, Organanlagen; erster Herzschlag (~120–160/min). Erste Bewegungen (~7. Woche)." },
+  { title: "Pränatal II – fötal & Gehirn", body: "Fötal (9. Woche–Geburt): massives Wachstum (Gewicht ~15 g → ~3,3 kg; Länge ~50 cm), Schlaf‑Wach, Bewegungen (ab ~16. Woche spürbar). Neurogenese (bis ~250k Neurone/min), Axon-/Dendritenwachstum; postnatal: Überproduktion + synaptic pruning." },
+  { title: "Teratogene & sensible Phasen", body: "Externe Schädiger (biologisch/physikalisch/chemisch): Infektionen, Strahlung, Umweltgifte, Alkohol/Drogen, Medikamente (z. B. Thalidomid). Wirkung abhängig von Dosis, Dauer und Entwicklungsfenster (sensibel = hohes Wachstum)." },
+  { title: "FAS/FASD & Umfeldfaktoren", body: "Fetale Alkoholeffekte: Gesichtsfehlbildungen, Wachstumsstörung, Herzfehler, motorisch‑kognitive Defizite (z. B. Aufmerksamkeit, Lernen). Niedriger SES, Mangelernährung, chronischer Stress/Missbrauch → erhöhte Risiken; pränatale Diagnostik unterstützt Früherkennung." },
+  { title: "Frühe Kindheit – Reflexe & Sinne", body: "Such‑/Saugreflex dienen Nahrungsaufnahme; transiente frühkindliche Reflexe vs. lebenslange (Patellarsehne). Früh: Präferenz für Mutterstimme, ‑gesicht, ‑geruch; visuelle Präferenzen für Muster/Bewegung/Gesichter." },
+  { title: "Tiefenwahrnehmung & Umwelt", body: "Visuelle Klippe (Gibson/Walk): Krabbelnde meiden scheinbare Tiefe → frühes Tiefenverständnis. Aktive Interaktion/Anregung fördern Entwicklung; Deprivation verändert Hirnwachstum und senkt kognitive Werte." },
+  { title: "Adoleszenz – Reifung & Befinden", body: "Hormonumstellung (Östrogen/Progesteron; Testosteron); Menarche/Spermache; sekundäre Geschlechtsmerkmale, Wachstumsschübe. Psychisches Befinden (Selbstwert/Stress) teils belastet – große interindividuelle Varianz." },
+  { title: "Erwachsenenalter – Körper & Kognition", body: "Langsamer Abbau (Reaktionszeit/Muskelkraft); Inflammaging (chronisch niedriggradige Entzündung) – Risiko für Erkrankungen. Menopause (~50 J.), Testosteronabfall. Schutzfaktoren: aktiv bleiben (Bewegung, Ernährung, kognitives Training)." },
+  { title: "Postformales Denken", body: "Im frühen/mittleren EA: reflektiert‑abgewogen, antizipiert Folgen, toleriert Ambiguität; verknüpft mit Kreativität/Metaphern‑/Ironieverständnis. Reife Entscheidungen basieren auf Erfahrung + Emotionsregulation." },
+  { title: "Piaget – Konstruktivismus & Schemata", body: "Kinder als aktive Wissenskonstrukteure: Schemata strukturieren Erfahrung. Assimilation: neue Info in Schema einpassen. Akkommodation: Schema anpassen. Lernen als Wechselspiel, motiviert durch Diskrepanzen." },
+  { title: "Piaget – Stadien", body: "Sensumotorisch (0–2): Objektpermanenz. Präoperational (2–7): Sprache/Repräsentationen (Animismus/Realismus). Konkret‑operational (7–11): Logik über Konkretes, Reversibilität, Erhaltung. Formal‑operational (11+): Abstraktion, Hypothesenprüfung." },
+  { title: "Piaget – Aktualisierungen", body: "Neuere Paradigmen (z. B. Blickdauer) deuten frühere Kompetenzen (Objektpermanenz ~3,5 Monate); Aufgabenkomplexität überschätzte teils Erwerbsalter; nicht alle Veränderungen klar stufig." },
+  { title: "Theory of Mind", body: "Zuschreiben mentaler Zustände (Wünsche/Glauben). False‑Belief (Maxi): Ab ~4–6 Jahren korrekte Attribution der falschen Überzeugung (grüner Schrank), jüngere nutzen Eigenwissen (blauer Schrank)." },
+  { title: "Moral – Kohlberg I", body: "Präkonventionell: Strafe/Belohnung; instrumentell (Eigennutz, Reziprozität)." },
+  { title: "Moral – Kohlberg II", body: "Konventionell: zwischenmenschliche Erwartungen/Beziehungen; soziales System/Ordnung (internalisierte Normen)." },
+  { title: "Moral – Kohlberg III", body: "Postkonventionell: sozialer Kontrakt/Rechte; universelle ethische Prinzipien über Gesetzen (wenige erreichen dauerhaft Stufe 5/6)." },
+  { title: "Kohlberg – Kritik", body: "Fürsorge vs. Gerechtigkeit (Gilligan): Geschlechtsunterschiede gering. Kulturelle Generalisierbarkeit eingeschränkt (westliche Instrumente)." },
+  { title: "Bindung – Strange Situation", body: "Typen: A (unsicher‑vermeidend: äußerlich ruhig, Cortisol hoch), B (sicher: weint bei Trennung, gut tröstbar), C (unsicher‑ambivalent: sucht Trost, nimmt ihn nicht an), D (unsicher‑desorganisiert: konfus, oft Trauma)." },
+  { title: "Bindung – Wirkfaktoren & Transfer", body: "Elterliche Sensitivität zentral; Bindung über Generationen & Kulturen; Bindungsperson muss nicht Mutter sein (auch Vater/Großeltern/Betreuer)." },
+  { title: "Erikson – psychosoziale Krisen", body: "Acht Krisen von Urvertrauen vs. Misstrauen bis Ich‑Integrität vs. Verzweiflung; erfolgreiche Bewältigung fördert nächste Stufe, Konflikte bleiben als Themen präsent." },
+  { title: "Identität – Marcia", body: "Vier Status: diffus, übernommen (Foreclosure), moratorium (kritisch), erarbeitet (Achievement). Dimensionen: Exploration × Commitment; Ziel: kohärentes Selbst im Jugendalter." },
+  { title: "Kognitive Alterung & Training", body: "65+: Leistungsrückgänge variieren; Fähigkeiten korrelieren stärker. Gesunde, aktive, geistig/sportlich eingebundene Ältere zeigen geringe Einbußen; Erkrankungen (Alzheimer/Parkinson) steigen im Risiko." },
+  { title: "Transfer & Prüfe dich", body: "Kannst du Phasen benennen, Teratogene und sensible Perioden erklären, Piagets Kernkonzepte/Stadien skizzieren, False‑Belief erklären, Kohlberg/Erikson/Marcia zuordnen und Schutzfaktoren in der Alterung nennen?" }
+]
+
+// Map ergänzen
+summaryByChapter[6] = chapter6SummarySteps
+
+// Kompakter Review (≈ 15–18 Minuten) – Kapitel 5
+export const chapter5ReviewSteps: { title: string; body: string }[] = [
+  { title: "Worum geht’s (Abgrenzung)", body: "Allgemeine Psychologie untersucht grundlegende, universelle Funktionen bei gesunden Erwachsenen. Abgrenzung: nicht Differenziell (Unterschiede), nicht Entwicklungs‑ (Veränderungen), nicht Sozial‑ (Einfluss anderer)." },
+  { title: "Kognitive Wende & Ansatz", body: "Mentale Repräsentationen & Informationsverarbeitung im Zentrum (Aufmerksamkeit, Wahrnehmung, Gedächtnis, Denken/Entscheiden). Experimente + Modelle; Anschluss an kognitive Neurowissenschaft." },
+  { title: "Input‑Verarbeitung (Landkarte)", body: "Reizaufnahme → Aufmerksamkeit/Selektion → Top‑down‑Einbettung (Vorwissen/Erwartungen, Emotion/Motivation) → Klassifikation/Urteil/Entscheidung → Handlung; Sprache als Ausdruck/Koordination." },
+  { title: "Wahrnehmung: 3 Stufen", body: "(1) Sensorische Empfindung (Transduktion über Rezeptoren) (2) Wahrnehmung i. e. S. (Perzept als integriertes mentales Abbild) (3) Klassifikation (Zuordnung zu Kategorien)." },
+  { title: "Top‑down‑Einflüsse", body: "Vorwissen, Erwartungen, Bewertungen und Emotionen lenken Aufmerksamkeit & Interpretation (z. B. Angst → Bedrohungsfokus)." },
+  { title: "Psychophysik – Schwellen/Methoden", body: "Absolutschwelle = kleinste Intensität für Detektion; Unterschiedsschwelle = minimaler Differenzbetrag (ausgangsabhängig). Grenz‑ vs. Konstanzmethode → psychometrische Funktion; 50%‑Kriterium als Schwelle." },
+  { title: "Signalentdeckungstheorie (SDT)", body: "Detektion = Sensitivität + Entscheidungskriterium (Antworttendenz). Vier Ausgänge: Treffer, Verpasser, falscher Alarm, korrekte Zurückweisung. Ersetzt harte Schwelle durch probabilistische Entscheidung." },
+  { title: "Aufmerksamkeit: Unaufmerksamkeitsblindheit", body: "Fokus bindet Verarbeitungskapazität: Unerwartete Ereignisse bleiben oft unbemerkt (‚Gorilla‘) → Aufmerksamkeit bestimmt, was bewusst wird." },
+  { title: "Cueing (Posner)", body: "Valide < neutral < invalide Reaktionszeiten. Endogen (wissensgetrieben) wirkt ab ~200 ms und länger; exogen (reizgetrieben) wirkt schon ~50 ms, kürzer anhaltend. Fixation verhindert Augenbewegungs‑Konfundierung." },
+  { title: "Selektive Aufmerksamkeit & Dichotisches Hören", body: "Cocktailparty‑Phänomen; beschatteter Kanal wird erinnert, unbeschatteter kaum. Split‑Span: ohrweise Reproduktion leichter als paarweise → frühe, physikalische Selektion." },
+  { title: "Farbtheorien (Young‑Helmholtz & Hering)", body: "Trichromasie (3 Zapfentypen) erklärt Farbmischung/Fehlsichten; Gegenfarbentheorie (Rot‑Grün, Blau‑Gelb, Schwarz‑Weiß) erklärt u. a. Nachbilder. Ergänzende Ebenen der Verarbeitung." },
+  { title: "Tiefe & Größe", body: "Monokulare Cues: Linienperspektive, relative Größe, Verdeckung, atmosphärische Perspektive. Binokular: Querdisparation, Konvergenz (Akkommodation für Nahes). Ames‑Raum: manipulierte Cues → Größentäuschung." },
+  { title: "Zwei visuelle Pfade", body: "Ursprünglich: ventral = ‚Was‘, dorsal = ‚Wo‘. Goodale & Milner: ventral = Vision for Perception, dorsal = Vision for Action (Greifen/Steuern). Evidenz: doppelte Dissoziationen (Läsionsfälle)." },
+  { title: "Lernen – Definition", body: "Durch Erfahrung entstandene, relativ überdauernde Verhaltensänderung/‑potenzial (nicht Reifung/Ermüdung/Drogen); Auftreten probabilistisch, kontextabhängig." },
+  { title: "Nicht‑assoziativ: Habituation/Sensitivierung", body: "Habituation: Reaktionsabnahme auf wiederholte irrelevante Reize. Sensitivierung: Zunahme v. a. bei aversiven Reizen (Alarmfunktion)." },
+  { title: "Klassische Konditionierung – Kerne", body: "UCS→UCR; CS+UCS‑Paarung → CS→CR. Erwerb; Löschung (CS ohne UCS); Spontanremission; Generalisierung (ähnliche Reize lösen CR aus) vs. Diskrimination (Training)." },
+  { title: "Operante Konditionierung – Kerne", body: "Gesetz des Effekts (Thorndike). Skinner: operante Kammer, Basisrate → Verstärkung; Vier‑Felder: pos./neg. Verstärkung (Verhalten ↑), pos./neg. Bestrafung (Verhalten ↓); Löschung/Spontanerholung." },
+  { title: "Beobachtungslernen (Bandura)", body: "Imitation ohne direkte eigene Verstärkung; stellvertretende Konsequenzen (Belohnung/Tadel) steuern Ausführung (Bobo‑Doll‑Studien)." },
+  { title: "Gedächtnisprozess & Modelle", body: "Enkodierung → Speicherung → Abruf. Drei‑Speicher (sensorisch/KZG/LZG) als Rahmen; Arbeitsgedächtnis (Zentrale Exekutive, phonologische Schleife, visuo‑räuml. Notizblock, episodischer Puffer); Millersche Zahl & Chunking; Dual‑Task‑Interferenzen sind modalitätsspezifisch." },
+  { title: "LZG‑Systeme & Effekte", body: "Explizit (semantisch/episodisch) vs. implizit/non‑deklarativ (prozedural, Konditionierung, Priming, Habituation). Fall H.M.: Dissoziation. Enkodierspezifität (Kontext/Stimmung), serieller Positionseffekt (Primacy/Recency), Vergessenskurve (früher Abfall → Spacing), Interferenz (proaktiv/retroaktiv)." }
+]
+
+// Registry ergänzen (Review-Sequenzen)
+// Kapitel 6 soll Kapitel 5 wiederholen → stelle den Review-Eintrag für 5 bereit
+;(reviewSummaryByChapter as any)[5] = chapter5ReviewSteps
 
 // Kompakter Review (≈ 15 Minuten) – Kapitel 4
 export const chapter4ReviewSteps: { title: string; body: string }[] = [
